@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instituto Gubernamental Técnico Francisco Miranda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="sticky-top shadow-sm bg-white">
-      <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand fw-bold" href="#inicio">IGTFM</a>
+    <header class="sticky-top shadow-sm site-header">
+      <nav class="navbar navbar-expand-lg navbar-light container-fluid px-3">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
+          <span class="logo-placeholder"><img src="fotos de maestros/Logo Instituto transparente.png" alt="Logo del Instituto Técnico Gubernamental Francisco Miranda" /></span>
+          <span class="institution-name">Conoce nuestra institución</span>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="#instituto">Instituto</a></li>
             <li class="nav-item"><a class="nav-link" href="#oferta">Oferta Académica</a></li>
@@ -25,22 +29,49 @@
           </ul>
         </div>
       </nav>
+      <div class="specialty-bar">
+        <div class="container specialty-links" aria-label="Especialidades técnicas">
+          <a href="#oferta">Carreras</a>
+          <a href="#docentes">Deportes</a>
+          <a href="#docentes">Banda</a>
+          <a href="#especialidades">Talleres</a>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section id="inicio" class="hero-section text-white text-center d-flex align-items-center">
-        <div class="container py-5">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <span class="badge bg-warning text-dark mb-3">Instituto Gubernamental Técnico Francisco Miranda</span>
-              <h1 class="display-5 fw-bold">Formando talento técnico con valores, ciencia y compromiso social</h1>
-              <p class="lead mt-4">Bienvenido al centro educativo que prepara a las nuevas generaciones del país con una oferta técnica moderna, un equipo docente sólido y proyectos reales para la comunidad.</p>
-              <div class="mt-4">
-                <a href="#oferta" class="btn btn-light btn-lg me-2">Descubre nuestra oferta</a>
-                <a href="#docentes" class="btn btn-outline-light btn-lg">Conoce al equipo docente</a>
+      <section id="inicio" class="hero-section text-white">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Campus y comunidad"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Imagen del instituto"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Imagen de aprendizaje"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1800&q=85');">
+              <div class="hero-overlay"></div>
+              <div class="container hero-content">
+                <h1>Instituto Técnico Gubernamental Francisco Miranda</h1>
+                <p>Educación técnica con valores, ciencia y compromiso social para abrir caminos hacia un futuro con propósito.</p>
+                <div class="hero-actions">
+                  <a href="#oferta" class="btn btn-warning btn-lg">Explorar nuestra oferta</a>
+                  <a href="#docentes" class="btn btn-outline-light btn-lg">Conocer al equipo</a>
+                </div>
               </div>
             </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1800&q=85');">
+              <div class="hero-overlay"></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=85');">
+              <div class="hero-overlay"></div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Imagen anterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Imagen siguiente">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </section>
 
@@ -66,8 +97,8 @@
                 <div class="col-12">
                   <div class="info-box p-4 shadow-sm rounded-4">
                     <h5>Ubicación</h5>
-                    <p>Calle Principal del Municipio, Ciudad Capital, Estado. Estamos cerca de los puntos de transporte escolar y accesos principales.</p>
-                    <p class="mb-0"><strong>Teléfono:</strong> +58 212 555 1234 | <strong>Email:</strong> info@igtfm.edu.ve</p>
+                    <p>Instituto Técnico Gubernamental Francisco Miranda, aldea de Zambrano, Honduras, carretera del norte, kilómetro 34.</p>
+                    <p class="mb-0"><strong>Teléfono:</strong> +504 9627-9345 | <strong>Email:</strong> Próximamente</p>
                   </div>
                 </div>
               </div>
@@ -145,6 +176,24 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="especialidades" class="specialties-section py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <span class="eyebrow">Rutas para tu futuro</span>
+            <h2 class="section-title">Conoce nuestros talleres</h2>
+            <p class="text-muted">Explora las áreas prácticas que fortalecen el talento de nuestra comunidad estudiantil.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4"><article id="estructuras-metalicas" class="specialty-card specialty-ochre"><span>01</span><h3>Estructuras metálicas</h3><p>Diseño, fabricación y montaje con precisión, seguridad y creatividad.</p><a class="workshop-button" href="#estructuras-metalicas">Conocer taller</a></article></div>
+            <div class="col-md-6 col-xl-4"><article id="carpinteria" class="specialty-card specialty-yellow"><span>02</span><h3>Carpintería</h3><p>El trabajo de la madera convertido en oficio, diseño y emprendimiento.</p><a class="workshop-button" href="#carpinteria">Conocer taller</a></article></div>
+            <div class="col-md-6 col-xl-4"><article id="belleza-cosmetologia" class="specialty-card specialty-peach"><span>03</span><h3>Belleza y cosmetología</h3><p>Imagen, cuidado personal y técnicas profesionales para crear oportunidades.</p><a class="workshop-button" href="#belleza-cosmetologia">Conocer taller</a></article></div>
+            <div class="col-md-6 col-xl-4"><article id="hogar" class="specialty-card specialty-cream"><span>04</span><h3>Hogar</h3><p>Habilidades prácticas para la vida, la creatividad y el desarrollo productivo.</p><a class="workshop-button" href="#hogar">Conocer taller</a></article></div>
+            <div class="col-md-6 col-xl-4"><article id="costura-confeccion" class="specialty-card specialty-sage"><span>05</span><h3>Costura y confección</h3><p>Patronaje, diseño y confección con visión de calidad y autonomía.</p><a class="workshop-button" href="#costura-confeccion">Conocer taller</a></article></div>
+            <div class="col-md-6 col-xl-4"><article id="informatica" class="specialty-card specialty-blue"><span>06</span><h3>Informática</h3><p>Programación, redes y soluciones digitales para el mundo actual.</p><a class="workshop-button" href="#informatica">Conocer taller</a></article></div>
           </div>
         </div>
       </section>
@@ -683,9 +732,10 @@
               <h2 class="section-title">Contacto</h2>
               <p>Para más información sobre matrículas, horarios y actividades, comunícate con nosotros o visítanos en el instituto.</p>
               <ul class="list-unstyled fs-5">
-                <li><strong>Dirección:</strong> Calle Principal del Municipio, Ciudad Capital</li>
-                <li><strong>Teléfono:</strong> +58 212 555 1234</li>
-                <li><strong>Email:</strong> info@igtfm.edu.ve</li>
+                <li><strong>Dirección:</strong> 7H8X+HR9, Zambrano, Francisco Morazán</li>
+                <li class="mt-2"><a href="https://maps.app.goo.gl/3q9AVP38MZLPvZtu7" target="_blank" rel="noopener noreferrer">Ver ubicación en Google Maps</a></li>
+                <li><strong>Teléfono:</strong> +504 9627-9345 Sub Director</li>
+                <li><strong>Email:</strong> Falta Correo</li>
               </ul>
               <div class="d-flex gap-3 mt-3">
                 <a class="btn btn-primary" href="#">Facebook</a>
@@ -694,7 +744,7 @@
             </div>
             <div class="col-lg-6">
               <div class="map-card shadow-sm rounded-4 overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.0221703550036!2d-66.90360394468867!3d10.480594592277035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a583c7a21c537%3A0x9adeb19a37bbef4!2sVenezuela!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps?q=7H8X%2BHR9%2C%20Zambrano%2C%20Francisco%20Moraz%C3%A1n&output=embed" width="100%" height="320" style="border:0;" title="Mapa de ubicación del Instituto Técnico Francisco Miranda: 7H8X+HR9, Zambrano, Francisco Morazán" allowfullscreen="" loading="lazy"></iframe>
               </div>
             </div>
           </div>
