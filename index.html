@@ -30,6 +30,7 @@
             <li class="nav-item"><a class="nav-link" href="#oferta">Oferta Académica</a></li>
             <li class="nav-item"><a class="nav-link" href="#docentes">Docentes</a></li>
             <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#matricula">Matrícula</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
         </div>
@@ -702,6 +703,79 @@
                   <h5 class="card-title">Feria de Emprendimientos</h5>
                   <p class="card-text">Eventos donde los estudiantes presentan prototipos y soluciones creadas durante las distintas carreras de BTP.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matricula" class="enrollment-section py-5">
+        <div class="container">
+          <div class="enrollment-box shadow-sm">
+            <div>
+              <span class="eyebrow">Nuevo ingreso</span>
+              <h2 class="section-title mb-2">Haz tu matrícula aquí</h2>
+              <p class="mb-0">Inicia el proceso de matrícula y envía los documentos necesarios para revisar tu solicitud.</p>
+            </div>
+            <a class="btn btn-warning btn-lg enrollment-button" href="#formulario-matricula">Iniciar matrícula <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="formulario-matricula" class="enrollment-form-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <div class="enrollment-form-card shadow-sm">
+                <div class="mb-4">
+                  <span class="eyebrow">Solicitud de matrícula</span>
+                  <h2 class="section-title mb-2">Completa tus datos</h2>
+                  <p class="text-muted mb-0">Adjunta cada documento en formato PDF, JPG o PNG. El tamaño máximo recomendado es de 5 MB por archivo.</p>
+                </div>
+                <form action="#" method="post" enctype="multipart/form-data">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="student-name">Nombre completo del estudiante</label>
+                      <input class="form-control" id="student-name" name="student-name" type="text" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="guardian-name">Nombre del padre, madre o encargado</label>
+                      <input class="form-control" id="guardian-name" name="guardian-name" type="text" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="student-phone">Teléfono de contacto</label>
+                      <input class="form-control" id="student-phone" name="student-phone" type="tel" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="grade">Grado a cursar</label>
+                      <select class="form-select" id="grade" name="grade" required>
+                        <option value="">Selecciona un grado</option>
+                        <option>7° Ciclo Básico Técnico</option>
+                        <option>8° Ciclo Básico Técnico</option>
+                        <option>9° Ciclo Básico Técnico</option>
+                        <option>10° grado</option>
+                        <option>11° grado</option>
+                        <option>12° grado</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label" for="birth-certificate">Partida de nacimiento</label>
+                      <input class="form-control" id="birth-certificate" name="birth-certificate" type="file" accept=".pdf,.jpg,.jpeg,.png" required />
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label" for="previous-grades">Notas del año anterior</label>
+                      <input class="form-control" id="previous-grades" name="previous-grades" type="file" accept=".pdf,.jpg,.jpeg,.png" required />
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label" for="grade-document">Documento del grado a cursar</label>
+                      <input class="form-control" id="grade-document" name="grade-document" type="file" accept=".pdf,.jpg,.jpeg,.png" required />
+                    </div>
+                    <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-3 mt-4">
+                      <p class="small text-muted mb-0">La secretaría revisará la información y se comunicará contigo.</p>
+                      <button class="btn btn-primary btn-lg" type="submit">Enviar solicitud</button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

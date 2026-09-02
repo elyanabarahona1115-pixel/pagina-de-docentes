@@ -106,6 +106,52 @@ body {
   background-color: #ffffff;
 }
 
+.enrollment-section {
+  background-color: #173b59;
+}
+
+.enrollment-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+  border-left: 8px solid var(--secondary);
+  background-color: #f8e7a8;
+  color: var(--dark);
+}
+
+.enrollment-box .section-title {
+  color: var(--header-blue);
+}
+
+.enrollment-button {
+  flex-shrink: 0;
+  color: #172033;
+  font-weight: 700;
+}
+
+.enrollment-form-section {
+  background-color: #f3e6ca;
+}
+
+.enrollment-form-card {
+  padding: 2.5rem;
+  border-top: 6px solid var(--teal);
+  background-color: #ffffff;
+}
+
+.enrollment-form-card .form-label {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.enrollment-form-card .form-control,
+.enrollment-form-card .form-select {
+  min-height: 48px;
+  border-color: #cbd5e1;
+}
+
 .card-hover {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -170,5 +216,19 @@ footer p {
 @media (max-width: 768px) {
   .hero-section {
     padding-top: 5rem;
+  }
+
+  .enrollment-box {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+
+  .enrollment-button {
+    width: 100%;
+  }
+
+  .enrollment-form-card {
+    padding: 1.5rem;
   }
 }
