@@ -113,8 +113,38 @@ class TallerDinamico {
     renderizarHero(taller) {
         let temaClase = 'hero-taller-belleza';
         let overlayClase = 'hero-overlay-belleza';
+        let fondoDeportes = '';
 
-        if (taller.id === 'carpinteria') {
+        if (taller.id === 'deportes') {
+            temaClase = 'hero-taller-deportes';
+            overlayClase = 'hero-overlay-deportes';
+            const imagenesDeportes = taller.secciones[0].imagenes || [];
+            const rutasDeportes = imagenesDeportes.map(imagen =>
+                imagen.startsWith('http') || imagen.startsWith('data:') || imagen.startsWith('/') || imagen.startsWith('fotos de maestros/') || imagen.startsWith('assets/')
+                    ? imagen
+                    : `fotos de maestros/assets/images/${imagen}`
+            );
+            const indicadores = rutasDeportes.map((_, index) => `
+                <button type="button" data-bs-target="#deportesHeroCarousel" data-bs-slide-to="${index}" class="${index === 0 ? 'active' : ''}" aria-current="${index === 0 ? 'true' : 'false'}" aria-label="Imagen ${index + 1}"></button>
+            `).join('');
+            const slides = rutasDeportes.map((ruta, index) => `
+                <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                    <img src="${ruta}" class="hero-deportes-image hero-deportes-image-${index + 1}" alt="Área de Deportes, imagen ${index + 1}" />
+                </div>
+            `).join('');
+            fondoDeportes = `
+                <div id="deportesHeroCarousel" class="carousel slide hero-deportes-carousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">${indicadores}</div>
+                    <div class="carousel-inner">${slides}</div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#deportesHeroCarousel" data-bs-slide="prev" aria-label="Imagen anterior">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#deportesHeroCarousel" data-bs-slide="next" aria-label="Imagen siguiente">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            `;
+        } else if (taller.id === 'carpinteria') {
             temaClase = 'hero-taller-carpinteria';
             overlayClase = 'hero-overlay-carpinteria';
         } else if (taller.id === 'banda') {
@@ -124,6 +154,7 @@ class TallerDinamico {
 
         return `
             <section class="hero-taller ${temaClase}">
+                ${fondoDeportes}
                 <div class="${overlayClase}"></div>
                 <div class="container hero-content-belleza">
                     <h1 class="hero-title">${taller.titulo}</h1>

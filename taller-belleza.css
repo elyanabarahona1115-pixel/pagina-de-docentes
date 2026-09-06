@@ -48,11 +48,19 @@
 }
 
 .hero-taller-banda {
-    --theme-primary: #1d3557;
-    --theme-secondary: #d9caa4;
-    --theme-tertiary: #edf2ff;
-    --theme-accent: #c89b2a;
-    --theme-contrast: #fffaf0;
+    --theme-primary: #0d6efd;
+    --theme-secondary: #ffc107;
+    --theme-tertiary: #f8f9fa;
+    --theme-accent: #1f2937;
+    --theme-contrast: #ffffff;
+}
+
+.theme-banda {
+    --theme-primary: #0d6efd;
+    --theme-secondary: #ffc107;
+    --theme-tertiary: #f8f9fa;
+    --theme-accent: #1f2937;
+    --theme-contrast: #ffffff;
 }
 
 /* ===== RESET Y ESTILOS GLOBALES ===== */
@@ -159,9 +167,67 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(29, 53, 87, 0.35) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(200, 155, 42, 0.28) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 50%, rgba(13, 110, 253, 0.28) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 193, 7, 0.28) 0%, transparent 50%);
     animation: gradientShift 8s ease infinite;
+}
+
+.hero-taller-deportes {
+    position: relative;
+    background: #1f2937;
+}
+
+.hero-deportes-carousel {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-deportes-carousel .carousel-inner,
+.hero-deportes-carousel .carousel-item {
+    height: 100%;
+}
+
+.hero-deportes-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-deportes-carousel .hero-deportes-image-2 {
+    object-fit: cover;
+    object-position: center 35%;
+}
+
+.hero-overlay-deportes {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(17, 24, 39, 0.88) 0%, rgba(17, 24, 39, 0.62) 52%, rgba(17, 24, 39, 0.28) 100%);
+}
+
+.hero-taller-deportes .hero-content-belleza {
+    color: #ffffff;
+}
+
+.hero-taller-deportes .hero-subtitle {
+    color: #ffc107;
+}
+
+.hero-taller-deportes .hero-description {
+    color: #f8f9fa;
+}
+
+.hero-deportes-carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.hero-deportes-carousel .carousel-control-prev,
+.hero-deportes-carousel .carousel-control-next {
+    z-index: 2;
 }
 
 @keyframes gradientShift {
@@ -272,61 +338,61 @@ body {
 .theme-banda .quality-card h3,
 .theme-banda .cta-section h2,
 .theme-banda .placeholder-text i {
-    color: #1d3557;
+    color: #0d6efd;
 }
 
 .theme-banda .section-divider {
-    background: linear-gradient(90deg, #d9caa4, #c89b2a);
+    background: linear-gradient(90deg, #0d6efd, #ffc107);
 }
 
 .theme-banda .achievement-card,
 .theme-banda .challenge-card,
 .theme-banda .quality-card {
-    border-color: rgba(29, 53, 87, 0.2);
+    border-color: rgba(13, 110, 253, 0.25);
 }
 
 .theme-banda .achievement-card {
-    background: linear-gradient(135deg, rgba(255, 251, 247, 0.9), rgba(233, 240, 255, 0.8));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.9));
 }
 
 .theme-banda .achievement-icon,
 .theme-banda .quality-icon,
 .theme-banda .challenge-number {
-    color: #fffaf0;
-    background: linear-gradient(135deg, #1d3557, #c89b2a);
+    color: #ffffff;
+    background: linear-gradient(135deg, #0d6efd, #ffc107);
 }
 
 .theme-banda .challenge-card {
-    border-left-color: #d9caa4;
+    border-left-color: #ffc107;
 }
 
 .theme-banda .quality-card {
-    background: linear-gradient(135deg, #edf2ff 0%, #d9caa4 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff3cd 100%);
 }
 
 .theme-banda .cta-section {
-    background: linear-gradient(135deg, #1d3557 0%, #c89b2a 100%);
+    background: linear-gradient(135deg, #0d6efd 0%, #ffc107 100%);
 }
 
 .theme-banda .btn-cta {
-    color: #1d3557;
+    color: #1f2937;
 }
 
 .theme-banda .btn-cta:hover {
-    color: #d9caa4;
+    color: #0d6efd;
 }
 
 .theme-banda .section-title:hover {
-    color: #2b4d7d;
+    color: #084298;
 }
 
 .theme-banda .achievement-card:hover,
 .theme-banda .quality-card:hover {
-    box-shadow: 0 12px 35px rgba(29, 53, 87, 0.18);
+    box-shadow: 0 12px 35px rgba(13, 110, 253, 0.18);
 }
 
 .theme-banda .challenge-card:hover {
-    border-left-color: #c89b2a;
+    border-left-color: #ffc107;
 }
 
 @keyframes fadeInDown {

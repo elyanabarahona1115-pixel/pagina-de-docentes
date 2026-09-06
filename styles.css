@@ -47,7 +47,7 @@ body {
 
 .navbar {
   background-color: transparent;
-  min-height: 150px;
+  min-height: 82px;
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
@@ -76,8 +76,8 @@ body {
 
 .logo-placeholder {
   display: inline-grid;
-  width: 116px;
-  height: 137px;
+  width: 70px;
+  height: 70px;
   place-items: center;
   overflow: visible;
   border-radius: 0;
@@ -133,8 +133,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 0.65rem;
-  padding-bottom: 0.65rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
   width: 100%;
   max-width: 100%;
   overflow: visible;
@@ -143,7 +143,7 @@ body {
 .specialty-links a {
   flex: 0 1 auto;
   min-width: 10rem;
-  padding: 1rem 1.35rem;
+  padding: 0.65rem 1.15rem;
   border: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: 999px;
   background-color: #ffffff;
@@ -176,7 +176,7 @@ body {
 .specialty-links .dropdown-toggle {
   flex: 0 1 auto;
   min-width: 10rem;
-  padding: 1rem 1.35rem;
+  padding: 0.65rem 1.15rem;
   border: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: 999px;
   background-color: #ffffff;
