@@ -63,6 +63,22 @@
     --theme-contrast: #ffffff;
 }
 
+.theme-deportes {
+    --theme-primary: #0d6efd;
+    --theme-secondary: #ffc107;
+    --theme-tertiary: #f8f9fa;
+    --theme-accent: #1f2937;
+    --theme-contrast: #ffffff;
+}
+
+.theme-belleza {
+    --theme-primary: #0d6efd;
+    --theme-secondary: #ffc107;
+    --theme-tertiary: #f8f9fa;
+    --theme-accent: #a6533a;
+    --theme-contrast: #ffffff;
+}
+
 /* ===== RESET Y ESTILOS GLOBALES ===== */
 * {
     margin: 0;
@@ -81,10 +97,105 @@ body {
     line-height: 1.8;
 }
 
+.talleres-selector {
+    background-color: #d7e6ef;
+    color: #173b59;
+}
+
+.talleres-selector h2 {
+    color: #173b59;
+    font-family: var(--font-serif);
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-shadow: 0 2px 6px rgba(23, 59, 89, 0.14);
+}
+
+.talleres-selector h2::after {
+    content: '';
+    display: block;
+    width: 78px;
+    height: 4px;
+    margin-top: 0.55rem;
+    border-radius: 999px;
+    background-color: #f3d98c;
+}
+
+.talleres-selector .text-muted {
+    color: #365b76 !important;
+}
+
+.talleres-selector .dropdown-toggle {
+    border-color: #173b59;
+    color: #173b59;
+}
+
+.talleres-selector .dropdown-toggle:hover,
+.talleres-selector .dropdown-toggle:focus {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.45);
+    color: #173b59;
+}
+
+.area-belleza .talleres-selector,
+.area-belleza .hero-taller-belleza {
+    background: #d7e6ef;
+}
+
+.area-belleza .hero-taller-belleza .hero-content-belleza {
+    color: #173b59;
+}
+
+.area-belleza .hero-taller-belleza .hero-title {
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    font-weight: 800;
+    color: #173b59;
+    text-shadow: 0 3px 10px rgba(23, 59, 89, 0.16);
+}
+
+.area-belleza .hero-taller-belleza .hero-subtitle,
+.area-belleza .hero-taller-belleza .hero-description {
+    color: #365b76;
+}
+
 /* ===== NAVEGACIÓN ===== */
 .navbar-wrapper {
     background: linear-gradient(135deg, var(--soft-lavender) 0%, var(--light-purple) 100%);
     box-shadow: 0 2px 8px rgba(216, 180, 254, 0.15);
+}
+
+.area-belleza .navbar-wrapper {
+    background: linear-gradient(90deg, #a6533a 0%, #d8b52a 55%, #002b7f 100%);
+    box-shadow: 0 2px 8px rgba(166, 83, 58, 0.22);
+}
+
+.area-carpinteria .navbar-wrapper {
+    background: linear-gradient(90deg, #604714 0%, #d8b52a 55%, #a6533a 100%);
+    box-shadow: 0 2px 8px rgba(96, 71, 20, 0.22);
+}
+
+.area-banda .navbar-wrapper,
+.area-deportes .navbar-wrapper {
+    background: linear-gradient(90deg, #0d6efd 0%, #1f2937 48%, #ffc107 100%);
+    box-shadow: 0 2px 8px rgba(13, 110, 253, 0.24);
+}
+
+.area-belleza .navbar-brand,
+.area-belleza .nav-link,
+.area-carpinteria .navbar-brand,
+.area-carpinteria .nav-link,
+.area-banda .navbar-brand,
+.area-banda .nav-link,
+.area-deportes .navbar-brand,
+.area-deportes .nav-link {
+    color: #ffffff !important;
+}
+
+.area-belleza .nav-link::after,
+.area-carpinteria .nav-link::after,
+.area-banda .nav-link::after,
+.area-deportes .nav-link::after {
+    background-color: #ffc107;
 }
 
 .navbar-brand {
@@ -393,6 +504,107 @@ body {
 
 .theme-banda .challenge-card:hover {
     border-left-color: #ffc107;
+}
+
+.theme-banda .section-light,
+.theme-banda .section-dark,
+.theme-deportes .section-light,
+.theme-deportes .section-dark {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.theme-banda .section-title,
+.theme-deportes .section-title,
+.theme-banda .achievement-card h3,
+.theme-deportes .achievement-card h3,
+.theme-banda .challenge-card h3,
+.theme-deportes .challenge-card h3,
+.theme-banda .quality-card h3,
+.theme-deportes .quality-card h3 {
+    color: #0d6efd;
+}
+
+.theme-banda .section-divider,
+.theme-deportes .section-divider {
+    background: linear-gradient(90deg, #0d6efd, #ffc107);
+}
+
+.theme-banda .achievement-card,
+.theme-banda .challenge-card,
+.theme-banda .quality-card,
+.theme-deportes .achievement-card,
+.theme-deportes .challenge-card,
+.theme-deportes .quality-card {
+    border-color: rgba(13, 110, 253, 0.25);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.theme-banda .achievement-icon,
+.theme-banda .quality-icon,
+.theme-banda .challenge-number,
+.theme-deportes .achievement-icon,
+.theme-deportes .quality-icon,
+.theme-deportes .challenge-number {
+    color: #ffffff;
+    background: linear-gradient(135deg, #0d6efd, #ffc107);
+}
+
+.theme-banda .challenge-card,
+.theme-deportes .challenge-card {
+    border-left-color: #ffc107;
+}
+
+.theme-banda .cta-section,
+.theme-deportes .cta-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #ffc107 100%);
+}
+
+.theme-belleza .section-light,
+.theme-belleza .section-dark {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.theme-belleza .section-title,
+.theme-belleza .achievement-card h3,
+.theme-belleza .challenge-card h3,
+.theme-belleza .quality-card h3,
+.theme-belleza .placeholder-text i {
+    color: #0d6efd;
+}
+
+.theme-belleza .section-divider {
+    background: linear-gradient(90deg, #0d6efd, #ffc107);
+}
+
+.theme-belleza .image-placeholder {
+    background: linear-gradient(135deg, #f8f9fa, #fff3cd);
+    box-shadow: 0 10px 40px rgba(13, 110, 253, 0.16);
+}
+
+.theme-belleza .achievement-card,
+.theme-belleza .challenge-card,
+.theme-belleza .quality-card {
+    border-color: rgba(13, 110, 253, 0.25);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.theme-belleza .achievement-icon,
+.theme-belleza .quality-icon,
+.theme-belleza .challenge-number {
+    color: #ffffff;
+    background: linear-gradient(135deg, #0d6efd, #ffc107);
+}
+
+.theme-belleza .challenge-card {
+    border-left-color: #ffc107;
+}
+
+.theme-belleza .cta-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #ffc107 100%);
+}
+
+.theme-belleza .btn-cta {
+    color: #1f2937;
 }
 
 @keyframes fadeInDown {

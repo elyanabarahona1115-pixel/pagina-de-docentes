@@ -81,6 +81,9 @@ class TallerDinamico {
         const taller = TALLERES_DATA[tallerKey];
         if (!taller) return;
 
+        document.body.classList.remove('area-belleza', 'area-carpinteria', 'area-banda', 'area-deportes');
+        document.body.classList.add(`area-${tallerKey}`);
+
         if (this.selectorSection) {
             const mostrarSelector = tallerKey !== 'banda';
             this.selectorSection.style.display = mostrarSelector ? 'block' : 'none';
@@ -89,10 +92,13 @@ class TallerDinamico {
         // Limpiar contenedor
         this.contenedor.innerHTML = '';
         this.contenedor.classList.remove('theme-belleza', 'theme-carpinteria', 'theme-banda');
+        this.contenedor.classList.remove('theme-deportes');
         if (tallerKey === 'carpinteria') {
             this.contenedor.classList.add('theme-carpinteria');
         } else if (tallerKey === 'banda') {
             this.contenedor.classList.add('theme-banda');
+        } else if (tallerKey === 'deportes') {
+            this.contenedor.classList.add('theme-deportes');
         } else {
             this.contenedor.classList.add('theme-belleza');
         }
