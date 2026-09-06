@@ -5,19 +5,19 @@
 
 /* ===== VARIABLES DE COLOR Y TIPOGRAFÍA ===== */
 :root {
-    /* Colores morados pastel y neutros */
-    --lilac: #E9D8A6;
-    --soft-lavender: #EAE6FA;
-    --pastel-violet: #D8B4FE;
-    --light-purple: #F3E8FF;
-    --darker-purple: #C084FC;
-    --soft-gray: #F5F3F0;
-    --warm-gray: #D7CCC8;
-    --rose-gold: #F5D5E3;
-    --accent-rose: #E9C9D8;
-    --text-dark: #4A3F35;
-    --text-light: #8B7C78;
-    --white-cream: #FFFBF7;
+    /* Paleta institucional compartida con la página inicial */
+    --lilac: #E6C879;
+    --soft-lavender: #F3E6CA;
+    --pastel-violet: #E6C879;
+    --light-purple: #EAD9B8;
+    --darker-purple: #191970;
+    --soft-gray: #F8F9FA;
+    --warm-gray: #D8B52A;
+    --rose-gold: #F3E6CA;
+    --accent-rose: #E6C879;
+    --text-dark: #172033;
+    --text-light: #604714;
+    --white-cream: #FFFDF5;
 
     /* Tema por defecto: belleza */
     --theme-primary: var(--pastel-violet);
@@ -32,27 +32,27 @@
 }
 
 .hero-taller-belleza {
-    --theme-primary: var(--pastel-violet);
-    --theme-secondary: var(--light-purple);
-    --theme-tertiary: var(--soft-lavender);
-    --theme-accent: var(--darker-purple);
+    --theme-primary: #E6C879;
+    --theme-secondary: #EAD9B8;
+    --theme-tertiary: #F3E6CA;
+    --theme-accent: #191970;
     --theme-contrast: var(--white-cream);
 }
 
 .hero-taller-carpinteria {
-    --theme-primary: #F8C79A;
-    --theme-secondary: #FDE1BE;
-    --theme-tertiary: #FFF1E2;
-    --theme-accent: #D97706;
-    --theme-contrast: #FFF9F2;
+    --theme-primary: #E6C879;
+    --theme-secondary: #EAD9B8;
+    --theme-tertiary: #F3E6CA;
+    --theme-accent: #191970;
+    --theme-contrast: var(--white-cream);
 }
 
 .hero-taller-banda {
-    --theme-primary: #1d3557;
-    --theme-secondary: #d9caa4;
-    --theme-tertiary: #edf2ff;
-    --theme-accent: #c89b2a;
-    --theme-contrast: #fffaf0;
+    --theme-primary: #E6C879;
+    --theme-secondary: #EAD9B8;
+    --theme-tertiary: #F3E6CA;
+    --theme-accent: #191970;
+    --theme-contrast: var(--white-cream);
 }
 
 /* ===== RESET Y ESTILOS GLOBALES ===== */
@@ -75,12 +75,12 @@ body {
 
 /* ===== NAVEGACIÓN ===== */
 .navbar-wrapper {
-    background: linear-gradient(135deg, var(--soft-lavender) 0%, var(--light-purple) 100%);
-    box-shadow: 0 2px 8px rgba(216, 180, 254, 0.15);
+    background: linear-gradient(90deg, #FFD700 0%, #D8B52A 45%, #002B7F 100%);
+    box-shadow: 0 2px 8px rgba(23, 32, 51, 0.18);
 }
 
 .navbar-brand {
-    color: var(--darker-purple) !important;
+    color: #FFFFFF !important;
     font-size: 1.3rem;
     font-family: var(--font-serif);
     transition: all 0.3s ease;
@@ -88,7 +88,7 @@ body {
 
 .navbar-brand:hover {
     transform: scale(1.05);
-    color: var(--pastel-violet) !important;
+    color: #D9D9FF !important;
 }
 
 .navbar-brand i {
@@ -96,7 +96,7 @@ body {
 }
 
 .nav-link {
-    color: var(--text-dark) !important;
+    color: #FFFFFF !important;
     font-weight: 500;
     transition: all 0.3s ease;
     margin: 0 0.5rem;
@@ -110,7 +110,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--darker-purple);
+    background-color: #D9D9FF;
     transition: width 0.3s ease;
 }
 
@@ -800,4 +800,125 @@ body {
 .quality-card:focus-visible {
     outline: 2px solid var(--pastel-violet);
     outline-offset: 2px;
+}
+
+/* Componentes compartidos con la portada institucional */
+.talleres-selector {
+    background: linear-gradient(135deg, #F3E6CA 0%, #EAD9B8 100%);
+    border-bottom: 1px solid rgba(25, 25, 112, 0.12);
+}
+
+.talleres-selector h2 {
+    font-family: var(--font-serif);
+    color: #191970;
+}
+
+.talleres-selector .btn-outline-secondary {
+    border-color: #191970;
+    color: #191970;
+}
+
+.talleres-selector .btn-outline-secondary:hover,
+.talleres-selector .btn-outline-secondary:focus {
+    background-color: #191970;
+    border-color: #191970;
+    color: #FFFFFF;
+}
+
+.talleres-selector .dropdown-menu {
+    border-color: rgba(25, 25, 112, 0.18);
+}
+
+.talleres-selector .dropdown-item:hover,
+.talleres-selector .dropdown-item:focus {
+    background-color: #F3E6CA;
+    color: #191970;
+}
+
+.hero-overlay-belleza,
+.hero-overlay-carpinteria,
+.hero-overlay-banda {
+    background: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.28) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 43, 127, 0.2) 0%, transparent 50%);
+}
+
+.theme-carpinteria .section-title,
+.theme-carpinteria .achievement-card h3,
+.theme-carpinteria .challenge-card h3,
+.theme-carpinteria .quality-card h3,
+.theme-carpinteria .cta-section h2,
+.theme-carpinteria .placeholder-text i,
+.theme-banda .section-title,
+.theme-banda .achievement-card h3,
+.theme-banda .challenge-card h3,
+.theme-banda .quality-card h3,
+.theme-banda .cta-section h2,
+.theme-banda .placeholder-text i {
+    color: var(--theme-accent);
+}
+
+.theme-carpinteria .section-divider,
+.theme-banda .section-divider {
+    background: linear-gradient(90deg, #E6C879, #191970);
+}
+
+.theme-carpinteria .achievement-card,
+.theme-carpinteria .challenge-card,
+.theme-carpinteria .quality-card,
+.theme-banda .achievement-card,
+.theme-banda .challenge-card,
+.theme-banda .quality-card {
+    border-color: rgba(25, 25, 112, 0.2);
+}
+
+.theme-carpinteria .achievement-card,
+.theme-banda .achievement-card {
+    background: linear-gradient(135deg, rgba(255, 253, 245, 0.9), rgba(243, 230, 202, 0.8));
+}
+
+.theme-carpinteria .achievement-icon,
+.theme-carpinteria .quality-icon,
+.theme-carpinteria .challenge-number,
+.theme-banda .achievement-icon,
+.theme-banda .quality-icon,
+.theme-banda .challenge-number {
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #E6C879, #191970);
+}
+
+.theme-carpinteria .challenge-card,
+.theme-banda .challenge-card {
+    border-left-color: #E6C879;
+}
+
+.theme-carpinteria .quality-card,
+.theme-banda .quality-card {
+    background: linear-gradient(135deg, #F3E6CA 0%, #E6C879 100%);
+}
+
+.theme-carpinteria .cta-section,
+.theme-banda .cta-section {
+    background: linear-gradient(135deg, #E6C879 0%, #191970 100%);
+}
+
+.theme-carpinteria .btn-cta,
+.theme-banda .btn-cta {
+    color: #191970;
+}
+
+.theme-carpinteria .btn-cta:hover,
+.theme-banda .btn-cta:hover {
+    color: #604714;
+}
+
+.footer-section {
+    background: linear-gradient(180deg, #111827 0%, #172033 100%);
+}
+
+.footer-section h5 {
+    color: #E6C879;
+}
+
+.footer-divider {
+    border-color: rgba(230, 200, 121, 0.25);
 }
