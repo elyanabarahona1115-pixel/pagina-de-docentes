@@ -1110,6 +1110,95 @@ footer {
   color: var(--azul-oscuro);
 }
 
+/* Tratamiento caligráfico y translúcido para el encabezado principal. */
+.institution-name {
+  position: relative;
+  z-index: 1;
+  max-width: 330px;
+  color: rgba(255, 231, 147, 0.96);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
+}
+
+.navbar-brand {
+  align-items: center !important;
+}
+
+.logo-placeholder {
+  position: relative;
+  z-index: 2;
+  width: 104px;
+  height: 104px;
+  flex: 0 0 104px;
+  margin-top: -0.35rem;
+  margin-bottom: -0.35rem;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.28));
+}
+
+.site-header .navbar-nav {
+  gap: 0.45rem;
+}
+
+.site-header .nav-link {
+  padding: 0.7rem 1.2rem !important;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f8c74e 0%, #f5a623 100%);
+  color: #1f2937 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  background: linear-gradient(135deg, #f4ba35 0%, #e9950a 100%);
+  color: #1f2937 !important;
+  transform: translateY(-1px);
+}
+
+.site-header .nav-link::after {
+  display: none;
+}
+
+.hero-content h1 {
+  max-width: 900px;
+  padding: 0.6rem 1.25rem 0.8rem;
+  border: 0;
+  border-radius: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 24, 72, 0.52) 0%, rgba(0, 24, 72, 0.28) 38%, rgba(0, 24, 72, 0.08) 64%, transparent 82%);
+  color: rgba(255, 231, 147, 0.98);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2.8rem, 6vw, 5.6rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px) {
+  .institution-name {
+    max-width: 190px;
+    font-size: 1.15rem;
+  }
+
+  .logo-placeholder {
+    width: 82px;
+    height: 82px;
+    flex-basis: 82px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.2rem, 12vw, 3.5rem);
+  }
+}
+
 /* ===== SECCIÓN HISTORIA DEL INSTITUTO ===== */
 
 .historia-section {
