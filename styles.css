@@ -1918,3 +1918,170 @@ footer {
     padding: 0.8rem;
   }
 }
+
+/* Ajustes exclusivos para teléfonos: el diseño de escritorio permanece igual. */
+@media (max-width: 767px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    min-height: 70px;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .navbar-brand {
+    min-width: 0;
+    max-width: calc(100% - 58px);
+  }
+
+  .logo-placeholder {
+    width: 52px;
+    height: 58px;
+    flex: 0 0 52px;
+  }
+
+  .institution-name {
+    max-width: 175px;
+    font-size: 0.95rem;
+  }
+
+  .navbar-toggler {
+    flex: 0 0 auto;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .navbar-collapse {
+    padding: 0.75rem 0 0.25rem;
+  }
+
+  .navbar-nav {
+    align-items: stretch !important;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.6rem 0.25rem;
+  }
+
+  .navbar-matricula-btn {
+    display: block;
+    margin-top: 0.35rem;
+    text-align: center;
+  }
+
+  .specialty-links {
+    gap: 0.45rem;
+    padding: 0.55rem 0.5rem;
+  }
+
+  .specialty-links a,
+  .specialty-links .dropdown,
+  .specialty-links .dropdown-toggle {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .specialty-links a,
+  .specialty-links .dropdown-toggle {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .specialty-links .dropdown-menu {
+    position: static !important;
+    width: 100%;
+    min-width: 0;
+    margin-top: 0.35rem;
+  }
+
+  .hero-section,
+  .hero-section .carousel,
+  .hero-section .carousel-item,
+  .hero-content {
+    min-height: 72vh;
+  }
+
+  .hero-content {
+    align-items: center;
+    padding: 4rem 1.25rem 5rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 10vw, 3.1rem);
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions,
+  .matricula-card .btn,
+  .matricula-form-page .btn {
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    white-space: normal;
+  }
+
+  section.py-5 {
+    padding-top: 2.75rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.7rem, 8vw, 2.35rem);
+    line-height: 1.15;
+  }
+
+  .historia-card,
+  .matricula-card,
+  .matricula-form-page {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .historia-card {
+    width: 100%;
+  }
+
+  .matricula-card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .matricula-form-page {
+    width: 100%;
+  }
+
+  .map-card iframe {
+    min-height: 240px;
+    height: 240px;
+  }
+
+  .teacher-card img {
+    height: 230px;
+  }
+
+  .teacher-card .card-body {
+    min-height: 0;
+  }
+
+  footer .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

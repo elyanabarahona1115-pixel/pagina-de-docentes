@@ -81,7 +81,7 @@ class TallerDinamico {
         const taller = TALLERES_DATA[tallerKey];
         if (!taller) return;
 
-        document.body.classList.remove('area-belleza', 'area-carpinteria', 'area-banda', 'area-deportes');
+        document.body.classList.remove('area-belleza', 'area-carpinteria', 'area-electricidad', 'area-banda', 'area-deportes');
         document.body.classList.add(`area-${tallerKey}`);
 
         if (this.selectorSection) {
@@ -93,10 +93,12 @@ class TallerDinamico {
 
         // Limpiar contenedor
         this.contenedor.innerHTML = '';
-        this.contenedor.classList.remove('theme-belleza', 'theme-carpinteria', 'theme-banda');
+        this.contenedor.classList.remove('theme-belleza', 'theme-carpinteria', 'theme-electricidad', 'theme-banda');
         this.contenedor.classList.remove('theme-deportes');
         if (tallerKey === 'carpinteria') {
             this.contenedor.classList.add('theme-carpinteria');
+        } else if (tallerKey === 'electricidad') {
+            this.contenedor.classList.add('theme-electricidad');
         } else if (tallerKey === 'banda') {
             this.contenedor.classList.add('theme-banda');
         } else if (tallerKey === 'deportes') {
@@ -155,6 +157,9 @@ class TallerDinamico {
         } else if (taller.id === 'carpinteria') {
             temaClase = 'hero-taller-carpinteria';
             overlayClase = 'hero-overlay-carpinteria';
+        } else if (taller.id === 'electricidad') {
+            temaClase = 'hero-taller-electricidad';
+            overlayClase = 'hero-overlay-electricidad';
         } else if (taller.id === 'banda') {
             temaClase = 'hero-taller-banda';
             overlayClase = 'hero-overlay-banda';
@@ -320,6 +325,8 @@ class TallerDinamico {
             tallerNombre = 'Belleza y Cosmetología';
         } else if (taller.id === 'banda') {
             tallerNombre = 'Banda Latina Francisco Miranda';
+        } else if (taller.id === 'electricidad') {
+            tallerNombre = 'Electricidad';
         }
 
         return `

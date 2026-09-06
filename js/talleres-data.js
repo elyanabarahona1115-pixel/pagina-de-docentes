@@ -337,6 +337,79 @@ const TALLERES_DATA = {
                 layout: 'image-text'
             }
         ]
+    },
+    electricidad: {
+        id: 'electricidad',
+        titulo: 'Taller de Electricidad',
+        subtitulo: 'Formación técnica para transformar la energía en soluciones',
+        descripcion: 'Historia, tecnología, seguridad y proyectos que preparan a los estudiantes del Instituto Francisco Miranda para la vida laboral',
+        icon: 'fas fa-bolt',
+        secciones: [
+            {
+                numero: 1,
+                titulo: 'Origen del Taller',
+                contenido: 'El Taller de Electricidad forma parte de la transformación del Instituto Técnico Gubernamental Francisco Miranda hacia una institución de modalidad técnica. Su creación respondió a la necesidad de ofrecer a los estudiantes una formación práctica, vinculada con los oficios y las necesidades reales de la comunidad.\n\nDesde sus inicios, el taller se ha desarrollado junto con las áreas de estructuras metálicas y madera. Esta organización permitió construir una propuesta de formación técnica amplia, en la que los estudiantes aprenden a interpretar instalaciones, utilizar herramientas y resolver problemas con responsabilidad.',
+                imagen: 'fotos de maestros/Mario leonel avila maradiaga.png',
+                layout: 'text-image'
+            },
+            {
+                numero: 2,
+                titulo: 'Docente e Impulsor: Mario Ávila',
+                contenido: 'Mario Leonel Ávila Maradiaga es docente del área de Electricidad y cuenta con formación como Licenciado en Educación Tecnológica Industrial con orientación en Electricidad. Su trabajo combina la enseñanza de los fundamentos eléctricos con el acompañamiento de las prácticas que realizan los estudiantes.\n\nAdemás de impartir conocimientos técnicos, el docente atiende necesidades de mantenimiento eléctrico del colegio y apoya distintas actividades de los talleres. Esta experiencia permite relacionar los contenidos de clase con situaciones concretas y transmitir una cultura de prevención, orden y responsabilidad profesional.',
+                imagen: 'fotos de maestros/Mario leonel avila maradiaga.png',
+                layout: 'image-text'
+            },
+            {
+                numero: 3,
+                titulo: 'Evolución e Integración Tecnológica',
+                contenido: 'El taller ha evolucionado desde la enseñanza de conceptos básicos y circuitos sencillos hacia prácticas que integran herramientas, equipos y recursos tecnológicos. Los estudiantes aprenden a reconocer componentes, interpretar diagramas y comprender el funcionamiento de instalaciones eléctricas aplicadas a distintos contextos.\n\nLa integración tecnológica fortalece la formación porque conecta la teoría con la solución de problemas. El uso responsable de instrumentos de medición y materiales de trabajo permite que los alumnos desarrollen precisión, pensamiento lógico y criterios técnicos cercanos a los que encontrarán en el mundo laboral.',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-08-10 at 1.27.27 PM.jpeg',
+                layout: 'text-image'
+            },
+            {
+                numero: 4,
+                titulo: 'Habilidades y Formación de los Estudiantes',
+                contenido: 'La formación del taller busca que los estudiantes puedan desenvolverse con seguridad y criterio técnico. Aprenden a identificar conductores y componentes, interpretar esquemas, preparar conexiones, utilizar herramientas y revisar el funcionamiento de una instalación antes de ponerla en servicio.\n\nEl aprendizaje también desarrolla hábitos de orden, trabajo colaborativo, comunicación y responsabilidad. La meta es que los conocimientos puedan aplicarse en el mantenimiento del hogar, en proyectos escolares, en el apoyo a la institución y en futuras oportunidades de empleo o emprendimiento.',
+                tipo: 'card-grid',
+                items: [
+                    { icon: 'fas fa-diagram-project', titulo: 'Interpretación de Circuitos', texto: 'Lectura de diagramas y comprensión del funcionamiento de conexiones eléctricas.' },
+                    { icon: 'fas fa-screwdriver-wrench', titulo: 'Manejo de Herramientas', texto: 'Uso responsable de herramientas e instrumentos propios del área de Electricidad.' },
+                    { icon: 'fas fa-microchip', titulo: 'Integración Tecnológica', texto: 'Relación entre fundamentos eléctricos, medición y soluciones técnicas actuales.' },
+                    { icon: 'fas fa-briefcase', titulo: 'Preparación Laboral', texto: 'Formación práctica para continuar estudios, trabajar o emprender con responsabilidad.' }
+                ]
+            },
+            {
+                numero: 5,
+                titulo: 'Medidas de Seguridad y Normas',
+                contenido: 'En Electricidad, la seguridad es una condición indispensable antes, durante y después de cada práctica. Los estudiantes deben trabajar bajo supervisión docente, mantener el área ordenada y comprobar que los circuitos estén desenergizados antes de manipular conexiones o componentes.\n\nTambién deben utilizar el equipo de protección personal indicado para cada actividad, emplear herramientas en buen estado y respetar los procedimientos de medición. No se permite improvisar conexiones, trabajar con cables deteriorados ni energizar un montaje sin revisión previa. Estas normas ayudan a prevenir contactos eléctricos, cortocircuitos, quemaduras e incendios.',
+                tipo: 'challenge-grid',
+                items: [
+                    { numero: '1', titulo: 'Desenergizar Antes de Trabajar', texto: 'Verificar que el circuito esté desconectado antes de manipular cables o componentes.' },
+                    { numero: '2', titulo: 'Supervisión Docente', texto: 'Realizar prácticas y mediciones con orientación del docente responsable del taller.' },
+                    { numero: '3', titulo: 'Protección y Herramientas', texto: 'Usar protección personal y herramientas adecuadas, aisladas y en buen estado.' },
+                    { numero: '4', titulo: 'Orden y Prevención', texto: 'Mantener el área limpia, evitar improvisaciones y revisar cada montaje antes de energizarlo.' }
+                ]
+            },
+            {
+                numero: 6,
+                titulo: 'Proyectos y Principales Logros',
+                contenido: 'Los estudiantes aplican lo aprendido en proyectos y prácticas que les permiten pasar del concepto a la solución. Entre sus experiencias se encuentran el armado y revisión de circuitos, conexiones eléctricas y trabajos de apoyo al mantenimiento del instituto, siempre de acuerdo con el nivel de formación y bajo supervisión.\n\nEl principal logro del taller es formar jóvenes capaces de analizar una situación, proponer una solución y ejecutarla respetando las normas de seguridad. La participación en proyectos fortalece la confianza, la precisión y el sentido de servicio.',
+                imagen: 'fotos de maestros/FB_IMG_1786736362194.jpg',
+                layout: 'image-text'
+            },
+            {
+                numero: 7,
+                titulo: 'Proyección del Taller',
+                contenido: 'El Taller de Electricidad continúa siendo un espacio para preparar a los estudiantes ante los cambios tecnológicos y las exigencias del trabajo técnico. Su proyección se relaciona con fortalecer el equipamiento, ampliar las prácticas y mantener una enseñanza conectada con las necesidades de la institución y del entorno.\n\nLa visión es que cada egresado conserve una base sólida para seguir especializándose y pueda aplicar sus conocimientos de manera segura, ética y útil.',
+                tipo: 'quality-grid',
+                items: [
+                    { icon: 'fas fa-lightbulb', titulo: 'Innovación', texto: 'Incorporar recursos y prácticas que acerquen la formación a la tecnología actual.' },
+                    { icon: 'fas fa-people-group', titulo: 'Trabajo Colaborativo', texto: 'Resolver proyectos mediante organización, comunicación y apoyo entre compañeros.' },
+                    { icon: 'fas fa-shield-halved', titulo: 'Cultura de Seguridad', texto: 'Convertir la prevención y el cumplimiento de normas en hábitos profesionales.' },
+                    { icon: 'fas fa-seedling', titulo: 'Aprendizaje Continuo', texto: 'Construir una base para continuar estudios, trabajar y emprender en el área técnica.' }
+                ]
+            }
+        ]
     }
 };
 
