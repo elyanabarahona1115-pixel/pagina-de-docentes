@@ -526,6 +526,45 @@ body {
   background-color: #f4e6c8;
 }
 
+.historia-toggle {
+  display: block;
+  min-width: 140px;
+  margin: 1.5rem 0 2rem auto;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #8a6515 0%, #604714 100%);
+  border: 2px solid #e6c879;
+  border-radius: 999px;
+  color: #fffaf3;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 14px rgba(96, 71, 20, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.historia-toggle:hover,
+.historia-toggle:focus-visible {
+  background: linear-gradient(135deg, #a57b20 0%, #7a5a18 100%);
+  border-color: #f3d98c;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 9px 18px rgba(96, 71, 20, 0.28);
+}
+
+.historia-detalles {
+  animation: historiaReveal 0.35s ease-out;
+}
+
+@keyframes historiaReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .card-hover {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -1122,6 +1161,12 @@ footer p {
   background-color: #f3f4f6;
 }
 
+.noticias-imagen img.imagen-dia-estudiante {
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .noticias-imagen-festival {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1132,6 +1177,13 @@ footer p {
 
 .noticias-imagen-festival img {
   border-radius: 10px;
+}
+
+.noticias-imagen img.imagen-bienvenida {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .noticias-imagen:hover img {
