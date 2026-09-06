@@ -141,7 +141,7 @@
             </div>
             <div class="col-lg-6">
               <div class="card shadow-sm border-0 h-100">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" class="card-img-top" alt="Campus Instituto" />
+                <img src="fotos de maestros/Gemini_Generated_Image_jj425zjj425zjj42.jpg" class="card-img-top" alt="Estudiantes del instituto reunidos en la cancha" />
                 <div class="card-body">
                   <h5 class="card-title">Acceso rápido</h5>
                   <p class="card-text">Síguenos en nuestras redes sociales para estar al día con eventos, matrículas, proyectos y noticias del instituto.</p>
@@ -179,6 +179,9 @@
                 </p>
               </div>
 
+              <button type="button" class="btn btn-primary historia-toggle" id="historiaToggle" aria-expanded="false" aria-controls="historiaDetalles">Ver más</button>
+
+              <div class="historia-detalles" id="historiaDetalles" hidden>
               <div class="historia-seccion">
                 <h3 class="historia-subtitulo">Fundadores y Colaboradores</h3>
                 <p>
@@ -238,6 +241,7 @@
                   <div class="valor-item">Tecnología</div>
                 </div>
               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -260,14 +264,14 @@
               </p>
             </div>
             <div class="noticias-imagen">
-              <img src="https://via.placeholder.com/400x280?text=Bienvenida+Estudiantil" alt="Bienvenida al Año Estudiantil" />
+              <img src="fotos de maestros/637102708_1486281133508586_7109734301680115304_n.jpg" class="imagen-bienvenida" alt="Estudiantes reunidos durante la bienvenida escolar" />
             </div>
           </div>
 
           <!-- Bloque 2: Festivales Culturales y Tradiciones (Imagen a la izquierda) -->
           <div class="noticias-bloque noticias-bloque-invertido">
             <div class="noticias-imagen">
-              <img src="https://via.placeholder.com/400x280?text=Festivales+Culturales" alt="Festivales Culturales y Tradiciones" />
+              <img src="fotos de maestros/490135247_1211685307634838_6721762223064236361_n.jpg" class="imagen-festival" alt="Estudiantes durante una actividad cultural" />
             </div>
             <div class="noticias-contenido">
               <h3 class="noticias-subtitulo">Festivales Culturales y Tradiciones</h3>
@@ -292,14 +296,14 @@
               </p>
             </div>
             <div class="noticias-imagen">
-              <img src="https://via.placeholder.com/400x280?text=Día+del+Estudiante" alt="Día del Estudiante" />
+              <img src="fotos de maestros/721801702_1592229936247038_1378997849892512121_n (1).jpg" class="imagen-dia-estudiante" alt="Celebración del Día del Estudiante" />
             </div>
           </div>
 
           <!-- Bloque 4: Maratones Deportivas (Imagen a la izquierda) -->
           <div class="noticias-bloque noticias-bloque-invertido">
             <div class="noticias-imagen">
-              <img src="https://via.placeholder.com/400x280?text=Maratones+Deportivas" alt="Maratones Deportivas Institucionales" />
+              <img src="fotos de maestros/Gemini_Generated_Image_ag9y8jag9y8jag9y.jpg" alt="Estudiantes participando en una maratón deportiva" />
             </div>
             <div class="noticias-contenido">
               <h3 class="noticias-subtitulo">Maratones Deportivas Institucionales</h3>
@@ -324,7 +328,7 @@
               </p>
             </div>
             <div class="noticias-imagen">
-              <img src="https://via.placeholder.com/400x280?text=Celebración+Navideña" alt="Celebración Navideña y Cierre de Año" />
+              <img src="fotos de maestros/490713654_1215534773916558_7748288754183478708_n.jpg" alt="Celebración Navideña y Cierre de Año" />
             </div>
           </div>
         </div>
@@ -332,57 +336,117 @@
 
       <section id="oferta" class="py-5 bg-light">
         <div class="container">
-          <div class="text-center mb-5">
+          <div class="text-center mb-4">
             <h2 class="section-title">Oferta Académica</h2>
-            <p class="text-muted">Nuestro plan académico incluye ciclo básico técnico y especializaciones profesionales de BTP que preparan a los estudiantes para el mundo laboral.</p>
           </div>
-          <div class="row g-4">
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">7° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Bases técnicas del área de ciencias y tecnología, con énfasis en computación, ciencias aplicadas y formación ciudadana.</p>
+
+          <div class="category-tabs" aria-label="Navegación de categorías">
+            <button class="category-tab is-active" type="button" data-tab="carreras">Carreras</button>
+            <button class="category-tab" type="button" data-tab="deportes">Deportes</button>
+            <button class="category-tab" type="button" data-tab="banda">Banda</button>
+            <button class="category-tab" type="button" data-tab="talleres">Talleres</button>
+          </div>
+
+          <div class="tab-panels">
+            <div class="tab-panel is-active" id="tab-carreras">
+              <div class="tab-dropdown-card">
+                <div class="career-grid">
+                  <article class="career-card">
+                    <h3>Bachillerato Técnico Profesional en Informática</h3>
+                    <p>Carrera práctica en programación, redes, soporte técnico y desarrollo de soluciones digitales adaptadas al entorno productivo.</p>
+                    <button type="button" class="btn btn-primary career-more-toggle" aria-expanded="false" aria-controls="historia-informatica">Ver más</button>
+                    <div class="career-details" id="historia-informatica" hidden>
+                      <h4>Historia de la carrera de Informática</h4>
+                      <div class="career-timeline">
+                        <p><strong>2009 | Fundación:</strong> Se crea la carrera como Bachillerato Técnico en Computación. Antes, el instituto ofrecía únicamente Perito Mercantil y Contador Público. Los egresados obtenían doble titulación: Bachiller en Ciencias y Letras y Técnico en Computación.</p>
+                        <p><strong>Docentes fundadores:</strong> Fátima Rodríguez, Marlon Izaguirre, Jenny Sosa y Fredy Domínguez.</p>
+                        <p><strong>2010–2012:</strong> Se integra el profesor Wilmer Aguilar y la carrera funciona bajo crecimiento vegetativo, una etapa financieramente compleja debido a pagos irregulares para los docentes.</p>
+                        <p><strong>2011:</strong> Egresa la primera promoción, integrada por aproximadamente 27 alumnos.</p>
+                        <p><strong>2016:</strong> Después de un estudio del programa PRAEMO, el plan evoluciona a BTP Semestral y posteriormente se consolida como Bachillerato Técnico Profesional en Informática, incorporando asignaturas modernas como Desarrollo Web.</p>
+                        <p><strong>2024:</strong> Se implementa el proyecto de robótica. La carrera obtiene el primer lugar en ferias del colegio, de redes y distrital, y avanza hasta la feria municipal de Tegucigalpa. También obtiene el segundo lugar en la competencia de robótica del Instituto San Miguel. Además, se establece un convenio con la Universidad de Defensa Hondureña para impartir un curso de Impresión 3D a estudiantes de 11.º y último año.</p>
+                        <p><strong>2026 | Actualidad:</strong> Se establece un convenio con Cisco Networking Academy (NetAcad) para impartir CCNA 1 y CCNA 2 de forma gratuita, y CCNA 3 a un costo simbólico. La carrera obtiene el primer lugar en la Feria de Ciencias del Instituto San Miguel y continúa liderada por el profesor Wilmer Aguilar, junto con varios docentes fundadores.</p>
+                      </div>
+                      <h4>Galería de Informática</h4>
+                      <div class="career-gallery">
+                        <img src="fotos de maestros/489924344_1212143317589037_7965735873629151343_n.jpg" alt="Estudiantes y docentes durante un reconocimiento académico" />
+                        <img src="fotos de maestros/490255736_1212505304219505_735771369632606098_n.jpg" alt="Estudiantes de Informática premiados en una actividad científica" />
+                        <img src="fotos de maestros/Captura de pantalla 2026-09-05 230140.png" alt="Estudiantes presentando un proyecto tecnológico" />
+                      </div>
+                    </div>
+                  </article>
+                  <article class="career-card">
+                    <h3>Bachillerato Técnico Profesional en Contaduría y Finanzas</h3>
+                    <p>Formación en contabilidad, finanzas, costos, normativa tributaria y gestión administrativa para empresas y emprendimientos.</p>
+                    <button type="button" class="btn btn-primary career-more-toggle" aria-expanded="false" aria-controls="historia-finanzas">Ver más</button>
+                    <div class="career-details" id="historia-finanzas" hidden>
+                      <h4>Historia de la carrera de Finanzas</h4>
+                      <div class="career-timeline">
+                        <p><strong>2004 | Fundación:</strong> Se crea oficialmente la carrera de Finanzas, anteriormente conocida como Perito Mercantil y Contador Público.</p>
+                        <p><strong>Antecedente:</strong> Antes de esta carrera, la oferta del centro educativo incluía Mercadotecnia, pero esta área perdió fuerza debido al bajo interés de los estudiantes en ese momento.</p>
+                        <p><strong>Apertura de la carrera:</strong> A principios de los años 2000, el área contable y mercantil se identificó como una de las opciones más atractivas para la comunidad, impulsando así su creación.</p>
+                        <p><strong>Consolidación:</strong> Las profesoras Elieth y María de la Paz cuentan con información importante sobre este proceso. La profesora María de la Paz fue quien otorgó formalidad y solidez a la carrera.</p>
+                      </div>
+                      <h4>Galería de Finanzas</h4>
+                      <div class="career-gallery">
+                        <img src="fotos de maestros/490570348_1215237743946261_1484989901039487616_n.jpg" alt="Estudiantes de Finanzas en una actividad académica" />
+                        <img src="fotos de maestros/490591215_1215237437279625_8358877777363312834_n.jpg" alt="Estudiantes de Finanzas durante una jornada institucional" />
+                        <img src="fotos de maestros/490918707_1215237550612947_3045895280991920326_n.jpg" alt="Estudiantes y docentes de Finanzas en una actividad institucional" />
+                      </div>
+                    </div>
+                  </article>
+                  <article class="career-card">
+                    <h3>Bachillerato Técnico Profesional en Agroindustria</h3>
+                    <p>Especialización en el procesamiento de materias primas, control de calidad, transformación agropecuaria y desarrollo sostenible.</p>
+                    <button type="button" class="btn btn-primary career-more-toggle" aria-expanded="false" aria-controls="resumen-agroindustria">Ver más</button>
+                    <div class="career-details" id="resumen-agroindustria" hidden>
+                      <h4>Resumen de la carrera de Agroindustria</h4>
+                      <div class="career-timeline">
+                        <p><strong>Formación técnica:</strong> Prepara a los estudiantes para transformar materias primas agropecuarias en productos con valor agregado, aplicando procesos de producción, conservación y almacenamiento.</p>
+                        <p><strong>Control de calidad:</strong> Desarrolla conocimientos sobre higiene, seguridad, selección de materias primas y control de calidad para obtener productos aptos para el consumo.</p>
+                        <p><strong>Práctica y sostenibilidad:</strong> Combina la teoría con experiencias prácticas de producción, aprovechamiento responsable de los recursos y cuidado del medio ambiente.</p>
+                        <p><strong>Proyectos productivos:</strong> La carrera impulsa proyectos como huertos, producción de alimentos y actividades agropecuarias que fortalecen el trabajo en equipo y la resolución de problemas.</p>
+                        <p><strong>Proyección profesional:</strong> Los egresados pueden continuar estudios superiores o emprender iniciativas relacionadas con procesamiento de alimentos, producción agropecuaria y desarrollo de productos sostenibles.</p>
+                      </div>
+                      <h4>Galería de Agroindustria</h4>
+                      <div class="career-gallery">
+                        <img src="fotos de maestros/739699067_1616033093866722_6816829993622952964_n.jpg" alt="Estudiantes de Agroindustria frente a la procesadora de lácteos" />
+                        <img src="fotos de maestros/FB_IMG_1786736362194.jpg" alt="Productos elaborados por estudiantes de Agroindustria" />
+                        <img src="fotos de maestros/FB_IMG_1786736988407.jpg" alt="Estudiantes de Agroindustria reconocidos en una feria científica" />
+                      </div>
+                    </div>
+                  </article>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">8° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Profundización en competencias técnicas, laboratorios prácticos y comienzo de orientación vocacional hacia ramas productivas.</p>
-                </div>
+
+            <div class="tab-panel" id="tab-deportes">
+              <div class="tab-dropdown-card">
+                <ul class="dropdown-list">
+                  <li><span class="dropdown-badge">Activo</span> Fútbol</li>
+                  <li><span class="dropdown-badge">Activo</span> Baloncesto</li>
+                  <li><span class="dropdown-badge">Próximamente</span> Voleibol</li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">9° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Último ciclo del básico, enfocado en la integración de saberes y la preparación para la educación técnica superior.</p>
-                </div>
+
+            <div class="tab-panel" id="tab-banda">
+              <div class="tab-dropdown-card">
+                <ul class="dropdown-list">
+                  <li><span class="dropdown-badge">Grupo</span> Banda Latina Francisco Miranda</li>
+                  <li><span class="dropdown-badge">Ensayos</span> Prácticas de conjunto</li>
+                  <li><span class="dropdown-badge">Eventos</span> Presentaciones institucionales</li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Contaduría y Finanzas</h5>
-                  <p class="card-text">Formación en contabilidad, finanzas, costos, normativa tributaria y gestión administrativa para empresas y emprendimientos.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Informática</h5>
-                  <p class="card-text">Carrera práctica en programación, redes, soporte técnico y desarrollo de soluciones digitales adaptadas al entorno productivo.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Agroindustria</h5>
-                  <p class="card-text">Especialización en producción agrícola, procesamiento de alimentos y tecnologías para el desarrollo sostenible del sector primario.</p>
-                </div>
+
+            <div class="tab-panel" id="tab-talleres">
+              <div class="tab-dropdown-card">
+                <ul class="dropdown-list">
+                  <li><a href="talleres.html?taller=belleza">Belleza y Cosmetología</a></li>
+                  <li><a href="talleres.html?taller=carpinteria">Carpintería y Ebanistería</a></li>
+                  <li><span class="dropdown-badge">Próximamente</span> Electricidad</li>
+                  <li><span class="dropdown-badge">Próximamente</span> Hogar</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -423,7 +487,7 @@
               </div>
               <div class="col-sm-6 col-lg-4">
                 <div class="card shadow-sm h-100">
-                  <img src="assets/images/avatar-female.svg" class="card-img-top" alt="Secretaria Elied Medina" onerror="this.src='assets/images/avatar-female.svg'" />
+                  <img src="fotos de maestros/Elieth Medina.jpeg" class="card-img-top executive-img secretary-img" alt="Secretaria Elied Medina" onerror="this.src='assets/images/avatar-female.svg'" />
                   <div class="card-body">
                     <h5 class="card-title">Secretaria</h5>
                     <p class="card-text">Elied Medina</p>
@@ -445,6 +509,17 @@
                     <h5 class="card-title">Consejería</h5>
                     <p class="card-text mb-1">Prof. Marlon Noel Izaguirre Velásquez</p>
                     <p class="card-text small text-muted">Miembro del departamento de consejería, orienta a los estudiantes en su desarrollo personal y académico dentro del instituto.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card shadow-sm h-100">
+                  <img src="fotos de maestros/Irma Erazo  (3).png" class="card-img-top" alt="Irma Yolanda Erazo Lagos" onerror="this.src='assets/images/avatar-female.svg'" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Consejera Estudiantil</h5>
+                    <p class="card-text mb-1">Lic. Irma Yolanda Erazo Lagos</p>
+                    <p class="card-text small text-muted">Acompaña el desarrollo académico, personal y formativo de la comunidad estudiantil.</p>
+                    <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Irma Yolanda Erazo Lagos" data-bs-title="Consejera Estudiantil" data-bs-summary="Licenciada en Pedagogía y Ciencias de la Educación por la UNAH (2019). Perito Mercantil y Contador Público." data-bs-details="Integra el equipo docente e institucional desde marzo de 2023. Cuenta con experiencia como sub-coordinadora del Colectivo Divina Providencia, participación en Territorio 25, militancia desde 2017, mesas electorales y prácticas profesionales en CESAL y CDHI. Participa en capacitaciones continuas y lidera iniciativas de disciplina y convivencia escolar, seguimiento al rendimiento académico, asistencia y puntualidad estudiantil." >Ver más</button>
                   </div>
                 </div>
               </div>
@@ -501,7 +576,7 @@
               </div>
               <div class="col-sm-6 col-lg-4">
                 <div class="card shadow-sm h-100">
-                  <img src="assets/images/avatar.svg" class="card-img-top" alt="Carlos Fernando Medina" onerror="this.src='assets/images/avatar.svg'" />
+                  <img src="fotos de maestros/Carlos Fernando Medina (1).jpg" class="card-img-top" alt="Carlos Fernando Medina" onerror="this.src='assets/images/avatar.svg'" />
                   <div class="card-body">
                     <h5 class="card-title">Orientador</h5>
                     <p class="card-text">Lic. Carlos Fernando Medina</p>
@@ -584,7 +659,7 @@
               <div class="row g-4">
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Ada Lizeth Ordóñez Martínez" onerror="this.src='assets/images/avatar.svg'" />
+                    <img src="fotos de maestros/3bef9e4e-396f-4da8-8875-c857e03b928a.jpg" class="card-img-top" alt="Ada Lizeth Ordóñez Martínez" onerror="this.src='assets/images/avatar-female.svg'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Ada Lizeth Ordóñez Martínez</h5>
                       <p class="card-text">Docente investigadora y encargada del equipo de Fútbol Femenino.</p>
@@ -594,7 +669,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Ana Liliam Soto Aguilera" onerror="this.src='assets/images/avatar.svg'" />
+                    <img src="fotos de maestros/3bef9e4e-396f-4da8-8875-c857e03b928a.jpg" class="card-img-top" alt="Ana Liliam Soto Aguilera" onerror="this.src='assets/images/avatar-female.svg'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Ana Liliam Soto Aguilera</h5>
                       <p class="card-text">Docente de Ciencias Naturales.</p>
@@ -684,7 +759,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Heydy Vanessa González García" onerror="this.src='assets/images/avatar.svg'" />
+                    <img src="fotos de maestros/3bef9e4e-396f-4da8-8875-c857e03b928a.jpg" class="card-img-top" alt="Heydy Vanessa González García" onerror="this.src='assets/images/avatar-female.svg'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Heydy Vanessa González García</h5>
                       <p class="card-text">Docente de Estructuras Metálicas y Dibujo Técnico.</p>
@@ -714,16 +789,6 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Junior Josué López Montes" onerror="this.src='assets/images/avatar.svg'" />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Junior Josué López Montes</h5>
-                      <p class="card-text">Docente en formación.</p>
-                      <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Junior Josué López Montes" data-bs-title="Docente en formación" data-bs-summary="En constante continuidad de estudios superiores y formación profesional." data-bs-details="Junior Josué López Montes es docente en formación, dedicado a su crecimiento profesional y académico dentro del instituto." >Ver más</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="card shadow-sm h-100 teacher-card">
                     <img src="fotos de maestros/Karen Sanchez.png" class="card-img-top" alt="Karen Leticia Sánchez Bautista" onerror="this.src='https://via.placeholder.com/600x350?text=Karen'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Karen Leticia Sánchez Bautista</h5>
@@ -739,16 +804,6 @@
                       <h5 class="card-title">Katia Patricia Osorto Galo</h5>
                       <p class="card-text">Asistente de Secretaría y docente de Inglés.</p>
                       <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Katia Patricia Osorto Galo" data-bs-title="Asistente de Secretaría" data-bs-summary="Licenciada en Educación Media. Docente de Inglés y docente de primaria." data-bs-details="Katia Patricia Osorto Galo cuenta con más de tres décadas de experiencia. Desde 1991 ha trabajado en educación primaria, desde 2004 imparte inglés y desde 2016 atiende funciones administrativas en secretaría." >Ver más</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Lesby Elieth Medina Agurcia" onerror="this.src='assets/images/avatar.svg'" />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Lesby Elieth Medina Agurcia</h5>
-                      <p class="card-text">Secretaria General del instituto.</p>
-                      <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Lesby Elieth Medina Agurcia" data-bs-title="Secretaria General" data-bs-summary="Licenciada en Pedagogía con orientación en Planeamiento y Administración de la Educación." data-bs-details="Lesby Elieth Medina Agurcia es Secretaria General desde abril de 2003. Ha gestionado seguridad social, ampliación de aulas, innovación curricular y la creación de carreras como Informática, Agroindustria y bachillerato técnico profesional." >Ver más</button>
                     </div>
                   </div>
                 </div>
@@ -1047,6 +1102,28 @@
     </div>
 
     <script>
+      const historiaToggle = document.getElementById('historiaToggle');
+      const historiaDetalles = document.getElementById('historiaDetalles');
+      if (historiaToggle && historiaDetalles) {
+        historiaToggle.addEventListener('click', function () {
+          const mostrarDetalles = historiaDetalles.hidden;
+          historiaDetalles.hidden = !mostrarDetalles;
+          historiaToggle.setAttribute('aria-expanded', String(mostrarDetalles));
+          historiaToggle.textContent = mostrarDetalles ? 'Ver menos' : 'Ver más';
+        });
+      }
+
+      document.querySelectorAll('.career-more-toggle').forEach(function (button) {
+        button.addEventListener('click', function () {
+          const details = document.getElementById(button.getAttribute('aria-controls'));
+          const mostrarDetalles = details.hidden;
+          details.hidden = !mostrarDetalles;
+          button.setAttribute('aria-expanded', String(mostrarDetalles));
+          button.textContent = mostrarDetalles ? 'Ver menos' : 'Ver más';
+          button.closest('.career-card').classList.toggle('career-card-expanded', mostrarDetalles);
+        });
+      });
+
       const teacherModal = document.getElementById('teacherModal');
       if (teacherModal) {
         teacherModal.addEventListener('show.bs.modal', function (event) {

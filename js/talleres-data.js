@@ -151,8 +151,8 @@ const TALLERES_DATA = {
                 titulo: 'Fútbol masculino y femenino',
                 contenido: 'El Área de Deportes del Instituto Técnico General Francisco Miranda es un espacio fundamental para la formación integral de los estudiantes. A través de diferentes actividades y competencias, se promueve la disciplina, el trabajo en equipo, la responsabilidad, el compañerismo y el bienestar físico y emocional.\n\nLa actividad deportiva comenzó a organizarse formalmente alrededor del año 2010, y desde aproximadamente 2015 el instituto ha participado de manera más constante en competencias externas, representando a la institución en diferentes eventos.\n\nEl fútbol masculino y femenino es la disciplina con mayor participación, pero también se practican baloncesto, voleibol y atletismo, además de actividades como ajedrez y tenis de mesa dentro de las clases de Educación Física. Actualmente, alrededor de 200 estudiantes participan en actividades deportivas, mientras que aproximadamente 60 forman parte de los equipos que representan al instituto en competencias externas.\n\nA lo largo de los años, el instituto ha obtenido importantes participaciones y reconocimientos, incluyendo subcampeonatos, semifinales y campeonatos en torneos interinstitucionales. Destaca especialmente el fútbol femenino, que ha logrado posicionarse en los primeros lugares en competencias frente a centros educativos públicos y privados.\n\nMás que una actividad competitiva, el deporte representa para el Instituto Técnico General Francisco Miranda una oportunidad para descubrir talentos, fortalecer valores y brindar a los jóvenes experiencias que contribuyen a su desarrollo personal y académico.',
                 imagenes: [
-                    'assets/deportes/Captura de pantalla_2-9-2026_13588_.jpeg',
-                    'assets/deportes/Captura de pantalla_2-9-2026_135746_.jpeg'
+                    'fotos de maestros/770609167_1650598493743515_8933238635894113469_n.jpg',
+                    'fotos de maestros/558062269_1370435878426446_2279646507352163466_n.jpg'
                 ],
                 layout: 'text-image'
             }
@@ -169,7 +169,7 @@ const TALLERES_DATA = {
                 numero: 1,
                 titulo: 'Historia y Trayectoria',
                 contenido: 'La Banda Latina Francisco Miranda es una expresión cultural y artística de la institución, creada como un espacio para fortalecer el sentido de identidad, disciplina y trabajo en equipo entre estudiantes y docentes.\n\nA lo largo de los años, la banda ha evolucionado, consolidándose como una de las agrupaciones más representativas del instituto, con una historia marcada por la dedicación de sus directores, músicos, estudiantes y la comunidad educativa.\n\nSu trayectoria refleja la importancia de la música como herramienta de formación integral, promoviendo valores como la responsabilidad, la puntualidad, el respeto y la pasión por el arte.',
-                imagen: 'placeholder-banda-1.jpg',
+                imagen: 'fotos de maestros/791849022_1354575423325959_8293929378069427322_n.jpg',
                 layout: 'text-image'
             },
             {
@@ -241,7 +241,8 @@ const TALLERES_DATA = {
                 numero: 1,
                 titulo: 'Fundación del Taller',
                 contenido: 'El Taller de Carpintería y Ebanistería nació con la transformación del colegio cuando pasó a su modalidad técnica. Inicialmente, los talleres que comenzaron fueron únicamente el taller de estructuras metálicas y el taller de madera (existía también un taller agropecuario que posteriormente desapareció, manteniéndose actualmente junto con el taller de electricidad).\n\nEl taller fue concebido como una respuesta a la necesidad de ofrecer formación técnica práctica en el área de la carpintería, combinando técnicas tradicionales con posibilidades de modernización. Esta visión inicial sentó las bases para lo que hoy es un centro de excelencia en la formación de técnicos en madera.',
-                imagen: 'placeholder-1-fundacion.jpg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-05 at 9.58.49 PM.jpeg',
+                imagenClase: 'imagen-fundacion',
                 layout: 'text-image'
             },
             {
@@ -255,7 +256,7 @@ const TALLERES_DATA = {
                 numero: 3,
                 titulo: 'Primeros Años y Dificultades Iniciales',
                 contenido: 'Los inicios fueron complejos. En el espacio donde funciona actualmente el taller de madera, compartían área de trabajo tanto el taller de estructuras metálicas como el de madera, generando una situación de hacinamiento debido a la alta cantidad de estudiantes.\n\nLas máquinas y soldadoras debían trasladarse periódicamente hasta la subdirección, lo que limitaba la continuidad de los procesos de aprendizaje. Con el paso del tiempo, el taller de estructuras metálicas se independizó, permitiendo que el taller de madera contara con un espacio más dedicado.\n\nEn esa etapa inicial, casi todos los trabajos se realizaban de forma manual con herramientas básicas (como peines, ganchos y cepillos manuales), ya que no se contaba con maquinaria especializada como cepilladoras o rosters. A pesar de estas limitaciones, la calidad del trabajo y el compromiso del equipo docente permitieron que los estudiantes adquirieran sólidos conocimientos en técnicas fundamentales de carpintería.',
-                imagen: 'placeholder-3-inicios.jpg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-05 at 10.10.40 PM.jpeg',
                 layout: 'text-image'
             },
             {
