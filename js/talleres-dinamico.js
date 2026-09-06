@@ -85,8 +85,10 @@ class TallerDinamico {
         document.body.classList.add(`area-${tallerKey}`);
 
         if (this.selectorSection) {
-            const mostrarSelector = tallerKey !== 'banda';
-            this.selectorSection.style.display = mostrarSelector ? 'block' : 'none';
+            const params = new URLSearchParams(window.location.search);
+            const mostrarSelector = !params.has('taller');
+            this.selectorSection.hidden = !mostrarSelector;
+            this.selectorSection.classList.toggle('hidden', !mostrarSelector);
         }
 
         // Limpiar contenedor
