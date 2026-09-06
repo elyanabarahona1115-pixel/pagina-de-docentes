@@ -1112,6 +1112,7 @@ footer {
 
 /* Tratamiento caligráfico y translúcido para el encabezado principal. */
 .institution-name {
+  display: none;
   position: relative;
   z-index: 1;
   max-width: 330px;
@@ -1125,17 +1126,23 @@ footer {
 }
 
 .navbar-brand {
+  position: static;
+  z-index: auto;
+  transform: none;
   align-items: center !important;
+}
+
+.site-header .navbar {
+  min-height: 108px;
 }
 
 .logo-placeholder {
   position: relative;
   z-index: 2;
-  width: 104px;
-  height: 104px;
-  flex: 0 0 104px;
-  margin-top: -0.35rem;
-  margin-bottom: -0.35rem;
+  width: 108px;
+  height: 108px;
+  flex: 0 0 108px;
+  margin: 0;
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.28));
 }
 
@@ -1183,15 +1190,19 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .site-header .navbar {
+    min-height: 88px;
+  }
+
   .institution-name {
     max-width: 190px;
     font-size: 1.15rem;
   }
 
   .logo-placeholder {
-    width: 82px;
-    height: 82px;
-    flex-basis: 82px;
+    width: 88px;
+    height: 88px;
+    flex-basis: 88px;
   }
 
   .hero-content h1 {
