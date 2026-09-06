@@ -410,6 +410,74 @@ const TALLERES_DATA = {
                 ]
             }
         ]
+    },
+    hogar: {
+        id: 'hogar',
+        titulo: 'Taller de Hogar',
+        subtitulo: 'Aprender para la vida, crear para servir',
+        descripcion: 'Formacion practica en confeccion, gastronomia y administracion del hogar para desarrollar autonomia, creatividad y emprendimiento',
+        icon: 'fas fa-home',
+        secciones: [
+            {
+                numero: 1,
+                titulo: 'Origen y Fundadora del Taller',
+                contenido: 'El Taller de Hogar forma parte de la formacion tecnica del Instituto Francisco Miranda y responde a la necesidad de preparar a los estudiantes para resolver situaciones de la vida cotidiana con creatividad, organizacion y responsabilidad. Desde sus primeras etapas, el area ha integrado conocimientos de confeccion, cocina, nutricion, manualidades y cuidado del hogar.\n\nLa docente Francis Elizabeth Moncada Silva ha sido una figura central en el desarrollo de esta propuesta. Es licenciada en Taller de Hogar, Belleza, Cosmetologia, Corte, Nutricion y Alimentos, y cuenta con 21 anos de servicio en el instituto. Su experiencia ha permitido convertir el aula en un espacio de aprendizaje practico y de emprendimiento.',
+                imagen: 'fotos de maestros/Profe Francis.jpg',
+                layout: 'text-image'
+            },
+            {
+                numero: 2,
+                titulo: 'Historia y Evolucion del Area',
+                contenido: 'El area de Hogar acompana la transformacion del instituto hacia la educacion tecnica. En el ciclo basico tecnico, establecido en 2007, se incorporo junto con Agropecuaria, Madera y Estructuras Metalicas como una alternativa de formacion vinculada con las necesidades de las familias y la comunidad.\n\nCon el tiempo, el taller ha ampliado sus experiencias practicas. Las actividades ya no se limitan a una sola tecnica: articulan confeccion, elaboracion de alimentos, nutricion, belleza, manualidades y administracion del hogar. Esta integracion permite que los estudiantes comprendan como planificar, elaborar y presentar un producto util.',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.32.14 AM (1).jpeg',
+                layout: 'image-text'
+            },
+            {
+                numero: 3,
+                titulo: 'Confeccion, Gastronomia y Administracion del Hogar',
+                contenido: 'La formacion combina conocimientos tecnicos con actividades que pueden aplicarse en el hogar, en la comunidad o en un pequeno emprendimiento. En confeccion, los estudiantes practican el uso responsable de la maquina de coser, la preparacion de materiales y la elaboracion de prendas y piezas utilitarias.\n\nEn gastronomia y nutricion aprenden a organizar ingredientes, seguir recetas, aplicar tecnicas basicas de preparacion y presentar alimentos. La administracion del hogar fortalece la planificacion, el aprovechamiento de recursos, el orden, la limpieza y la toma responsable de decisiones.',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.32.14 AM (2).jpeg',
+                layout: 'text-image'
+            },
+            {
+                numero: 4,
+                titulo: 'Habilidades y Formacion de los Estudiantes',
+                contenido: 'El taller promueve una educacion para la vida: cada practica busca que los estudiantes puedan desenvolverse con autonomia, trabajar en equipo y convertir una idea en un producto o servicio. La docente acompana el proceso desde la preparacion hasta la evaluacion del resultado.',
+                tipo: 'card-grid',
+                items: [
+                    { icon: 'fas fa-shirt', titulo: 'Confeccion y Creatividad', texto: 'Uso de materiales, maquina de coser y procedimientos basicos para crear piezas utiles.' },
+                    { icon: 'fas fa-utensils', titulo: 'Gastronomia y Nutricion', texto: 'Preparacion de alimentos, organizacion de ingredientes y presentacion con responsabilidad.' },
+                    { icon: 'fas fa-list-check', titulo: 'Administracion del Hogar', texto: 'Planificacion, orden, higiene, aprovechamiento de recursos y manejo responsable del tiempo.' },
+                    { icon: 'fas fa-lightbulb', titulo: 'Emprendimiento', texto: 'Desarrollo de productos y servicios que pueden convertirse en oportunidades de ingreso.' }
+                ]
+            },
+            {
+                numero: 5,
+                titulo: 'Medidas de Higiene y Seguridad',
+                contenido: 'La higiene y la seguridad son parte esencial de cada practica. Antes de cocinar, los estudiantes deben lavarse correctamente las manos, recoger el cabello, usar la indumentaria indicada y mantener limpias las superficies, utensilios y alimentos. Tambien deben separar los residuos y evitar la contaminacion cruzada.\n\nEn cocina se revisa el estado de los equipos, se manipulan con cuidado el calor, los cuchillos y los electrodomesticos, y se trabaja bajo supervision docente. En confeccion se mantienen las manos alejadas de la aguja, se desconecta la maquina antes de ajustar el hilo y se conserva el area ordenada para evitar tropiezos o accidentes.',
+                tipo: 'challenge-grid',
+                items: [
+                    { numero: '1', titulo: 'Higiene Personal', texto: 'Lavado de manos, cabello recogido, indumentaria limpia y presentacion adecuada.' },
+                    { numero: '2', titulo: 'Cocina Limpia y Ordenada', texto: 'Desinfectar superficies, cuidar los utensilios y evitar la contaminacion cruzada.' },
+                    { numero: '3', titulo: 'Uso Seguro del Equipo', texto: 'Manipular calor, cuchillos, electrodomesticos y maquinas con orientacion docente.' },
+                    { numero: '4', titulo: 'Prevencion en el Taller', texto: 'Desconectar equipos antes de ajustarlos, recoger materiales y respetar las normas.' }
+                ]
+            },
+            {
+                numero: 6,
+                titulo: 'Proyectos Elaborados por los Estudiantes',
+                contenido: 'Las practicas del Taller de Hogar se concretan en productos que muestran el aprendizaje y la creatividad del grupo. Entre las experiencias del area se encuentran la elaboracion de prendas y piezas de costura, manualidades, decoraciones y preparaciones de alimentos. Tambien se desarrollan actividades de belleza y nutricion que fortalecen la presentacion, la atencion y el trabajo colaborativo.\n\nCada proyecto implica planificar, seleccionar materiales, distribuir tareas, cuidar los recursos y revisar el resultado final. Asi, el estudiante comprende que un trabajo de calidad combina tecnica, higiene, responsabilidad y capacidad para resolver problemas.',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.39.41 AM.jpeg',
+                layout: 'image-text'
+            },
+            {
+                numero: 7,
+                titulo: 'Principales Logros y Proyeccion',
+                contenido: 'Uno de los principales logros del area es ofrecer una formacion practica que los estudiantes pueden aplicar en su vida diaria, continuar en estudios posteriores o convertir en una iniciativa de emprendimiento. El trabajo de la docente ha permitido sostener un espacio donde se integran habilidades tecnicas, creatividad, nutricion, servicio y valores.\n\nLa proyeccion del taller es seguir fortaleciendo las practicas de confeccion, gastronomia y administracion del hogar, ampliar los proyectos estudiantiles y aprovechar cada experiencia para formar personas autonomas, organizadas y capaces de aportar a sus familias y a su comunidad.',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.32.14 AM.jpeg',
+                layout: 'text-image'
+            }
+        ]
     }
 };
 
