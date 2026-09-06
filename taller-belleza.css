@@ -1501,3 +1501,27 @@ body {
 .theme-belleza .cta-section {
     background: linear-gradient(135deg, var(--vino) 0%, var(--azul-oscuro) 100%) !important;
 }
+
+.hero-taller-banda {
+    background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 100%);
+}
+
+.hero-taller-banda .hero-content-belleza {
+    color: var(--blanco);
+    font-family: Arial, Roboto, Inter, sans-serif;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero-taller-banda .hero-title {
+    color: var(--dorado) !important;
+    font-family: Arial, Roboto, Inter, sans-serif;
+    font-weight: 800;
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.45);
+}
+
+.hero-taller-banda .hero-subtitle,
+.hero-taller-banda .hero-description {
+    color: #F0F4F8 !important;
+    font-family: Arial, Roboto, Inter, sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}

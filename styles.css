@@ -1110,6 +1110,162 @@ footer {
   color: var(--azul-oscuro);
 }
 
+/* ===== ENCABEZADO Y HERO DEL INICIO ===== */
+:root {
+  --ocre-institucional: #C49A3A;
+  --ocre-profundo: #9B7628;
+  --amarillo-suave: #F3D98B;
+}
+
+.site-header {
+  background: linear-gradient(112deg, var(--azul-oscuro) 0%, #073F98 62%, var(--azul-principal) 100%);
+  box-shadow: 0 10px 28px rgba(0, 28, 86, 0.22) !important;
+}
+
+.site-header::after {
+  content: "";
+  display: block;
+  height: 12px;
+  background: linear-gradient(90deg, var(--ocre-profundo) 0%, var(--ocre-institucional) 58%, var(--dorado) 86%, var(--amarillo-suave) 100%);
+}
+
+.site-header .navbar {
+  min-height: 96px;
+  padding: 0.7rem clamp(1rem, 3vw, 3.5rem) !important;
+}
+
+.navbar-brand {
+  gap: 0.85rem !important;
+}
+
+.logo-placeholder {
+  width: 92px;
+  height: 92px;
+  flex: 0 0 92px;
+}
+
+.institution-name {
+  max-width: 220px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.site-header .navbar-nav {
+  gap: clamp(0.35rem, 1.8vw, 1.15rem);
+}
+
+.site-header .nav-link {
+  position: relative;
+  padding: 0.65rem 0.35rem !important;
+  color: var(--blanco) !important;
+  font-size: 0.94rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.site-header .nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0.35rem;
+  bottom: 0.25rem;
+  left: 0.35rem;
+  height: 2px;
+  background: var(--dorado);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.site-header .nav-link:hover::after,
+.site-header .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.navbar-matricula-btn {
+  margin-left: 0.65rem;
+  padding: 0.72rem 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: var(--dorado);
+  color: var(--azul-oscuro) !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.navbar-matricula-btn:hover,
+.navbar-matricula-btn:focus-visible {
+  background: var(--amarillo-suave);
+  color: var(--azul-oscuro) !important;
+  transform: translateY(-1px);
+}
+
+.site-header .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.site-header .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.hero-section,
+.hero-section .carousel,
+.hero-section .carousel-item {
+  min-height: 78vh;
+  height: 78vh;
+}
+
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(4, 20, 52, 0.58) 0%, rgba(4, 20, 52, 0.2) 58%, rgba(4, 20, 52, 0.08) 100%);
+}
+
+.hero-content {
+  min-height: 78vh;
+  padding: 4rem 2rem;
+}
+
+@media (max-width: 991.98px) {
+  .site-header .navbar-collapse {
+    padding: 0.9rem 0 0.25rem;
+  }
+
+  .site-header .navbar-nav {
+    align-items: flex-start !important;
+    gap: 0.15rem;
+  }
+
+  .navbar-matricula-btn {
+    margin: 0.45rem 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-header .navbar {
+    min-height: 82px;
+    padding: 0.55rem 1rem !important;
+  }
+
+  .logo-placeholder {
+    width: 72px;
+    height: 72px;
+    flex-basis: 72px;
+  }
+
+  .institution-name {
+    max-width: 155px;
+    font-size: 0.68rem;
+  }
+
+  .hero-section,
+  .hero-section .carousel,
+  .hero-section .carousel-item {
+    min-height: 68vh;
+    height: 68vh;
+  }
+}
+
 /* ===== SECCIÓN HISTORIA DEL INSTITUTO ===== */
 
 .historia-section {
