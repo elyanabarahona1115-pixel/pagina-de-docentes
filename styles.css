@@ -1144,23 +1144,22 @@ footer {
 }
 
 .site-header .nav-link {
-  padding: 0.55rem 1rem !important;
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 0.7rem 1.2rem !important;
+  border: 0;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--blanco) !important;
+  background: linear-gradient(135deg, #f8c74e 0%, #f5a623 100%);
+  color: #1f2937 !important;
   font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 800;
   letter-spacing: 0.01em;
   transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 .site-header .nav-link:hover,
 .site-header .nav-link.active {
-  border-color: rgba(255, 215, 0, 0.72);
-  background: rgba(255, 215, 0, 0.16);
-  color: var(--dorado) !important;
+  background: linear-gradient(135deg, #f4ba35 0%, #e9950a 100%);
+  color: #1f2937 !important;
   transform: translateY(-1px);
 }
 
