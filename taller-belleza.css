@@ -59,6 +59,15 @@
     --theme-contrast: var(--white-cream);
 }
 
+.hero-taller-electricidad {
+    --theme-primary: #12355b;
+    --theme-secondary: #f4b400;
+    --theme-tertiary: #d9edf7;
+    --theme-accent: #12355b;
+    --theme-contrast: var(--white-cream);
+    background: linear-gradient(135deg, #12355b 0%, #1d638f 55%, #f4b400 100%);
+}
+
 .hero-taller-banda {
     --theme-primary: var(--azul-principal);
     --theme-secondary: var(--dorado);
@@ -311,6 +320,13 @@ body {
     animation: gradientShift 8s ease infinite;
 }
 
+.hero-overlay-electricidad {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(8, 32, 58, 0.9) 0%, rgba(18, 53, 91, 0.58) 55%, rgba(244, 180, 0, 0.2) 100%);
+    animation: gradientShift 8s ease infinite;
+}
+
 .hero-overlay-banda {
     position: absolute;
     top: 0;
@@ -477,6 +493,65 @@ body {
 
 .theme-carpinteria .section-title:hover {
     color: #e67a17;
+}
+
+.theme-electricidad .section-title,
+.theme-electricidad .achievement-card h3,
+.theme-electricidad .challenge-card h3,
+.theme-electricidad .quality-card h3,
+.theme-electricidad .cta-section h2,
+.theme-electricidad .placeholder-text i {
+    color: #12355b;
+}
+
+.theme-electricidad .section-divider {
+    background: linear-gradient(90deg, #f4b400, #1d638f);
+}
+
+.theme-electricidad .achievement-card,
+.theme-electricidad .challenge-card,
+.theme-electricidad .quality-card {
+    border-color: rgba(29, 99, 143, 0.35);
+}
+
+.theme-electricidad .achievement-card {
+    background: linear-gradient(135deg, rgba(244, 250, 253, 0.95), rgba(217, 237, 247, 0.78));
+}
+
+.theme-electricidad .achievement-icon,
+.theme-electricidad .quality-icon,
+.theme-electricidad .challenge-number {
+    color: #ffffff;
+    background: linear-gradient(135deg, #12355b, #f4b400);
+}
+
+.theme-electricidad .challenge-card {
+    border-left-color: #f4b400;
+}
+
+.theme-electricidad .quality-card {
+    background: linear-gradient(135deg, #d9edf7 0%, #f8f1d5 100%);
+}
+
+.theme-electricidad .cta-section {
+    background: linear-gradient(135deg, #12355b 0%, #1d638f 58%, #f4b400 100%);
+}
+
+.theme-electricidad .btn-cta {
+    color: #12355b;
+}
+
+.theme-electricidad .section-title:hover {
+    color: #1d638f;
+}
+
+.theme-electricidad .achievement-card:hover,
+.theme-electricidad .quality-card:hover {
+    box-shadow: 0 12px 35px rgba(29, 99, 143, 0.2);
+}
+
+.theme-electricidad .challenge-card:hover {
+    border-left-color: #1d638f;
 }
 
 .theme-carpinteria .achievement-card:hover {
