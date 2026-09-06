@@ -214,7 +214,7 @@ class TallerDinamico {
         const imagenHtml = rutasImagenes.length ? `
             <div class="col-lg-6 ${seccion.layout === 'image-text' ? 'order-lg-1' : 'order-lg-2'}">
                 ${rutasImagenes.map(rutaImagen => `
-                    <div class="image-placeholder mb-3">
+                    <div class="image-placeholder mb-3 ${seccion.imagenClase || ''}">
                         <img src="${rutaImagen}" alt="${seccion.titulo}" class="placeholder-img" />
                         <div class="placeholder-text">
                             <i class="fas fa-images"></i>

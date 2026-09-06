@@ -241,7 +241,8 @@ const TALLERES_DATA = {
                 numero: 1,
                 titulo: 'Fundación del Taller',
                 contenido: 'El Taller de Carpintería y Ebanistería nació con la transformación del colegio cuando pasó a su modalidad técnica. Inicialmente, los talleres que comenzaron fueron únicamente el taller de estructuras metálicas y el taller de madera (existía también un taller agropecuario que posteriormente desapareció, manteniéndose actualmente junto con el taller de electricidad).\n\nEl taller fue concebido como una respuesta a la necesidad de ofrecer formación técnica práctica en el área de la carpintería, combinando técnicas tradicionales con posibilidades de modernización. Esta visión inicial sentó las bases para lo que hoy es un centro de excelencia en la formación de técnicos en madera.',
-                imagen: 'placeholder-1-fundacion.jpg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-05 at 9.58.49 PM.jpeg',
+                imagenClase: 'imagen-fundacion',
                 layout: 'text-image'
             },
             {
@@ -255,7 +256,7 @@ const TALLERES_DATA = {
                 numero: 3,
                 titulo: 'Primeros Años y Dificultades Iniciales',
                 contenido: 'Los inicios fueron complejos. En el espacio donde funciona actualmente el taller de madera, compartían área de trabajo tanto el taller de estructuras metálicas como el de madera, generando una situación de hacinamiento debido a la alta cantidad de estudiantes.\n\nLas máquinas y soldadoras debían trasladarse periódicamente hasta la subdirección, lo que limitaba la continuidad de los procesos de aprendizaje. Con el paso del tiempo, el taller de estructuras metálicas se independizó, permitiendo que el taller de madera contara con un espacio más dedicado.\n\nEn esa etapa inicial, casi todos los trabajos se realizaban de forma manual con herramientas básicas (como peines, ganchos y cepillos manuales), ya que no se contaba con maquinaria especializada como cepilladoras o rosters. A pesar de estas limitaciones, la calidad del trabajo y el compromiso del equipo docente permitieron que los estudiantes adquirieran sólidos conocimientos en técnicas fundamentales de carpintería.',
-                imagen: 'placeholder-3-inicios.jpg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-05 at 10.10.40 PM.jpeg',
                 layout: 'text-image'
             },
             {

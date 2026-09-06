@@ -705,6 +705,10 @@ body {
     transition: opacity 0.3s ease;
 }
 
+.image-placeholder.imagen-fundacion .placeholder-img {
+    object-position: center top;
+}
+
 .image-placeholder:hover .placeholder-img {
     opacity: 1;
 }
