@@ -5,6 +5,7 @@
   --dorado: #FFD700;
   --lavanda: #D9D9FF;
   --blanco: #FFFFFF;
+  --fondo-calido: #FFFACD;
   --azul-claro: #DCEAF7;
   --lavanda-suave: #F1EEFA;
   --dorado-claro: #F3D98B;
@@ -582,6 +583,61 @@ body {
 
 .info-box {
   background-color: #f4e6c8;
+}
+
+#instituto {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #FFFACD;
+  background-image:
+    radial-gradient(circle at 12% 22%, rgba(255, 255, 255, 0.34) 0 2.2rem, transparent 2.35rem),
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.24) 0 3rem, transparent 3.15rem),
+    radial-gradient(circle at 28% 78%, rgba(255, 255, 255, 0.2) 0 1.5rem, transparent 1.65rem),
+    radial-gradient(circle at 91% 74%, rgba(255, 255, 255, 0.28) 0 2.4rem, transparent 2.55rem),
+    linear-gradient(135deg, #FFFACD 0%, #FFF7C2 100%);
+  background-size: auto, auto, auto, auto, 100% 100%;
+}
+
+#instituto > .container {
+  position: relative;
+  z-index: 1;
+}
+
+#instituto .info-box {
+  background: rgba(255, 250, 205, 0.82);
+  border: 1px solid rgba(196, 154, 58, 0.22);
+  box-shadow: 0 8px 20px rgba(138, 101, 21, 0.08);
+}
+
+/* Superficies claras coherentes en todo el sitio. */
+.tab-dropdown-card,
+.matricula-card,
+.matricula-form-page,
+.noticias-section,
+.noticias-contenido,
+.carpinteria-contenido,
+.galeria-item,
+.historia-card,
+.valor-item,
+.matricula-form-panel,
+.matricula-item,
+.image-placeholder,
+.achievement-card,
+.challenge-card,
+.quality-card {
+  background-color: var(--fondo-calido);
+}
+
+.tab-dropdown-card,
+.matricula-card,
+.matricula-form-page,
+.noticias-contenido,
+.carpinteria-contenido,
+.galeria-item,
+.historia-card,
+.matricula-form-panel {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 250, 205, 0.9));
 }
 
 .historia-toggle {
