@@ -1110,159 +1110,93 @@ footer {
   color: var(--azul-oscuro);
 }
 
-/* ===== ENCABEZADO Y HERO DEL INICIO ===== */
-:root {
-  --ocre-institucional: #C49A3A;
-  --ocre-profundo: #9B7628;
-  --amarillo-suave: #F3D98B;
-}
-
-.site-header {
-  background: linear-gradient(112deg, var(--azul-oscuro) 0%, #073F98 62%, var(--azul-principal) 100%);
-  box-shadow: 0 10px 28px rgba(0, 28, 86, 0.22) !important;
-}
-
-.site-header::after {
-  content: "";
-  display: block;
-  height: 12px;
-  background: linear-gradient(90deg, var(--ocre-profundo) 0%, var(--ocre-institucional) 58%, var(--dorado) 86%, var(--amarillo-suave) 100%);
-}
-
-.site-header .navbar {
-  min-height: 96px;
-  padding: 0.7rem clamp(1rem, 3vw, 3.5rem) !important;
+/* Tratamiento caligráfico y translúcido para el encabezado principal. */
+.institution-name {
+  position: relative;
+  z-index: 1;
+  max-width: 330px;
+  color: rgba(255, 231, 147, 0.96);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
 }
 
 .navbar-brand {
-  gap: 0.85rem !important;
+  align-items: center !important;
 }
 
 .logo-placeholder {
-  width: 92px;
-  height: 92px;
-  flex: 0 0 92px;
-}
-
-.institution-name {
-  max-width: 220px;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  line-height: 1.35;
-  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  width: 104px;
+  height: 104px;
+  flex: 0 0 104px;
+  margin-top: -0.35rem;
+  margin-bottom: -0.35rem;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.28));
 }
 
 .site-header .navbar-nav {
-  gap: clamp(0.35rem, 1.8vw, 1.15rem);
+  gap: 0.45rem;
 }
 
 .site-header .nav-link {
-  position: relative;
-  padding: 0.65rem 0.35rem !important;
-  color: var(--blanco) !important;
-  font-size: 0.94rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-}
-
-.site-header .nav-link::after {
-  content: "";
-  position: absolute;
-  right: 0.35rem;
-  bottom: 0.25rem;
-  left: 0.35rem;
-  height: 2px;
-  background: var(--dorado);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.25s ease;
-}
-
-.site-header .nav-link:hover::after,
-.site-header .nav-link.active::after {
-  transform: scaleX(1);
-}
-
-.navbar-matricula-btn {
-  margin-left: 0.65rem;
-  padding: 0.72rem 1.35rem;
+  padding: 0.55rem 1rem !important;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 999px;
-  background: var(--dorado);
-  color: var(--azul-oscuro) !important;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--blanco) !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
-.navbar-matricula-btn:hover,
-.navbar-matricula-btn:focus-visible {
-  background: var(--amarillo-suave);
-  color: var(--azul-oscuro) !important;
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  border-color: rgba(255, 215, 0, 0.72);
+  background: rgba(255, 215, 0, 0.16);
+  color: var(--dorado) !important;
   transform: translateY(-1px);
 }
 
-.site-header .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.45);
+.site-header .nav-link::after {
+  display: none;
 }
 
-.site-header .navbar-toggler-icon {
-  filter: brightness(0) invert(1);
-}
-
-.hero-section,
-.hero-section .carousel,
-.hero-section .carousel-item {
-  min-height: 78vh;
-  height: 78vh;
-}
-
-.hero-overlay {
-  background: linear-gradient(90deg, rgba(4, 20, 52, 0.58) 0%, rgba(4, 20, 52, 0.2) 58%, rgba(4, 20, 52, 0.08) 100%);
-}
-
-.hero-content {
-  min-height: 78vh;
-  padding: 4rem 2rem;
-}
-
-@media (max-width: 991.98px) {
-  .site-header .navbar-collapse {
-    padding: 0.9rem 0 0.25rem;
-  }
-
-  .site-header .navbar-nav {
-    align-items: flex-start !important;
-    gap: 0.15rem;
-  }
-
-  .navbar-matricula-btn {
-    margin: 0.45rem 0 0;
-  }
+.hero-content h1 {
+  max-width: 900px;
+  padding: 0.6rem 1.25rem 0.8rem;
+  border: 0;
+  border-radius: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 24, 72, 0.52) 0%, rgba(0, 24, 72, 0.28) 38%, rgba(0, 24, 72, 0.08) 64%, transparent 82%);
+  color: rgba(255, 231, 147, 0.98);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2.8rem, 6vw, 5.6rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 576px) {
-  .site-header .navbar {
-    min-height: 82px;
-    padding: 0.55rem 1rem !important;
+  .institution-name {
+    max-width: 190px;
+    font-size: 1.15rem;
   }
 
   .logo-placeholder {
-    width: 72px;
-    height: 72px;
-    flex-basis: 72px;
+    width: 82px;
+    height: 82px;
+    flex-basis: 82px;
   }
 
-  .institution-name {
-    max-width: 155px;
-    font-size: 0.68rem;
-  }
-
-  .hero-section,
-  .hero-section .carousel,
-  .hero-section .carousel-item {
-    min-height: 68vh;
-    height: 68vh;
+  .hero-content h1 {
+    font-size: clamp(2.2rem, 12vw, 3.5rem);
   }
 }
 
