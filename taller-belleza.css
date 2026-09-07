@@ -5,26 +5,38 @@
 
 /* ===== VARIABLES DE COLOR Y TIPOGRAFÍA ===== */
 :root {
-    /* Paleta institucional compartida con la página inicial */
-    --lilac: #E6C879;
-    --soft-lavender: #F3E6CA;
-    --pastel-violet: #E6C879;
-    --light-purple: #EAD9B8;
-    --darker-purple: #191970;
-    --soft-gray: #F8F9FA;
-    --warm-gray: #D8B52A;
-    --rose-gold: #F3E6CA;
-    --accent-rose: #E6C879;
-    --text-dark: #172033;
-    --text-light: #604714;
-    --white-cream: #FFFDF5;
+    --azul-principal: #0D6EFD;
+    --azul-oscuro: #002B7F;
+    --vino: #7A1F3D;
+    --dorado: #FFD700;
+    --lavanda: #D9D9FF;
+    --blanco: #FFFFFF;
+    --azul-claro: #DCEAF7;
+    --lavanda-suave: #F1EEFA;
+    --dorado-claro: #F3D98B;
+    --vino-claro: #A94B68;
+    --texto: #172033;
+
+    /* Alias de los componentes existentes, todos vinculados a la paleta institucional. */
+    --lilac: var(--lavanda);
+    --soft-lavender: var(--lavanda-suave);
+    --pastel-violet: var(--vino-claro);
+    --light-purple: var(--azul-claro);
+    --darker-purple: var(--azul-oscuro);
+    --soft-gray: var(--blanco);
+    --warm-gray: var(--dorado);
+    --rose-gold: var(--lavanda-suave);
+    --accent-rose: var(--lavanda);
+    --text-dark: var(--texto);
+    --text-light: #36506F;
+    --white-cream: var(--blanco);
 
     /* Tema por defecto: belleza */
-    --theme-primary: var(--pastel-violet);
-    --theme-secondary: var(--light-purple);
-    --theme-tertiary: var(--soft-lavender);
-    --theme-accent: var(--darker-purple);
-    --theme-contrast: var(--white-cream);
+    --theme-primary: var(--vino);
+    --theme-secondary: var(--lavanda);
+    --theme-tertiary: var(--lavanda-suave);
+    --theme-accent: var(--azul-oscuro);
+    --theme-contrast: var(--blanco);
 
     /* Tipografía */
     --font-serif: 'Playfair Display', serif;
@@ -32,56 +44,65 @@
 }
 
 .hero-taller-belleza {
-    --theme-primary: #E6C879;
-    --theme-secondary: #EAD9B8;
-    --theme-tertiary: #F3E6CA;
-    --theme-accent: #191970;
+    --theme-primary: var(--vino);
+    --theme-secondary: var(--lavanda);
+    --theme-tertiary: var(--lavanda-suave);
+    --theme-accent: var(--azul-oscuro);
     --theme-contrast: var(--white-cream);
 }
 
 .hero-taller-carpinteria {
-    --theme-primary: #E6C879;
-    --theme-secondary: #EAD9B8;
-    --theme-tertiary: #F3E6CA;
-    --theme-accent: #191970;
+    --theme-primary: var(--azul-principal);
+    --theme-secondary: var(--dorado);
+    --theme-tertiary: var(--azul-claro);
+    --theme-accent: var(--azul-oscuro);
     --theme-contrast: var(--white-cream);
+}
+
+.hero-taller-electricidad {
+    --theme-primary: #12355b;
+    --theme-secondary: #f4b400;
+    --theme-tertiary: #d9edf7;
+    --theme-accent: #12355b;
+    --theme-contrast: var(--white-cream);
+    background: linear-gradient(135deg, #12355b 0%, #1d638f 55%, #f4b400 100%);
 }
 
 .hero-taller-banda {
-    --theme-primary: #E6C879;
-    --theme-secondary: #EAD9B8;
-    --theme-tertiary: #F3E6CA;
-    --theme-accent: #191970;
+    --theme-primary: var(--azul-principal);
+    --theme-secondary: var(--dorado);
+    --theme-tertiary: var(--azul-claro);
+    --theme-accent: var(--azul-oscuro);
     --theme-contrast: var(--white-cream);
-    --theme-primary: #0d6efd;
-    --theme-secondary: #ffc107;
-    --theme-tertiary: #f8f9fa;
-    --theme-accent: #1f2937;
-    --theme-contrast: #ffffff;
+    --theme-primary: var(--azul-principal);
+    --theme-secondary: var(--dorado);
+    --theme-tertiary: var(--azul-claro);
+    --theme-accent: var(--azul-oscuro);
+    --theme-contrast: var(--blanco);
 }
 
 .theme-banda {
-    --theme-primary: #0d6efd;
-    --theme-secondary: #ffc107;
-    --theme-tertiary: #f8f9fa;
-    --theme-accent: #1f2937;
-    --theme-contrast: #ffffff;
+    --theme-primary: var(--azul-principal);
+    --theme-secondary: var(--dorado);
+    --theme-tertiary: var(--azul-claro);
+    --theme-accent: var(--azul-oscuro);
+    --theme-contrast: var(--blanco);
 }
 
 .theme-deportes {
-    --theme-primary: #0d6efd;
-    --theme-secondary: #ffc107;
-    --theme-tertiary: #f8f9fa;
-    --theme-accent: #1f2937;
-    --theme-contrast: #ffffff;
+    --theme-primary: var(--azul-principal);
+    --theme-secondary: var(--dorado);
+    --theme-tertiary: var(--azul-claro);
+    --theme-accent: var(--azul-oscuro);
+    --theme-contrast: var(--blanco);
 }
 
 .theme-belleza {
-    --theme-primary: #0d6efd;
-    --theme-secondary: #ffc107;
-    --theme-tertiary: #f8f9fa;
-    --theme-accent: #a6533a;
-    --theme-contrast: #ffffff;
+    --theme-primary: var(--vino);
+    --theme-secondary: var(--lavanda);
+    --theme-tertiary: var(--lavanda-suave);
+    --theme-accent: var(--azul-oscuro);
+    --theme-contrast: var(--blanco);
 }
 
 /* ===== RESET Y ESTILOS GLOBALES ===== */
@@ -89,6 +110,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
 }
 
 html {
@@ -295,6 +320,29 @@ body {
     animation: gradientShift 8s ease infinite;
 }
 
+.hero-overlay-electricidad {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(8, 32, 58, 0.9) 0%, rgba(18, 53, 91, 0.58) 55%, rgba(244, 180, 0, 0.2) 100%);
+    animation: gradientShift 8s ease infinite;
+}
+
+.hero-taller-estructuras {
+    --theme-primary: #263238;
+    --theme-secondary: #607d8b;
+    --theme-tertiary: #c04b3f;
+    --theme-accent: #263238;
+    --theme-contrast: var(--white-cream);
+    background: linear-gradient(135deg, #263238 0%, #607d8b 58%, #c04b3f 100%);
+}
+
+.hero-overlay-estructuras {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(20, 27, 30, 0.9) 0%, rgba(38, 50, 56, 0.62) 55%, rgba(192, 75, 63, 0.2) 100%);
+    animation: gradientShift 8s ease infinite;
+}
+
 .hero-overlay-banda {
     position: absolute;
     top: 0;
@@ -461,6 +509,124 @@ body {
 
 .theme-carpinteria .section-title:hover {
     color: #e67a17;
+}
+
+.theme-electricidad .section-title,
+.theme-electricidad .achievement-card h3,
+.theme-electricidad .challenge-card h3,
+.theme-electricidad .quality-card h3,
+.theme-electricidad .cta-section h2,
+.theme-electricidad .placeholder-text i {
+    color: #12355b;
+}
+
+.theme-electricidad .section-divider {
+    background: linear-gradient(90deg, #f4b400, #1d638f);
+}
+
+.theme-electricidad .achievement-card,
+.theme-electricidad .challenge-card,
+.theme-electricidad .quality-card {
+    border-color: rgba(29, 99, 143, 0.35);
+}
+
+.theme-electricidad .achievement-card {
+    background: linear-gradient(135deg, rgba(244, 250, 253, 0.95), rgba(217, 237, 247, 0.78));
+}
+
+.theme-electricidad .achievement-icon,
+.theme-electricidad .quality-icon,
+.theme-electricidad .challenge-number {
+    color: #ffffff;
+    background: linear-gradient(135deg, #12355b, #f4b400);
+}
+
+.theme-electricidad .challenge-card {
+    border-left-color: #f4b400;
+}
+
+.theme-electricidad .quality-card {
+    background: linear-gradient(135deg, #d9edf7 0%, #f8f1d5 100%);
+}
+
+.theme-electricidad .cta-section {
+    background: linear-gradient(135deg, #12355b 0%, #1d638f 58%, #f4b400 100%);
+}
+
+.theme-electricidad .btn-cta {
+    color: #12355b;
+}
+
+.theme-electricidad .section-title:hover {
+    color: #1d638f;
+}
+
+.theme-electricidad .achievement-card:hover,
+.theme-electricidad .quality-card:hover {
+    box-shadow: 0 12px 35px rgba(29, 99, 143, 0.2);
+}
+
+.theme-electricidad .challenge-card:hover {
+    border-left-color: #1d638f;
+}
+
+.theme-estructuras .section-title,
+.theme-estructuras .achievement-card h3,
+.theme-estructuras .challenge-card h3,
+.theme-estructuras .quality-card h3,
+.theme-estructuras .cta-section h2,
+.theme-estructuras .placeholder-text i {
+    color: #263238;
+}
+
+.theme-estructuras .section-divider {
+    background: linear-gradient(90deg, #c04b3f, #607d8b);
+}
+
+.theme-estructuras .achievement-card,
+.theme-estructuras .challenge-card,
+.theme-estructuras .quality-card {
+    border-color: rgba(96, 125, 139, 0.42);
+}
+
+.theme-estructuras .achievement-card {
+    background: linear-gradient(135deg, rgba(245, 247, 248, 0.96), rgba(224, 230, 233, 0.82));
+}
+
+.theme-estructuras .achievement-icon,
+.theme-estructuras .quality-icon,
+.theme-estructuras .challenge-number {
+    color: #ffffff;
+    background: linear-gradient(135deg, #263238, #c04b3f);
+}
+
+.theme-estructuras .challenge-card {
+    border-left-color: #c04b3f;
+}
+
+.theme-estructuras .quality-card {
+    background: linear-gradient(135deg, #e0e6e9 0%, #f3dfdc 100%);
+}
+
+.theme-estructuras .cta-section {
+    background: linear-gradient(135deg, #263238 0%, #607d8b 58%, #c04b3f 100%);
+}
+
+.theme-estructuras .btn-cta {
+    color: #263238;
+}
+
+.theme-estructuras .section-title:hover {
+    color: #c04b3f;
+}
+
+.theme-estructuras .achievement-card:hover,
+.theme-estructuras .quality-card:hover {
+    box-shadow: 0 12px 35px rgba(38, 50, 56, 0.22);
+}
+
+.theme-estructuras .challenge-card:hover {
+    border-left-color: #607d8b;
 }
 
 .theme-carpinteria .achievement-card:hover {
@@ -1234,4 +1400,278 @@ body {
 
 .footer-divider {
     border-color: rgba(230, 200, 121, 0.25);
+}
+
+:root {
+    --azul-principal: #0D6EFD;
+    --azul-oscuro: #002B7F;
+    --vino: #7A1F3D;
+    --dorado: #FFD700;
+    --lavanda: #D9D9FF;
+    --blanco: #FFFFFF;
+    --azul-claro: #DCEAF7;
+    --lavanda-suave: #F1EEFA;
+    --dorado-claro: #F3D98B;
+    --vino-claro: #A94B68;
+}
+
+body {
+    background-color: var(--lavanda-suave);
+    color: var(--texto);
+}
+
+.navbar-wrapper,
+.area-belleza .navbar-wrapper,
+.area-carpinteria .navbar-wrapper,
+.area-banda .navbar-wrapper,
+.area-deportes .navbar-wrapper {
+    background: linear-gradient(90deg, var(--azul-oscuro) 0%, var(--azul-principal) 62%, var(--vino) 100%);
+    box-shadow: 0 2px 8px rgba(0, 43, 127, 0.22);
+}
+
+.talleres-selector,
+.area-belleza .talleres-selector,
+.area-belleza .hero-taller-belleza {
+    background: linear-gradient(135deg, var(--lavanda-suave) 0%, var(--azul-claro) 100%);
+    color: var(--azul-oscuro);
+}
+
+.talleres-selector h2,
+.area-belleza .hero-taller-belleza .hero-title,
+.section-title,
+.achievement-card h3,
+.challenge-card h3,
+.quality-card h3 {
+    color: var(--azul-oscuro);
+}
+
+.talleres-selector h2::after,
+.section-divider {
+    background: linear-gradient(90deg, var(--vino), var(--dorado));
+}
+
+.talleres-selector .text-muted,
+.area-belleza .hero-taller-belleza .hero-subtitle,
+.area-belleza .hero-taller-belleza .hero-description,
+.section-text,
+.achievement-card p,
+.challenge-card p,
+.quality-card p {
+    color: #36506F !important;
+}
+
+.talleres-selector .dropdown-toggle {
+    border-color: var(--azul-oscuro);
+    color: var(--azul-oscuro);
+}
+
+.talleres-selector .dropdown-toggle:hover,
+.talleres-selector .dropdown-toggle:focus,
+.talleres-selector .dropdown-item:hover,
+.talleres-selector .dropdown-item:focus {
+    background-color: var(--lavanda);
+    border-color: var(--azul-principal);
+    color: var(--azul-oscuro);
+}
+
+.hero-taller {
+    background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 56%, var(--vino) 100%);
+}
+
+.hero-taller-deportes {
+    background: var(--azul-oscuro);
+}
+
+.hero-kicker-belleza,
+.hero-taller-deportes .hero-subtitle {
+    color: var(--dorado);
+}
+
+.hero-taller-belleza .hero-content-belleza,
+.hero-taller-belleza .hero-subtitle,
+.hero-taller-belleza .hero-description,
+.hero-taller-deportes .hero-content-belleza {
+    color: var(--blanco);
+}
+
+.theme-carpinteria,
+.theme-banda,
+.theme-deportes,
+.theme-belleza {
+    --theme-primary: var(--azul-principal);
+    --theme-secondary: var(--vino);
+    --theme-tertiary: var(--lavanda);
+    --theme-accent: var(--azul-oscuro);
+    --theme-contrast: var(--blanco);
+}
+
+.theme-belleza {
+    --theme-primary: var(--vino);
+    --theme-secondary: var(--lavanda);
+    --theme-tertiary: var(--lavanda-suave);
+}
+
+.theme-deportes,
+.theme-banda {
+    --theme-primary: var(--azul-principal);
+    --theme-secondary: var(--dorado);
+    --theme-tertiary: var(--azul-claro);
+}
+
+.section-light {
+    background: linear-gradient(180deg, var(--blanco) 0%, var(--lavanda-suave) 100%);
+}
+
+.section-dark {
+    background: linear-gradient(180deg, var(--azul-claro) 0%, var(--lavanda) 100%);
+}
+
+.achievement-card,
+.challenge-card,
+.quality-card {
+    border-color: rgba(0, 43, 127, 0.2);
+    background: var(--blanco);
+    box-shadow: 0 8px 25px rgba(0, 43, 127, 0.1);
+}
+
+.achievement-icon,
+.quality-icon,
+.placeholder-text i {
+    color: var(--vino);
+}
+
+.challenge-card {
+    border-left-color: var(--vino);
+}
+
+.challenge-number {
+    background: linear-gradient(135deg, var(--vino), var(--azul-oscuro));
+}
+
+.quality-card {
+    background: linear-gradient(135deg, var(--lavanda-suave) 0%, var(--lavanda) 100%);
+}
+
+.cta-section {
+    background: linear-gradient(135deg, var(--vino) 0%, var(--azul-oscuro) 100%);
+}
+
+.btn-cta {
+    background: var(--dorado);
+    color: var(--azul-oscuro);
+}
+
+.btn-cta:hover {
+    background: var(--dorado-claro);
+    color: var(--azul-oscuro);
+}
+
+.footer-section {
+    background: linear-gradient(180deg, var(--azul-oscuro) 0%, var(--vino) 100%);
+}
+
+.footer-section h5,
+.footer-divider {
+    color: var(--dorado);
+    border-color: rgba(255, 215, 0, 0.28);
+}
+
+.theme-carpinteria .section-title,
+.theme-carpinteria .achievement-card h3,
+.theme-carpinteria .challenge-card h3,
+.theme-carpinteria .quality-card h3,
+.theme-carpinteria .cta-section h2,
+.theme-carpinteria .placeholder-text i,
+.theme-banda .section-title,
+.theme-banda .achievement-card h3,
+.theme-banda .challenge-card h3,
+.theme-banda .quality-card h3,
+.theme-banda .cta-section h2,
+.theme-banda .placeholder-text i,
+.theme-deportes .section-title,
+.theme-deportes .achievement-card h3,
+.theme-deportes .challenge-card h3,
+.theme-deportes .quality-card h3,
+.theme-belleza .section-title,
+.theme-belleza .achievement-card h3,
+.theme-belleza .challenge-card h3,
+.theme-belleza .quality-card h3 {
+    color: var(--azul-oscuro) !important;
+}
+
+.theme-carpinteria .section-divider,
+.theme-banda .section-divider,
+.theme-deportes .section-divider,
+.theme-belleza .section-divider {
+    background: linear-gradient(90deg, var(--vino), var(--dorado)) !important;
+}
+
+.theme-carpinteria .achievement-card,
+.theme-carpinteria .challenge-card,
+.theme-carpinteria .quality-card,
+.theme-banda .achievement-card,
+.theme-banda .challenge-card,
+.theme-banda .quality-card,
+.theme-deportes .achievement-card,
+.theme-deportes .challenge-card,
+.theme-deportes .quality-card,
+.theme-belleza .achievement-card,
+.theme-belleza .challenge-card,
+.theme-belleza .quality-card {
+    border-color: rgba(0, 43, 127, 0.2) !important;
+    background: var(--blanco) !important;
+}
+
+.theme-carpinteria .achievement-icon,
+.theme-carpinteria .quality-icon,
+.theme-carpinteria .challenge-number,
+.theme-banda .achievement-icon,
+.theme-banda .quality-icon,
+.theme-banda .challenge-number,
+.theme-deportes .achievement-icon,
+.theme-deportes .quality-icon,
+.theme-deportes .challenge-number,
+.theme-belleza .achievement-icon,
+.theme-belleza .quality-icon,
+.theme-belleza .challenge-number {
+    color: var(--blanco) !important;
+    background: linear-gradient(135deg, var(--vino), var(--azul-oscuro)) !important;
+}
+
+.theme-carpinteria .challenge-card,
+.theme-banda .challenge-card,
+.theme-deportes .challenge-card,
+.theme-belleza .challenge-card {
+    border-left-color: var(--vino) !important;
+}
+
+.theme-carpinteria .cta-section,
+.theme-banda .cta-section,
+.theme-deportes .cta-section,
+.theme-belleza .cta-section {
+    background: linear-gradient(135deg, var(--vino) 0%, var(--azul-oscuro) 100%) !important;
+}
+
+.hero-taller-banda {
+    background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 100%);
+}
+
+.hero-taller-banda .hero-content-belleza {
+    color: var(--blanco);
+    font-family: Arial, Roboto, Inter, sans-serif;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero-taller-banda .hero-title {
+    color: var(--dorado) !important;
+    font-family: Arial, Roboto, Inter, sans-serif;
+    font-weight: 800;
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.45);
+}
+
+.hero-taller-banda .hero-subtitle,
+.hero-taller-banda .hero-description {
+    color: #F0F4F8 !important;
+    font-family: Arial, Roboto, Inter, sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
