@@ -244,6 +244,13 @@ body {
     font-size: 1.5rem;
 }
 
+.navbar-institution-logo {
+    width: 34px;
+    height: 34px;
+    margin-right: 0.55rem;
+    object-fit: contain;
+}
+
 .nav-link {
     color: #FFFFFF !important;
     font-weight: 500;

@@ -280,6 +280,16 @@ body {
   padding: 6rem 4rem;
 }
 
+.hero-carousel-content {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-carousel-content .hero-actions {
+  pointer-events: auto;
+}
+
 .hero-kicker {
   color: #fbbf24;
   font-size: 0.82rem;
