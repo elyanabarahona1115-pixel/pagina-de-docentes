@@ -911,6 +911,27 @@ body {
     transition: opacity 0.3s ease;
 }
 
+/* Carrusel de proyectos del Taller de Estructuras Metálicas */
+.taller-projects-carousel {
+    width: min(100%, 520px);
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid var(--linea-ocre);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(105, 66, 0, 0.18);
+}
+
+.taller-projects-carousel .carousel-item {
+    aspect-ratio: 4 / 3;
+    background: var(--marfil);
+}
+
+.taller-projects-carousel .carousel-item img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
 .image-placeholder.imagen-fundacion .placeholder-img {
     object-position: center top;
 }

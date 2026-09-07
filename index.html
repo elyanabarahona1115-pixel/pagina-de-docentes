@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Merriweather:wght@400;700&family=Caveat:wght@400;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="home-page">
     <header class="sticky-top shadow-sm site-header">
       <nav class="navbar navbar-expand-lg navbar-light container-fluid px-3">
         <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
@@ -21,7 +21,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-warning navbar-matricula-btn" href="autoridades.html">Autoridades Institucionales</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             <li class="nav-item ms-lg-2">
               <a class="btn btn-warning navbar-matricula-btn" href="#matricula">Matrícula</a>
@@ -33,16 +35,7 @@
         <div class="container specialty-links" aria-label="Especialidades técnicas">
           <a href="#oferta">Carreras</a>
           <a href="talleres.html?taller=deportes">Deportes</a>
-          <div class="dropdown">
-            <a href="talleres.html?taller=banda" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Banda <i class="fas fa-chevron-down ms-1"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="talleres.html?taller=banda">
-                <i class="fas fa-music me-2"></i>Banda Latina Francisco Miranda
-              </a></li>
-            </ul>
-          </div>
+          <a href="talleres.html?taller=banda">Banda Latina</a>
           <div class="dropdown">
             <a href="talleres.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               Talleres <i class="fas fa-chevron-down ms-1"></i>
@@ -86,7 +79,7 @@
                 <p>Educación técnica con valores, ciencia y compromiso social para abrir caminos hacia un futuro con propósito.</p>
                 <div class="hero-actions">
                   <a href="#oferta" class="btn btn-outline-light btn-lg">Explorar nuestra oferta</a>
-                  <a href="#docentes" class="btn btn-outline-light btn-lg">Conocer al equipo</a>
+                  <a href="autoridades.html" class="btn btn-outline-light btn-lg">Conocer al equipo</a>
                 </div>
               </div>
             </div>
@@ -448,11 +441,11 @@
         </div>
       </section>
 
-      <section id="docentes" class="py-5">
+      <section id="autoridades" class="py-5">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="section-title">Equipo Docente</h2>
-            <p class="text-muted">Conoce la estructura jerárquica y los docentes que acompañan el proceso formativo del instituto.</p>
+            <h2 class="section-title">Autoridades Institucionales</h2>
+            <p class="text-muted">Conoce a las autoridades, el personal administrativo y el equipo docente que acompañan el proceso formativo del instituto.</p>
           </div>
 
           <div class="mb-4">

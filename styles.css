@@ -755,14 +755,23 @@ body {
   box-shadow: 0 1rem 2rem rgba(23, 32, 51, 0.14) !important;
 }
 
-#docentes .container > .mb-4 .card {
+#autoridades .container > .mb-4 .card {
   background-color: var(--ochre-soft);
   border: 0;
 }
 
-#docentes .container > .mb-4 .card .card-body {
+#autoridades .container > .mb-4 .card .card-body {
   background-color: #f6e8c9;
   color: #382b13;
+}
+
+#autoridades {
+  scroll-margin-top: 130px;
+}
+
+/* El equipo institucional se consulta en su página independiente. */
+body.home-page #autoridades {
+  display: none;
 }
 
 #proyectos .card {

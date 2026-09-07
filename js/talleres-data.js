@@ -437,7 +437,7 @@ const TALLERES_DATA = {
                 numero: 3,
                 titulo: 'Evolución del Taller',
                 contenido: 'El taller ha evolucionado desde prácticas iniciales con herramientas básicas hacia una formación más organizada y cercana a los procesos de la industria. Los estudiantes trabajan con soldadoras, cortadoras, esmeriles, herramientas de medición y equipos de apoyo para preparar y unir piezas metálicas.\n\nEl crecimiento también se refleja en la relación entre el dibujo técnico y la práctica. Antes de fabricar, los estudiantes deben interpretar planos, establecer medidas, seleccionar perfiles y organizar el procedimiento. Esta integración permite mejorar la precisión, aprovechar los materiales y construir con mayor seguridad.',
-                imagen: 'fotos de maestros/Vanessa Lizeth galindo Velasquez.png',
+                imagen: 'fotos de maestros/Taller estructuras.jpg',
                 layout: 'text-image'
             },
             {
@@ -468,7 +468,14 @@ const TALLERES_DATA = {
                 numero: 6,
                 titulo: 'Proyectos y Estructuras Construidas',
                 contenido: 'Los estudiantes aplican sus conocimientos en proyectos que responden a necesidades reales del instituto y de la comunidad. Entre los trabajos documentados se encuentran la construcción de bancas con material de desecho, proyectos de reciclaje y la fabricación de piezas o estructuras que requieren medir, cortar, unir y dar acabado al metal.\n\nCada proyecto fortalece la creatividad y el sentido de servicio. El grupo aprende a distribuir tareas, aprovechar materiales, corregir errores y entregar una estructura estable y útil, relacionando el aprendizaje del taller con el cuidado del entorno.',
-                imagen: 'fotos de maestros/Vanessa Lizeth galindo Velasquez.png',
+                tipo: 'carousel',
+                imagenes: [
+                    'fotos de maestros/Silla Alta .jpg',
+                    'fotos de maestros/Ropero Organizador .png',
+                    'fotos de maestros/Mesa estructuras.jpg',
+                    'fotos de maestros/Esquinero.jpg'
+                ],
+                titulosImagenes: ['Silla alta', 'Ropero organizador', 'Mesa de estructuras', 'Esquinero'],
                 layout: 'image-text'
             },
             {
