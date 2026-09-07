@@ -121,9 +121,9 @@ window.addEventListener('scroll', function() {
     
     if (navbar) {
         if (window.pageYOffset > 50) {
-            navbar.style.boxShadow = '0 4px 15px rgba(216, 180, 254, 0.25)';
+            navbar.style.boxShadow = '0 4px 15px rgba(105, 66, 0, 0.2)';
         } else {
-            navbar.style.boxShadow = '0 2px 8px rgba(216, 180, 254, 0.15)';
+            navbar.style.boxShadow = '0 2px 8px rgba(105, 66, 0, 0.15)';
         }
     }
 });
