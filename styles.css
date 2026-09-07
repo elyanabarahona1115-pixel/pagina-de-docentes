@@ -137,7 +137,7 @@ body {
 
 .specialty-bar {
   border-top: 1px solid rgba(255, 255, 255, 0.22);
-  background-color: var(--ochre-dark);
+  background-color: #b8860b;
 }
 
 .specialty-links {
@@ -2550,7 +2550,7 @@ body {
 .specialty-bar,
 footer,
 .footer-section {
-  background-color: var(--ochre-dark) !important;
+  background-color: #b8860b !important;
 }
 
 .hero-section,
@@ -2751,13 +2751,13 @@ body {
 .navbar-wrapper,
 .matricula-page-main,
 .hero-section {
-  background: linear-gradient(100deg, var(--ocre-profundo) 0%, var(--ocre) 52%, var(--mostaza) 100%) !important;
+  background: linear-gradient(90deg, var(--azul-oscuro) 0%, #1557a6 52%, #d8b52a 100%) !important;
 }
 
 .specialty-bar,
 footer,
 .footer-section {
-  background-color: var(--ocre-profundo) !important;
+  background-color: #b8860b !important;
 }
 
 .institution-strip,
