@@ -5,7 +5,7 @@
 
 const TALLERES_DATA = {
     belleza: {
-                imagen: 'fotos de maestros/electricidad-evolucion-integracion-tecnologica.jpeg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-06 at 11.51.07 PM.jpeg',
                 imagenClase: 'imagen-electricidad-proyectos',
         subtitulo: 'Una historia de dedicación, innovación y transformación',
         descripcion: 'Descubre cómo iniciamos desde cero para convertir la belleza en una herramienta de empoderamiento estudiantil',
@@ -477,7 +477,7 @@ const TALLERES_DATA = {
                 numero: 7,
                 titulo: 'Principales Logros y Proyección',
                 contenido: 'Uno de los principales logros del Taller de Estructuras Metálicas es formar jóvenes con competencias laborales y una cultura de seguridad. El reconocimiento docente, la certificación como instructor y la participación en proyectos prácticos muestran el compromiso del equipo con una educación técnica vinculada a la realidad.\n\nLa proyección del área es continuar fortaleciendo el equipamiento, ampliar las prácticas de soldadura y fabricación, y consolidar proyectos que beneficien al instituto. La meta es que cada estudiante egrese con bases sólidas para trabajar, seguir especializándose o emprender con responsabilidad y calidad.',
-                imagen: 'fotos de maestros/Fabrio yanez.png',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-06 at 11.51.07 PM.jpeg',
                 layout: 'text-image'
             }
         ]
