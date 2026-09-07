@@ -373,6 +373,8 @@ class TallerDinamico {
 
         if (taller.id === 'belleza') {
             tallerNombre = 'Belleza y Cosmetología';
+        } else if (taller.id === 'deportes') {
+            tallerNombre = 'Área de Deportes';
         } else if (taller.id === 'banda') {
             tallerNombre = 'Banda Latina Francisco Miranda';
         } else if (taller.id === 'electricidad') {
@@ -386,7 +388,7 @@ class TallerDinamico {
         return `
             <section class="cta-section">
                 <div class="container text-center">
-                    <h2>${taller.id === 'hogar' ? 'Únete al' : taller.id === 'estructuras' ? 'Únete al Taller de' : 'Únete a la'} ${tallerNombre}</h2>
+                    <h2>${taller.id === 'hogar' || taller.id === 'deportes' ? 'Únete al' : taller.id === 'estructuras' ? 'Únete al Taller de' : 'Únete a la'} ${tallerNombre}</h2>
                     <p>Desarrolla habilidades prácticas que transformarán tu futuro</p>
                     <a href="index.html#contacto" class="btn btn-cta">Solicitar Información</a>
                 </div>

@@ -1045,6 +1045,20 @@
         });
       });
 
+      document.querySelectorAll('.category-tab').forEach(function (button) {
+        button.addEventListener('click', function () {
+          const tabName = button.getAttribute('data-tab');
+
+          document.querySelectorAll('.category-tab').forEach(function (tabButton) {
+            tabButton.classList.toggle('is-active', tabButton === button);
+          });
+
+          document.querySelectorAll('.tab-panel').forEach(function (panel) {
+            panel.classList.toggle('is-active', panel.id === `tab-${tabName}`);
+          });
+        });
+      });
+
       const teacherModal = document.getElementById('teacherModal');
       if (teacherModal) {
         teacherModal.addEventListener('show.bs.modal', function (event) {
