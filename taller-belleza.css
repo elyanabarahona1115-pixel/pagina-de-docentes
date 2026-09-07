@@ -917,6 +917,16 @@ body {
     object-position: center;
 }
 
+.image-placeholder.imagen-electricidad-proyectos {
+    aspect-ratio: 654 / 768;
+    min-height: 0;
+}
+
+.image-placeholder.imagen-electricidad-proyectos .placeholder-img {
+    object-fit: contain;
+    object-position: center;
+}
+
 .image-placeholder:hover .placeholder-img {
     opacity: 1;
 }
