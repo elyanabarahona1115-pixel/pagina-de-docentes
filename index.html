@@ -5,21 +5,18 @@
 @@ -6,744 +7,744 @@
     <title>Instituto Gubernamental Técnico Francisco Miranda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Merriweather:wght@400;700&family=Caveat:wght@400;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-<<<<<<< Updated upstream
-    <header class="sticky-top shadow-sm bg-white">
-      <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand fw-bold" href="#inicio">IGTFM</a>
-=======
     <header class="sticky-top shadow-sm site-header">
       <nav class="navbar navbar-expand-lg navbar-light container-fluid px-3">
         <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
           <span class="logo-placeholder"><img src="fotos de maestros/Logo Instituto transparente.png" alt="Logo del Instituto Técnico Gubernamental Francisco Miranda" /></span>
           <span class="institution-name">INSTITUTO TECNICO FRANCISCO MIRANDA</span>
         </a>
->>>>>>> Stashed changes
+        developer
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,22 +32,82 @@
           </ul>
         </div>
       </nav>
+      <div class="specialty-bar">
+        <div class="container specialty-links" aria-label="Especialidades técnicas">
+          <div class="dropdown">
+            <a href="oferta-academica.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Carreras <i class="fas fa-chevron-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="oferta-academica.html">Bachillerato Técnico Profesional en Informática</a></li>
+              <li><a class="dropdown-item" href="oferta-academica.html">Bachillerato Técnico Profesional en Contaduría y Finanzas</a></li>
+              <li><a class="dropdown-item" href="oferta-academica.html">Bachillerato Técnico Profesional en Agroindustria</a></li>
+            </ul>
+          </div>
+          <a href="talleres.html?taller=deportes">Deportes</a>
+          <div class="dropdown">
+            <a href="talleres.html?taller=banda" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Banda <i class="fas fa-chevron-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="talleres.html?taller=banda">Banda Latina Francisco Miranda</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a href="talleres.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Talleres <i class="fas fa-chevron-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="talleres.html?taller=belleza">
+                <i class="fas fa-spa me-2"></i>Belleza y Cosmetología
+              </a></li>
+              <li><a class="dropdown-item" href="talleres.html?taller=carpinteria">
+                <i class="fas fa-hammer me-2"></i>Carpintería y Ebanistería
+              </a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="talleres.html?taller=electricidad">
+                <i class="fas fa-bolt me-2"></i>Electricidad
+              </a></li>
+              <li><a class="dropdown-item" href="talleres.html?taller=hogar">
+                <i class="fas fa-home me-2"></i>Hogar
+              </a></li>
+              <li><a class="dropdown-item" href="talleres.html?taller=estructuras">
+                <i class="fas fa-industry me-2"></i>Estructuras Metálicas
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section id="inicio" class="hero-section text-white text-center d-flex align-items-center">
-        <div class="container py-5">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <span class="badge bg-warning text-dark mb-3">Instituto Gubernamental Técnico Francisco Miranda</span>
-              <h1 class="display-5 fw-bold">Formando talento técnico con valores, ciencia y compromiso social</h1>
-              <p class="lead mt-4">Bienvenido al centro educativo que prepara a las nuevas generaciones del país con una oferta técnica moderna, un equipo docente sólido y proyectos reales para la comunidad.</p>
-              <div class="mt-4">
-                <a href="#oferta" class="btn btn-light btn-lg me-2">Descubre nuestra oferta</a>
-                <a href="#docentes" class="btn btn-outline-light btn-lg">Conoce al equipo docente</a>
+      <section id="inicio" class="hero-section text-white">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Campus y comunidad"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Imagen del instituto"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Imagen de aprendizaje"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('assets/itfm imagenes/IMG_7347 (1).PNG');">
+              <div class="hero-overlay"></div>
+              <div class="container hero-content">
+                <h1>Instituto Técnico Gubernamental "Francisco&nbsp;Miranda"</h1>
               </div>
             </div>
+            <div class="carousel-item" style="background-image: url('assets/itfm imagenes/WhatsApp Image 2026-08-24 at 12.44.12 PM.jpeg');">
+              <div class="hero-overlay"></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/itfm imagenes/WhatsApp Image 2026-08-24 at 12.46.19 PM.jpeg');">
+              <div class="hero-overlay"></div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Imagen anterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Imagen siguiente">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </section>
 
@@ -76,15 +133,15 @@
                 <div class="col-12">
                   <div class="info-box p-4 shadow-sm rounded-4">
                     <h5>Ubicación</h5>
-                    <p>Calle Principal del Municipio, Ciudad Capital, Estado. Estamos cerca de los puntos de transporte escolar y accesos principales.</p>
-                    <p class="mb-0"><strong>Teléfono:</strong> +58 212 555 1234 | <strong>Email:</strong> info@igtfm.edu.ve</p>
+                    <p>Instituto Técnico Gubernamental "Francisco&nbsp;Miranda", aldea de Zambrano, Honduras, carretera del norte, kilómetro 34.</p>
+                    <p class="mb-0"><strong>Teléfono:</strong> +504 9627-9345 | <strong>Email:</strong> Próximamente</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="card shadow-sm border-0 h-100">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" class="card-img-top" alt="Campus Instituto" />
+                <img src="fotos de maestros/Gemini_Generated_Image_jj425zjj425zjj42.jpg" class="card-img-top" alt="Estudiantes del instituto reunidos en la cancha" />
                 <div class="card-body">
                   <h5 class="card-title">Acceso rápido</h5>
                   <p class="card-text">Síguenos en nuestras redes sociales para estar al día con eventos, matrículas, proyectos y noticias del instituto.</p>
@@ -100,67 +157,96 @@
         </div>
       </section>
 
-      <section id="oferta" class="py-5 bg-light">
+      <!-- Historia del Instituto -->
+      <section id="historia" class="historia-section py-5">
         <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="section-title">Oferta Académica</h2>
-            <p class="text-muted">Nuestro plan académico incluye ciclo básico técnico y especializaciones profesionales de BTP que preparan a los estudiantes para el mundo laboral.</p>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">7° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Bases técnicas del área de ciencias y tecnología, con énfasis en computación, ciencias aplicadas y formación ciudadana.</p>
+          <div class="historia-card shadow-lg">
+            <!-- Etiqueta decorativa de fecha -->
+            <div class="historia-badge">Desde 1987</div>
+            
+            <!-- Título elegante -->
+            <h2 class="historia-titulo">Historia del Instituto Técnico Francisco Miranda</h2>
+            
+            <!-- Contenido principal -->
+            <div class="historia-contenido">
+              <div class="historia-seccion">
+                <h3 class="historia-subtitulo">Trayectoria y Evolución</h3>
+                <p>
+                  El Instituto Técnico Francisco Miranda cuenta con <strong>más de 20 años de historia</strong> sirviendo a la comunidad de Zambrano y sus alrededores. Fundado oficialmente en <strong>1987</strong> mediante acuerdo institucional, inició su operación como institución de carácter <strong>privado</strong>, transformándose en <strong>institución oficial en 1995</strong>, ampliando así su cobertura y compromiso con la educación técnica accesible para todos.
+                </p>
+                <p>
+                  A lo largo de los años, el instituto ha experimentado una notable <strong>evolución académica</strong>, pasando de ofrecer exclusivamente un <strong>ciclo común inicial</strong>, a incorporar progresivamente diversas especialidades técnicas que responden a las necesidades del mercado laboral y la comunidad.
+                </p>
+              </div>
+
+              <button type="button" class="btn btn-primary historia-toggle" id="historiaToggle" aria-expanded="false" aria-controls="historiaDetalles">Ver más</button>
+
+              <div class="historia-detalles" id="historiaDetalles" hidden>
+              <div class="historia-seccion">
+                <h3 class="historia-subtitulo">Fundadores y Colaboradores</h3>
+                <p>
+                  Reconocemos el legado de quienes hicieron posible la creación y desarrollo de esta institución. Los <strong>fundadores</strong> fueron:
+                </p>
+                <ul class="historia-lista">
+                  <li>Don Germán Martínez</li>
+                  <li>Don Felicito Vargas</li>
+                  <li>PM Ramón Alexis Hernández</li>
+                  <li>Profa. Elba Marina Urraco</li>
+                  <li>Doña Elena Maradiaga</li>
+                  <li>Profa. Hilda Miranda</li>
+                </ul>
+                <p>
+                  Su visión y dedicación sentaron las bases para una institución comprometida con la excelencia académica y la inclusión social.
+                </p>
+              </div>
+
+              <div class="historia-seccion">
+                <h3 class="historia-subtitulo">Evolución Académica</h3>
+                <p>
+                  La oferta académica del instituto ha crecido significativamente:
+                </p>
+                <ul class="historia-timeline">
+                  <li><strong>1987:</strong> Ciclo común inicial</li>
+                  <li><strong>1997:</strong> Incorporación de Educación Comercial</li>
+                  <li><strong>2007:</strong> Ciclo básico técnico con talleres de Agropecuaria, Madera, Hogar y Estructuras Metálicas</li>
+                  <li><strong>2009:</strong> Bachillerato Técnico en Computación</li>
+                </ul>
+                <p>
+                  Hoy en día, el instituto continúa innovando para ofrecer programas que preparen a los estudiantes con competencias técnicas y valores para el éxito profesional.
+                </p>
+              </div>
+
+              <div class="historia-seccion">
+                <h3 class="historia-subtitulo">Impacto Regional</h3>
+                <p>
+                  El Instituto Técnico Francisco Miranda atiende a estudiantes provenientes de múltiples localidades, consolidándose como un centro educativo de referencia regional. Entre las comunidades que servimos se encuentran: Zambrano, San Francisco, El Reventón, Los Vallos, La Jagua, Ciudad España, y muchas otras.
+                </p>
+                <p>
+                  Este alcance geográfico refleja la confianza de familias de toda la región en la calidad educativa y la formación integral que ofrece nuestra institución.
+                </p>
+              </div>
+
+              <div class="historia-seccion">
+                <h3 class="historia-subtitulo">Nuestros Valores Institucionales</h3>
+                <div class="valores-grid">
+                  <div class="valor-item">El respeto a la Diversidad</div>
+                  <div class="valor-item">Inclusión Social</div>
+                  <div class="valor-item">Bien común</div>
+                  <div class="valor-item">Solidaridad</div>
+                  <div class="valor-item">Responsabilidad</div>
+                  <div class="valor-item">Organización</div>
+                  <div class="valor-item">Planificación</div>
+                  <div class="valor-item">Innovación pedagógica</div>
+                  <div class="valor-item">Actualización Técnica</div>
+                  <div class="valor-item">Tecnología</div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">8° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Profundización en competencias técnicas, laboratorios prácticos y comienzo de orientación vocacional hacia ramas productivas.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">9° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Último ciclo del básico, enfocado en la integración de saberes y la preparación para la educación técnica superior.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Contaduría y Finanzas</h5>
-                  <p class="card-text">Formación en contabilidad, finanzas, costos, normativa tributaria y gestión administrativa para empresas y emprendimientos.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Informática</h5>
-                  <p class="card-text">Carrera práctica en programación, redes, soporte técnico y desarrollo de soluciones digitales adaptadas al entorno productivo.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Agroindustria</h5>
-                  <p class="card-text">Especialización en producción agrícola, procesamiento de alimentos y tecnologías para el desarrollo sostenible del sector primario.</p>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-<<<<<<< Updated upstream
-=======
       <section id="especialidades" class="specialties-section py-5">
         <div class="container">
           <div class="text-center mb-5">
@@ -179,12 +265,11 @@
         </div>
       </section>
 
->>>>>>> Stashed changes
-      <section id="docentes" class="py-5">
+      <section id="docentes" class="py-5"> developer
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="section-title">Equipo Docente</h2>
-            <p class="text-muted">Conoce la estructura jerárquica y los docentes que acompañan el proceso formativo del instituto.</p>
+            <h2 class="section-title">Autoridades Institucionales</h2>
+            <p class="text-muted">Conoce a las autoridades, el personal administrativo y el equipo docente que acompañan el proceso formativo del instituto.</p>
           </div>
 
           <div class="mb-4">
@@ -252,19 +337,23 @@
               </div>
               <div class="col-sm-6 col-lg-3">
                 <div class="card shadow-sm h-100">
-                  <img src="assets/images/consejeria-3.jpg" class="card-img-top" alt="Consejería 3" onerror="this.src='https://via.placeholder.com/600x350?text=Consejeria'" />
+                  <img src="fotos de maestros/Roy Rodrigez  (2).jpg" class="card-img-top" alt="Consejería 2" onerror="this.src='https://via.placeholder.com/600x350?text=Consejeria'" />
                   <div class="card-body">
-                    <h5 class="card-title">Consejería</h5>
-                    <p class="card-text">Prof. Andrea Rivas</p>
+                    <h5 class="card-title">Consejeria</h5>
+                    <p class="card-text">Roy rodriguez</p>
+                    <p class="card-text small text-muted">Consejero de la Jornada vespertina 	Implementación de programas de mentoría académica.</p>
+                    <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="roy rodriguez" data-bs-title="Consejera Estudiantil" data-bs-summary="Roy	Pasante universitario de la carrera de ingeniería en sistemas	Consejero de la Jornada vespertina 	Implementación de programas de mentoría académica y optimización de procesos disciplinarios y de orientación estudiantil para la jornada vespertina." data-bs-details="Formación continua como pasante universitario en Ingeniería en Sistemas, aportando competencias tecnológicas y metodologías de gestión a la administración y supervisión institucional en la jornada de la tarde.	" >Ver más</button>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
                 <div class="card shadow-sm h-100">
-                  <img src="assets/images/consejeria-4.jpg" class="card-img-top" alt="Consejería 4" onerror="this.src='https://via.placeholder.com/600x350?text=Consejeria'" />
-                  <div class="card-body">
-                    <h5 class="card-title">Consejería</h5>
-                    <p class="card-text">Prof. Daniel Suárez</p>
+                  <img src="assets/images/consejeria-3.jpg" class="card-img-top" alt="Jefe de Consejería Estudiantil" onerror="this.src='https://via.placeholder.com/600x350?text=Consejeria'" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Jefe de Consejería Estudiantil</h5>
+                    <p class="card-text mb-1">Oficina de Consejería</p>
+                    <p class="card-text small text-muted">Se destaca por su continua continuidad en estudios superiores y su formación profesional constante dentro del ámbito educativo de la institución.</p>
+                    <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Jefe de Consejería Estudiantil" data-bs-title="Oficina de Consejería Estudiantil" data-bs-summary="Formación y trayectoria: Se destaca por su continua continuidad en estudios superiores y su formación profesional constante dentro del ámbito educativo de la institución." data-bs-details="Experiencia: Formación profesional constante. Ubicación: Oficina de Consejería Estudiantil. Horario: Jornada Completa. Correo: consejeria.jefe@igtfm.edu.hn" >Ver más</button>
                   </div>
                 </div>
               </div>
@@ -294,7 +383,7 @@
               </div>
               <div class="col-sm-6 col-lg-4">
                 <div class="card shadow-sm h-100">
-                  <img src="assets/images/avatar.svg" class="card-img-top" alt="Carlos Fernando Medina" onerror="this.src='assets/images/avatar.svg'" />
+                  <img src="fotos de maestros/Carlos Fernando Medina (1).jpg" class="card-img-top" alt="Carlos Fernando Medina" onerror="this.src='assets/images/avatar.svg'" />
                   <div class="card-body">
                     <h5 class="card-title">Orientador</h5>
                     <p class="card-text">Lic. Carlos Fernando Medina</p>
@@ -310,6 +399,22 @@
             <div class="mb-4">
               <p class="text-muted">Docentes con foto real y acceso a más detalles de su perfil.</p>
               <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card shadow-sm h-100 teacher-card">
+                    <img src="fotos de maestros/WhatsApp Image 2026-09-06 at 11.47.17 PM.jpeg" class="card-img-top" alt="Jefe de Consejería Estudiantil" onerror="this.src='https://via.placeholder.com/600x350?text=Consejeria'" />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Jefe de Consejería Estudiantil</h5>
+                      <p class="card-text">Se destaca por su continua continuidad en estudios superiores y su formación profesional constante dentro del ámbito educativo de la institución.</p>
+                      <ul class="list-unstyled small text-muted mb-3">
+                        <li><strong>Experiencia:</strong> Formación profesional constante</li>
+                        <li><strong>Ubicación:</strong> Oficina de Consejería Estudiantil</li>
+                        <li><strong>Horario:</strong> Jornada Completa</li>
+                        <li><strong>Correo:</strong> consejeria.jefe@igtfm.edu.hn</li>
+                      </ul>
+                      <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Jefe de Consejería Estudiantil" data-bs-title="Oficina de Consejería Estudiantil" data-bs-summary="Se destaca por su continua continuidad en estudios superiores y su formación profesional constante dentro del ámbito educativo de la institución." data-bs-details="Experiencia: Formación profesional constante. Ubicación: Oficina de Consejería Estudiantil. Horario: Jornada Completa. Correo: consejeria.jefe@igtfm.edu.hn">Ver más</button>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
                     <img src="fotos de maestros/Ana Simons.png" class="card-img-top" alt="Ana Gabriela Simons Zelaya" onerror="this.src='https://via.placeholder.com/600x350?text=Ana+Simons'" />
@@ -377,7 +482,7 @@
               <div class="row g-4">
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Ada Lizeth Ordóñez Martínez" onerror="this.src='assets/images/avatar.svg'" />
+                    <img src="fotos de maestros/3bef9e4e-396f-4da8-8875-c857e03b928a.jpg" class="card-img-top" alt="Ada Lizeth Ordóñez Martínez" onerror="this.src='assets/images/avatar-female.svg'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Ada Lizeth Ordóñez Martínez</h5>
                       <p class="card-text">Docente investigadora y encargada del equipo de Fútbol Femenino.</p>
@@ -387,7 +492,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Ana Liliam Soto Aguilera" onerror="this.src='assets/images/avatar.svg'" />
+                    <img src="fotos de maestros/3bef9e4e-396f-4da8-8875-c857e03b928a.jpg" class="card-img-top" alt="Ana Liliam Soto Aguilera" onerror="this.src='assets/images/avatar-female.svg'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Ana Liliam Soto Aguilera</h5>
                       <p class="card-text">Docente de Ciencias Naturales.</p>
@@ -437,7 +542,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="fotos de maestros/Profe Fátima.jpg" class="card-img-top" alt="Fátima Yaneth Rodríguez" onerror="this.src='https://via.placeholder.com/600x350?text=Fatima'" />
+                    <img src="fotos de maestros/Profe Fátima.jpg" class="card-img-top fatima-photo" alt="Fátima Yaneth Rodríguez" onerror="this.src='https://via.placeholder.com/600x350?text=Fatima'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Fátima Yaneth Rodríguez</h5>
                       <p class="card-text">Docente de Administración, Economía y Legislación.</p>
@@ -477,7 +582,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Heydy Vanessa González García" onerror="this.src='assets/images/avatar.svg'" />
+                    <img src="fotos de maestros/3bef9e4e-396f-4da8-8875-c857e03b928a.jpg" class="card-img-top" alt="Heydy Vanessa González García" onerror="this.src='assets/images/avatar-female.svg'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Heydy Vanessa González García</h5>
                       <p class="card-text">Docente de Estructuras Metálicas y Dibujo Técnico.</p>
@@ -507,16 +612,6 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Junior Josué López Montes" onerror="this.src='assets/images/avatar.svg'" />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Junior Josué López Montes</h5>
-                      <p class="card-text">Docente en formación.</p>
-                      <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Junior Josué López Montes" data-bs-title="Docente en formación" data-bs-summary="En constante continuidad de estudios superiores y formación profesional." data-bs-details="Junior Josué López Montes es docente en formación, dedicado a su crecimiento profesional y académico dentro del instituto." >Ver más</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="card shadow-sm h-100 teacher-card">
                     <img src="fotos de maestros/Karen Sanchez.png" class="card-img-top" alt="Karen Leticia Sánchez Bautista" onerror="this.src='https://via.placeholder.com/600x350?text=Karen'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Karen Leticia Sánchez Bautista</h5>
@@ -532,16 +627,6 @@
                       <h5 class="card-title">Katia Patricia Osorto Galo</h5>
                       <p class="card-text">Asistente de Secretaría y docente de Inglés.</p>
                       <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Katia Patricia Osorto Galo" data-bs-title="Asistente de Secretaría" data-bs-summary="Licenciada en Educación Media. Docente de Inglés y docente de primaria." data-bs-details="Katia Patricia Osorto Galo cuenta con más de tres décadas de experiencia. Desde 1991 ha trabajado en educación primaria, desde 2004 imparte inglés y desde 2016 atiende funciones administrativas en secretaría." >Ver más</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="card shadow-sm h-100 teacher-card">
-                    <img src="assets/images/avatar.svg" class="card-img-top" alt="Lesby Elieth Medina Agurcia" onerror="this.src='assets/images/avatar.svg'" />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Lesby Elieth Medina Agurcia</h5>
-                      <p class="card-text">Secretaria General del instituto.</p>
-                      <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#teacherModal" data-bs-name="Lesby Elieth Medina Agurcia" data-bs-title="Secretaria General" data-bs-summary="Licenciada en Pedagogía con orientación en Planeamiento y Administración de la Educación." data-bs-details="Lesby Elieth Medina Agurcia es Secretaria General desde abril de 2003. Ha gestionado seguridad social, ampliación de aulas, innovación curricular y la creación de carreras como Informática, Agroindustria y bachillerato técnico profesional." >Ver más</button>
                     </div>
                   </div>
                 </div>
@@ -567,7 +652,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="fotos de maestros/Mario leonel avila maradiaga.png" class="card-img-top" alt="Mario Leonel Ávila Maradiaga" onerror="this.src='https://via.placeholder.com/600x350?text=Mario'" />
+                    <img src="fotos de maestros/Foto Nueva Profe Mario Leonel.jpg" class="card-img-top" alt="Mario Leonel Ávila Maradiaga" onerror="this.src='https://via.placeholder.com/600x350?text=Mario'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Mario Leonel Ávila Maradiaga</h5>
                       <p class="card-text">Docente del área de Electricidad.</p>
@@ -597,7 +682,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="fotos de maestros/Docente Mayra Alejandra Martines Aguilar .jpg" class="card-img-top" alt="Mayra Alejandra Martínez Aguilar" onerror="this.src='https://via.placeholder.com/600x350?text=Mayra'" />
+                    <img src="fotos de maestros/IMAGEN NUEVA PROFE MAYRA.jpg" class="card-img-top" alt="Mayra Alejandra Martínez Aguilar" onerror="this.src='https://via.placeholder.com/600x350?text=Mayra'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Mayra Alejandra Martínez Aguilar</h5>
                       <p class="card-text">Docente del área de Español.</p>
@@ -657,7 +742,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="fotos de maestros/Danilo Jose Banegas Figueroa.png" class="card-img-top" alt="Danilo José Banegas Figueroa" onerror="this.src='https://via.placeholder.com/600x350?text=Danilo'" />
+                    <img src="fotos de maestros/FOTO NUEVA PROFE DANILO.jpeg" class="card-img-top danilo-photo" alt="Danilo José Banegas Figueroa" onerror="this.src='https://via.placeholder.com/600x350?text=Danilo'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Danilo José Banegas Figueroa</h5>
                       <p class="card-text">Docente de Taller de Madera y Estructuras Metálicas.</p>
@@ -789,9 +874,10 @@
               <h2 class="section-title">Contacto</h2>
               <p>Para más información sobre matrículas, horarios y actividades, comunícate con nosotros o visítanos en el instituto.</p>
               <ul class="list-unstyled fs-5">
-                <li><strong>Dirección:</strong> Calle Principal del Municipio, Ciudad Capital</li>
-                <li><strong>Teléfono:</strong> +58 212 555 1234</li>
-                <li><strong>Email:</strong> info@igtfm.edu.ve</li>
+                <li><strong>Dirección:</strong> 7H8X+HR9, Zambrano, Francisco Morazán</li>
+                <li class="mt-2"><a href="https://maps.app.goo.gl/3q9AVP38MZLPvZtu7" target="_blank" rel="noopener noreferrer">Ver ubicación en Google Maps</a></li>
+                <li><strong>Teléfono:</strong> +504 9627-9345 Sub Director</li>
+                <li><strong>Email:</strong> Falta Correo</li>
               </ul>
               <div class="d-flex gap-3 mt-3">
                 <a class="btn btn-primary" href="https://www.facebook.com/share/1BfL9HMhfy/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
@@ -800,9 +886,18 @@
             </div>
             <div class="col-lg-6">
               <div class="map-card shadow-sm rounded-4 overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.0221703550036!2d-66.90360394468867!3d10.480594592277035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a583c7a21c537%3A0x9adeb19a37bbef4!2sVenezuela!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps?q=7H8X%2BHR9%2C%20Zambrano%2C%20Francisco%20Moraz%C3%A1n&output=embed" width="100%" height="320" style="border:0;" title="Mapa de ubicación del Instituto Técnico Francisco Miranda: 7H8X+HR9, Zambrano, Francisco Morazán" allowfullscreen="" loading="lazy"></iframe>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matricula" class="matricula-section py-5">
+        <div class="container">
+          <div class="matricula-card text-center">
+            <h2 class="section-title mb-3">Solicitar matrícula</h2>
+            <a href="matricula.html" class="btn btn-warning btn-lg matricula-btn">Solicitar matrícula</a>
           </div>
         </div>
       </section>
@@ -834,6 +929,17 @@
     </div>
 
     <script>
+      const historiaToggle = document.getElementById('historiaToggle');
+      const historiaDetalles = document.getElementById('historiaDetalles');
+      if (historiaToggle && historiaDetalles) {
+        historiaToggle.addEventListener('click', function () {
+          const mostrarDetalles = historiaDetalles.hidden;
+          historiaDetalles.hidden = !mostrarDetalles;
+          historiaToggle.setAttribute('aria-expanded', String(mostrarDetalles));
+          historiaToggle.textContent = mostrarDetalles ? 'Ver menos' : 'Ver más';
+        });
+      }
+
       const teacherModal = document.getElementById('teacherModal');
       if (teacherModal) {
         teacherModal.addEventListener('show.bs.modal', function (event) {
@@ -851,6 +957,23 @@
       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const heroCarousel = document.querySelector('#heroCarousel');
+      if (heroCarousel) {
+        const heroContent = heroCarousel.querySelector('.hero-content');
+        if (heroContent) {
+          heroContent.classList.add('hero-carousel-content');
+          heroCarousel.appendChild(heroContent);
+        }
+
+        bootstrap.Carousel.getOrCreateInstance(heroCarousel, {
+          interval: 5000,
+          ride: 'carousel',
+          pause: false,
+          touch: true
+        }).cycle();
+      }
+    </script>
   </body>
 </html>
 </html>

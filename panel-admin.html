@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Panel administrativo del Instituto Técnico Gubernamental Francisco Miranda" />
+    <title>Panel administrativo | Francisco Miranda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="panel-admin.css" />
+  </head>
+  <body>
+    <div class="admin-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-block">
+          <a class="brand" href="index.html" aria-label="Volver al sitio público">
+            <span class="brand-mark">FM</span>
+            <span class="brand-copy">
+              <strong>Francisco Miranda</strong>
+              <small>Gestión institucional</small>
+            </span>
+          </a>
+          <button class="icon-button sidebar-close" id="sidebarClose" type="button" aria-label="Cerrar navegación">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegación administrativa">
+          <p class="nav-label">Espacio de trabajo</p>
+          <a class="nav-item is-active" href="#resumen" data-view="resumen"><i data-lucide="layout-dashboard"></i><span>Resumen</span></a>
+          <a class="nav-item" href="#matriculas" data-view="matriculas"><i data-lucide="users-round"></i><span>Matrículas</span><em>24</em></a>
+          <a class="nav-item" href="#docentes" data-view="docentes"><i data-lucide="graduation-cap"></i><span>Docentes</span></a>
+          <a class="nav-item" href="#programas" data-view="programas"><i data-lucide="book-open"></i><span>Programas</span></a>
+          <a class="nav-item" href="#calendario" data-view="calendario"><i data-lucide="calendar-days"></i><span>Calendario</span></a>
+          <p class="nav-label nav-label-spaced">Administración</p>
+          <a class="nav-item" href="#reportes" data-view="reportes"><i data-lucide="chart-no-axes-combined"></i><span>Reportes</span></a>
+          <a class="nav-item" href="#configuracion" data-view="configuracion"><i data-lucide="settings-2"></i><span>Configuración</span></a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="support-card">
+            <span class="support-icon"><i data-lucide="life-buoy"></i></span>
+            <div><strong>¿Necesitas ayuda?</strong><span>Centro de soporte</span></div>
+            <i class="support-arrow" data-lucide="arrow-up-right"></i>
+          </div>
+          <a class="public-link" href="index.html"><i data-lucide="external-link"></i> Ver sitio público</a>
+        </div>
+      </aside>
+
+      <main class="main-content" id="mainContent">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Abrir navegación"><i data-lucide="menu"></i></button>
+            <div class="breadcrumb"><span>Administración</span><i data-lucide="chevron-right"></i><strong>Resumen</strong></div>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button notification-button" type="button" aria-label="Ver notificaciones"><i data-lucide="bell"></i><span class="notification-dot"></span></button>
+            <span class="topbar-divider"></span>
+            <button class="profile-button" type="button" aria-label="Abrir menú de perfil"><span class="avatar">MC</span><span class="profile-copy"><strong>María C.</strong><small>Administradora</small></span><i data-lucide="chevron-down"></i></button>
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="page-heading" id="resumen">
+            <div>
+              <p class="eyebrow">Lunes, 07 de septiembre de 2026</p>
+              <h1>Buenos días, María</h1>
+              <p class="heading-copy">Aquí tienes una lectura clara de lo que está ocurriendo en el instituto.</p>
+            </div>
+            <button class="button button-primary" id="newAction" type="button"><i data-lucide="plus"></i> Nueva inscripción</button>
+          </section>
+
+          <section class="metrics-grid" aria-label="Indicadores principales">
+            <article class="metric-card metric-card-blue">
+              <div class="metric-top"><span class="metric-icon"><i data-lucide="users-round"></i></span><span class="metric-trend positive"><i data-lucide="trending-up"></i> 8.4%</span></div>
+              <p>Estudiantes activos</p><strong>1,284</strong><small>vs. 1,184 el período anterior</small>
+            </article>
+            <article class="metric-card metric-card-ochre">
+              <div class="metric-top"><span class="metric-icon"><i data-lucide="user-round-check"></i></span><span class="metric-trend positive"><i data-lucide="trending-up"></i> 4.2%</span></div>
+              <p>Docentes registrados</p><strong>86</strong><small>12 con actualización pendiente</small>
+            </article>
+            <article class="metric-card metric-card-neutral">
+              <div class="metric-top"><span class="metric-icon"><i data-lucide="wallet-cards"></i></span><span class="metric-trend positive"><i data-lucide="trending-up"></i> 6.8%</span></div>
+              <p>Ingresos del período</p><strong>L 248,600</strong><small>94.6% de recaudación esperada</small>
+            </article>
+            <article class="metric-card metric-card-dark">
+              <div class="metric-top"><span class="metric-icon"><i data-lucide="clipboard-check"></i></span><span class="metric-trend warning"><i data-lucide="clock-3"></i> En curso</span></div>
+              <p>Solicitudes abiertas</p><strong>24</strong><small>8 requieren atención hoy</small>
+            </article>
+          </section>
+
+          <section class="dashboard-grid">
+            <article class="panel enrollment-panel">
+              <div class="panel-heading"><div><p class="eyebrow">Rendimiento académico</p><h2>Matrículas por programa</h2></div><button class="select-button" type="button">2026 <i data-lucide="chevron-down"></i></button></div>
+              <div class="chart-summary"><strong>1,284</strong><span><b>+8.4%</b> frente al período anterior</span></div>
+              <div class="chart-wrap" aria-label="Gráfico de matrículas por mes" role="img">
+                <div class="chart-y-axis"><span>400</span><span>300</span><span>200</span><span>100</span><span>0</span></div>
+                <div class="bar-chart"><div class="grid-line line-1"></div><div class="grid-line line-2"></div><div class="grid-line line-3"></div><div class="grid-line line-4"></div><div class="chart-bars"><div class="bar-group"><i style="height: 48%"></i><i class="bar-secondary" style="height: 32%"></i><span>Ene</span></div><div class="bar-group"><i style="height: 59%"></i><i class="bar-secondary" style="height: 40%"></i><span>Feb</span></div><div class="bar-group"><i style="height: 53%"></i><i class="bar-secondary" style="height: 35%"></i><span>Mar</span></div><div class="bar-group"><i style="height: 69%"></i><i class="bar-secondary" style="height: 46%"></i><span>Abr</span></div><div class="bar-group"><i style="height: 74%"></i><i class="bar-secondary" style="height: 51%"></i><span>May</span></div><div class="bar-group"><i style="height: 82%"></i><i class="bar-secondary" style="height: 56%"></i><span>Jun</span></div><div class="bar-group"><i style="height: 91%"></i><i class="bar-secondary" style="height: 66%"></i><span>Jul</span></div><div class="bar-group is-current"><i style="height: 96%"></i><i class="bar-secondary" style="height: 72%"></i><span>Ago</span></div></div></div>
+              </div>
+              <div class="chart-legend"><span><i class="legend-dot dot-primary"></i> Estudiantes activos</span><span><i class="legend-dot dot-secondary"></i> Nuevas inscripciones</span></div>
+            </article>
+
+            <article class="panel program-panel">
+              <div class="panel-heading"><div><p class="eyebrow">Distribución</p><h2>Programas activos</h2></div><button class="icon-button subtle-button" type="button" aria-label="Más opciones"><i data-lucide="more-horizontal"></i></button></div>
+              <div class="donut-area"><div class="donut-chart"><div class="donut-center"><strong>1,284</strong><span>Total</span></div></div><div class="program-legend"><div><span><i class="legend-dot dot-primary"></i>BTP Informática</span><strong>38%</strong></div><div><span><i class="legend-dot dot-ochre"></i>Contaduría y Finanzas</span><strong>27%</strong></div><div><span><i class="legend-dot dot-yellow"></i>Agroindustria</span><strong>21%</strong></div><div><span><i class="legend-dot dot-muted"></i>Otros programas</span><strong>14%</strong></div></div></div>
+              <a class="text-link" href="#programas">Ver detalle de programas <i data-lucide="arrow-right"></i></a>
+            </article>
+          </section>
+
+          <section class="lower-grid">
+            <article class="panel activity-panel">
+              <div class="panel-heading"><div><p class="eyebrow">Seguimiento</p><h2>Actividad reciente</h2></div><a class="text-link" href="#reportes">Ver todo <i data-lucide="arrow-right"></i></a></div>
+              <div class="activity-list"><div class="activity-item"><span class="activity-icon activity-blue"><i data-lucide="user-plus"></i></span><div><strong>Nueva inscripción recibida</strong><p>José Manuel Rivera · BTP Informática</p></div><time>Hace 12 min</time></div><div class="activity-item"><span class="activity-icon activity-ochre"><i data-lucide="file-check-2"></i></span><div><strong>Documentación aprobada</strong><p>Expediente #FM-2026-0841 · Secretaría</p></div><time>Hace 38 min</time></div><div class="activity-item"><span class="activity-icon activity-yellow"><i data-lucide="calendar-plus-2"></i></span><div><strong>Evento agregado al calendario</strong><p>Reunión de docentes · 14 de septiembre</p></div><time>Hace 1 h</time></div><div class="activity-item"><span class="activity-icon activity-slate"><i data-lucide="message-square-more"></i></span><div><strong>Nuevo mensaje interno</strong><p>Coordinación académica · 3 destinatarios</p></div><time>Hace 2 h</time></div></div>
+            </article>
+
+            <article class="panel tasks-panel">
+              <div class="panel-heading"><div><p class="eyebrow">Prioridades</p><h2>Próximas tareas</h2></div><button class="icon-button subtle-button" type="button" aria-label="Agregar tarea" id="addTask"><i data-lucide="plus"></i></button></div>
+              <div class="task-list"><label class="task-item"><input type="checkbox" /><span class="custom-check"></span><span><strong>Validar expedientes de nuevo ingreso</strong><small>Vence hoy · Secretaría académica</small></span></label><label class="task-item"><input type="checkbox" /><span class="custom-check"></span><span><strong>Revisar carga horaria docente</strong><small>Vence mañana · Coordinación</small></span></label><label class="task-item"><input type="checkbox" /><span class="custom-check"></span><span><strong>Publicar calendario de talleres</strong><small>12 de septiembre · Comunicaciones</small></span></label></div>
+              <button class="button button-outline" id="viewTasks" type="button">Abrir lista de tareas <i data-lucide="arrow-up-right"></i></button>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status">La acción se ha registrado correctamente.</div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="panel-admin.js"></script>
+  </body>
+</html>
