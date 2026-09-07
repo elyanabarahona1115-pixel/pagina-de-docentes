@@ -326,7 +326,7 @@ const TALLERES_DATA = {
                 numero: 7,
                 titulo: 'Principales Logros',
                 contenido: 'Con el apoyo del estudiantado, docentes y administración, el taller ha sido equipado con prensas, canteadoras, cepilladoras, cepillos de mano, lijadoras y toda la maquinaria necesaria para garantizar un proceso de enseñanza-aprendizaje de estándar profesional.\n\nEl taller cuenta actualmente con equipos de última generación que permiten a los estudiantes trabajar con tecnología de punta. Esta inversión en infraestructura ha resultado en mejores egresados, con habilidades competitivas en el mercado laboral.\n\nLos proyectos realizados en el taller han ganado reconocimiento tanto dentro como fuera de la institución, demostrando la calidad del trabajo y la dedicación del equipo. Cada año se producen muebles y piezas de arte que reflejan el aprendizaje y la creatividad de los estudiantes.',
-                imagen: 'fotos de maestros/organizador-madera-carpinteria.jpg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-06 at 11.25.24 PM.jpeg',
                 layout: 'text-image'
             },
             {
