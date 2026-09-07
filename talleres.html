@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talleres Técnicos - Instituto Técnico Francisco Miranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="taller-belleza.css" />
+</head>
+<body>
+    <!-- Navegación -->
+    <header class="navbar-wrapper sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid px-3">
+            <a class="navbar-brand fw-bold d-inline-flex align-items-center" href="index.html">
+                <img src="fotos de maestros/Logo Instituto transparente.png" class="navbar-institution-logo" alt="Logo del Instituto" />
+                <span>Instituto Francisco Miranda</span>
+            </a>t8
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="talleres.html">Talleres</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de selección de talleres (Dropdown dinámico) -->
+        <section class="talleres-selector py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="mb-0">Nuestros Talleres Técnicos</h2>
+                        <p class="text-muted mb-0">Selecciona un taller para conocer su historia y programas</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="talleresDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-list"></i> Más opciones
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="talleresDropdown">
+                                <li><a class="dropdown-item" href="#" data-taller="belleza">
+                                    <i class="fas fa-spa"></i> Belleza y Cosmetología
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" data-taller="carpinteria">
+                                    <i class="fas fa-hammer"></i> Carpintería y Ebanistería
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" data-taller="deportes">
+                                    <i class="fas fa-futbol"></i> Área de Deportes
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" data-taller="banda">
+                                    <i class="fas fa-music"></i> Banda Latina Francisco Miranda
+                                </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" data-taller="electricidad">
+                                    <i class="fas fa-bolt"></i> Electricidad
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" data-taller="hogar">
+                                    <i class="fas fa-home"></i> Hogar
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" data-taller="estructuras">
+                                    <i class="fas fa-industry"></i> Estructuras Metálicas
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenedor dinámico de talleres -->
+        <div id="taller-content">
+            <!-- El contenido se cargará aquí dinámicamente -->
+            <div class="container py-5 text-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+                <p class="mt-3">Cargando contenido del taller...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5>Instituto Técnico Francisco Miranda</h5>
+                    <p>Educación técnica de calidad con compromiso social</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ubicación</h5>
+                    <p>Aldea Zambrano, Honduras<br>Carretera del Norte, km 34</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Accesos directos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="talleres.html?taller=belleza" class="text-white text-decoration-none">Belleza y Cosmetología</a></li>
+                        <li><a href="talleres.html?taller=carpinteria" class="text-white text-decoration-none">Carpintería y Ebanistería</a></li>
+                                <li><a href="talleres.html?taller=banda" class="text-white text-decoration-none">Banda Latina Francisco Miranda</a></li>
+                                <li><a href="talleres.html?taller=deportes" class="text-white text-decoration-none">Área de Deportes</a></li>
+                                <li><a href="talleres.html?taller=electricidad" class="text-white text-decoration-none">Electricidad</a></li>
+                                <li><a href="talleres.html?taller=estructuras" class="text-white text-decoration-none">Estructuras Metálicas</a></li>
+                                <li><a href="talleres.html?taller=hogar" class="text-white text-decoration-none">Taller de Hogar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="text-center footer-bottom">
+                <p>&copy; 2024 Instituto Técnico Gubernamental Francisco Miranda. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Cargar datos de talleres primero -->
+    <script src="js/talleres-data.js"></script>
+    <!-- Luego cargar el sistema dinámico -->
+    <script src="js/talleres-dinamico.js"></script>
+    <!-- Script original del taller (para estilos y animaciones) -->
+    <script src="taller-belleza.js"></script>
+</body>
+</html>
