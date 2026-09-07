@@ -207,6 +207,8 @@ class TallerDinamico {
                 html += this.renderizarChallengeGrid(seccion);
             } else if (seccion.tipo === 'quality-grid') {
                 html += this.renderizarQualityGrid(seccion);
+            } else if (seccion.tipo === 'carousel') {
+                html += this.renderizarCarrusel(seccion);
             } else {
                 html += this.renderizarSeccionNormal(seccion);
             }
@@ -260,6 +262,44 @@ class TallerDinamico {
                         ${seccion.contenido.split('\n\n').map(p => `<p class="section-text">${p}</p>`).join('')}
                     </div>
                 `}
+            </div>
+        `;
+    }
+
+    renderizarCarrusel(seccion) {
+        const carouselId = `carousel-proyectos-${seccion.numero}`;
+        const imagenes = seccion.imagenes || [];
+        const titulos = seccion.titulosImagenes || [];
+        const classOrder = seccion.layout === 'image-text' ? 'order-lg-2' : 'order-lg-1';
+        const carouselOrder = seccion.layout === 'image-text' ? 'order-lg-1' : 'order-lg-2';
+
+        return `
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6 ${classOrder}">
+                    <h2 class="section-title">${seccion.titulo}</h2>
+                    <div class="section-divider"></div>
+                    ${seccion.contenido.split('\n\n').map(p => `<p class="section-text">${p}</p>`).join('')}
+                </div>
+                <div class="col-lg-6 ${carouselOrder}">
+                    <div id="${carouselId}" class="carousel slide taller-projects-carousel" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+                        <div class="carousel-indicators">
+                            ${imagenes.map((_, index) => `<button type="button" data-bs-target="#${carouselId}" data-bs-slide-to="${index}" ${index === 0 ? 'class="active" aria-current="true"' : ''} aria-label="${titulos[index] || `Imagen ${index + 1}`}"></button>`).join('')}
+                        </div>
+                        <div class="carousel-inner">
+                            ${imagenes.map((imagen, index) => `
+                                <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                                    <img src="${imagen}" class="d-block w-100" alt="${titulos[index] || seccion.titulo}" />
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev" aria-label="Imagen anterior">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next" aria-label="Imagen siguiente">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
         `;
     }

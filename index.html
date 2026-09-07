@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Merriweather:wght@400;700&family=Caveat:wght@400;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="home-page">
     <header class="sticky-top shadow-sm site-header">
       <nav class="navbar navbar-expand-lg navbar-light container-fluid px-3">
         <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
@@ -21,7 +21,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-warning navbar-matricula-btn" href="autoridades.html">Autoridades Institucionales</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             <li class="nav-item ms-lg-2">
               <a class="btn btn-warning navbar-matricula-btn" href="#matricula">Matrícula</a>
@@ -33,16 +35,7 @@
         <div class="container specialty-links" aria-label="Especialidades técnicas">
           <a href="#oferta">Carreras</a>
           <a href="talleres.html?taller=deportes">Deportes</a>
-          <div class="dropdown">
-            <a href="talleres.html?taller=banda" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Banda <i class="fas fa-chevron-down ms-1"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="talleres.html?taller=banda">
-                <i class="fas fa-music me-2"></i>Banda Latina Francisco Miranda
-              </a></li>
-            </ul>
-          </div>
+          <a href="talleres.html?taller=banda">Banda Latina</a>
           <div class="dropdown">
             <a href="talleres.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               Talleres <i class="fas fa-chevron-down ms-1"></i>
@@ -84,13 +77,10 @@
               <div class="container hero-content">
                 <h1>Instituto Técnico Gubernamental Francisco Miranda</h1>
                 <p>Educación técnica con valores, ciencia y compromiso social para abrir caminos hacia un futuro con propósito.</p>
-<<<<<<< Updated upstream
-=======
                 <div class="hero-actions">
                   <a href="#oferta" class="btn btn-outline-light btn-lg">Explorar nuestra oferta</a>
-                  <a href="#docentes" class="btn btn-outline-light btn-lg">Conocer al equipo</a>
+                  <a href="autoridades.html" class="btn btn-outline-light btn-lg">Conocer al equipo</a>
                 </div>
->>>>>>> Stashed changes
               </div>
             </div>
             <div class="carousel-item" style="background-image: url('assets/itfm imagenes/WhatsApp Image 2026-08-24 at 12.44.12 PM.jpeg');">
@@ -451,11 +441,11 @@
         </div>
       </section>
 
-      <section id="docentes" class="py-5">
+      <section id="autoridades" class="py-5">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="section-title">Equipo Docente</h2>
-            <p class="text-muted">Conoce la estructura jerárquica y los docentes que acompañan el proceso formativo del instituto.</p>
+            <h2 class="section-title">Autoridades Institucionales</h2>
+            <p class="text-muted">Conoce a las autoridades, el personal administrativo y el equipo docente que acompañan el proceso formativo del instituto.</p>
           </div>
 
           <div class="mb-4">
@@ -719,7 +709,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="fotos de maestros/Profe Fátima.jpg" class="card-img-top" alt="Fátima Yaneth Rodríguez" onerror="this.src='https://via.placeholder.com/600x350?text=Fatima'" />
+                    <img src="fotos de maestros/Profe Fátima.jpg" class="card-img-top fatima-photo" alt="Fátima Yaneth Rodríguez" onerror="this.src='https://via.placeholder.com/600x350?text=Fatima'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Fátima Yaneth Rodríguez</h5>
                       <p class="card-text">Docente de Administración, Economía y Legislación.</p>
@@ -829,7 +819,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="fotos de maestros/Mario leonel avila maradiaga.png" class="card-img-top" alt="Mario Leonel Ávila Maradiaga" onerror="this.src='https://via.placeholder.com/600x350?text=Mario'" />
+                    <img src="fotos de maestros/Foto Nueva Profe Mario Leonel.jpg" class="card-img-top" alt="Mario Leonel Ávila Maradiaga" onerror="this.src='https://via.placeholder.com/600x350?text=Mario'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Mario Leonel Ávila Maradiaga</h5>
                       <p class="card-text">Docente del área de Electricidad.</p>
@@ -859,7 +849,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="fotos de maestros/Docente Mayra Alejandra Martines Aguilar .jpg" class="card-img-top" alt="Mayra Alejandra Martínez Aguilar" onerror="this.src='https://via.placeholder.com/600x350?text=Mayra'" />
+                    <img src="fotos de maestros/IMAGEN NUEVA PROFE MAYRA.jpg" class="card-img-top" alt="Mayra Alejandra Martínez Aguilar" onerror="this.src='https://via.placeholder.com/600x350?text=Mayra'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Mayra Alejandra Martínez Aguilar</h5>
                       <p class="card-text">Docente del área de Español.</p>
@@ -919,7 +909,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                   <div class="card shadow-sm h-100 teacher-card">
-                    <img src="fotos de maestros/Danilo Jose Banegas Figueroa.png" class="card-img-top" alt="Danilo José Banegas Figueroa" onerror="this.src='https://via.placeholder.com/600x350?text=Danilo'" />
+                    <img src="fotos de maestros/FOTO NUEVA PROFE DANILO.jpeg" class="card-img-top danilo-photo" alt="Danilo José Banegas Figueroa" onerror="this.src='https://via.placeholder.com/600x350?text=Danilo'" />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">Danilo José Banegas Figueroa</h5>
                       <p class="card-text">Docente de Taller de Madera y Estructuras Metálicas.</p>
@@ -1072,5 +1062,22 @@
       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const heroCarousel = document.querySelector('#heroCarousel');
+      if (heroCarousel) {
+        const heroContent = heroCarousel.querySelector('.hero-content');
+        if (heroContent) {
+          heroContent.classList.add('hero-carousel-content');
+          heroCarousel.appendChild(heroContent);
+        }
+
+        bootstrap.Carousel.getOrCreateInstance(heroCarousel, {
+          interval: 5000,
+          ride: 'carousel',
+          pause: false,
+          touch: true
+        }).cycle();
+      }
+    </script>
   </body>
 </html>
