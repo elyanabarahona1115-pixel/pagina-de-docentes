@@ -120,6 +120,11 @@ h1 { margin-bottom: 9px; color: var(--navy); font-size: clamp(25px, 3vw, 34px); 
 .metric-card-ochre { color: #fff; background: var(--ochre); }
 .metric-card-neutral { border-color: var(--line); background: #fff; }
 .metric-card-dark { color: #fff; background: #233566; }
+.metrics-grid .metric-card { color: #fff; border-color: transparent; background: var(--ochre); }
+.metrics-grid .metric-card p { color: rgba(255,255,255,.72); }
+.metrics-grid .metric-card small { color: rgba(255,255,255,.58); }
+.metrics-grid .metric-card .metric-icon { color: #fff; background: rgba(255,255,255,.14); }
+.metrics-grid .metric-card .metric-trend.positive { color: var(--yellow); }
 .metric-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 17px; }
 .metric-icon { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 8px; background: rgba(255,255,255,.12); }
 .metric-icon svg { width: 16px; height: 16px; }
