@@ -349,7 +349,8 @@ const TALLERES_DATA = {
                 numero: 1,
                 titulo: 'Origen del Taller',
                 contenido: 'El Taller de Electricidad forma parte de la transformación del Instituto Técnico Gubernamental Francisco Miranda hacia una institución de modalidad técnica. Su creación respondió a la necesidad de ofrecer a los estudiantes una formación práctica, vinculada con los oficios y las necesidades reales de la comunidad.\n\nDesde sus inicios, el taller se ha desarrollado junto con las áreas de estructuras metálicas y madera. Esta organización permitió construir una propuesta de formación técnica amplia, en la que los estudiantes aprenden a interpretar instalaciones, utilizar herramientas y resolver problemas con responsabilidad.',
-                imagen: 'fotos de maestros/Mario leonel avila maradiaga.png',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-06 at 8.33.38 PM.jpeg',
+                imagenClase: 'imagen-electricidad',
                 layout: 'text-image'
             },
             {
