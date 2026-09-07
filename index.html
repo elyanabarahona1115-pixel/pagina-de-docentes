@@ -14,7 +14,7 @@
       <nav class="navbar navbar-expand-lg navbar-light container-fluid px-3">
         <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
           <span class="logo-placeholder"><img src="fotos de maestros/Logo Instituto transparente.png" alt="Logo del Instituto Técnico Gubernamental Francisco Miranda" /></span>
-          <span class="institution-name">Conoce nuestra institución</span>
+          <span class="institution-name">Instituto Técnico Gubernamental Francisco Miranda</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,11 +22,6 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#instituto">Instituto</a></li>
-            <li class="nav-item"><a class="nav-link" href="#oferta">Oferta Académica</a></li>
-            <li class="nav-item"><a class="nav-link" href="#docentes">Docentes</a></li>
-            <li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a></li>
-            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             <li class="nav-item ms-lg-2">
               <a class="btn btn-warning navbar-matricula-btn" href="#matricula">Matrícula</a>
@@ -60,14 +55,14 @@
                 <i class="fas fa-hammer me-2"></i>Carpintería y Ebanistería
               </a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item disabled" href="#">
-                <i class="fas fa-bolt me-2"></i>Electricidad <span class="badge bg-warning text-dark ms-2">Próximamente</span>
+              <li><a class="dropdown-item" href="talleres.html?taller=electricidad">
+                <i class="fas fa-bolt me-2"></i>Electricidad
               </a></li>
-              <li><a class="dropdown-item disabled" href="#">
-                <i class="fas fa-home me-2"></i>Hogar <span class="badge bg-warning text-dark ms-2">Próximamente</span>
+              <li><a class="dropdown-item" href="talleres.html?taller=hogar">
+                <i class="fas fa-home me-2"></i>Hogar
               </a></li>
-              <li><a class="dropdown-item disabled" href="#">
-                <i class="fas fa-scissors me-2"></i>Costura y Confección <span class="badge bg-warning text-dark ms-2">Próximamente</span>
+              <li><a class="dropdown-item" href="talleres.html?taller=estructuras">
+                <i class="fas fa-industry me-2"></i>Estructuras Metálicas
               </a></li>
             </ul>
           </div>
@@ -89,10 +84,13 @@
               <div class="container hero-content">
                 <h1>Instituto Técnico Gubernamental Francisco Miranda</h1>
                 <p>Educación técnica con valores, ciencia y compromiso social para abrir caminos hacia un futuro con propósito.</p>
+<<<<<<< Updated upstream
+=======
                 <div class="hero-actions">
-                  <a href="#oferta" class="btn btn-warning btn-lg">Explorar nuestra oferta</a>
+                  <a href="#oferta" class="btn btn-outline-light btn-lg">Explorar nuestra oferta</a>
                   <a href="#docentes" class="btn btn-outline-light btn-lg">Conocer al equipo</a>
                 </div>
+>>>>>>> Stashed changes
               </div>
             </div>
             <div class="carousel-item" style="background-image: url('assets/itfm imagenes/WhatsApp Image 2026-08-24 at 12.44.12 PM.jpeg');">
@@ -444,7 +442,7 @@
                 <ul class="dropdown-list">
                   <li><a href="talleres.html?taller=belleza">Belleza y Cosmetología</a></li>
                   <li><a href="talleres.html?taller=carpinteria">Carpintería y Ebanistería</a></li>
-                  <li><span class="dropdown-badge">Próximamente</span> Electricidad</li>
+                  <li><a href="talleres.html?taller=electricidad">Electricidad</a></li>
                   <li><span class="dropdown-badge">Próximamente</span> Hogar</li>
                 </ul>
               </div>
@@ -999,78 +997,9 @@
 
       <section id="matricula" class="matricula-section py-5">
         <div class="container">
-          <div class="matricula-card row align-items-center g-4">
-            <div class="col-lg-5">
-              <span class="eyebrow">Tipo de matrícula</span>
-              <h2 class="section-title mb-3">Haz tu matrícula aquí</h2>
-              <p class="matricula-texto">Completa tu inscripción de forma rápida y segura. Para continuar, debes entregar la documentación requerida.</p>
-              <ul class="matricula-lista">
-                <li>Partida de nacimiento</li>
-                <li>Notas del año anterior</li>
-                <li>Grado a cursar</li>
-              </ul>
-              <a href="#documentos-matricula" class="btn btn-warning btn-lg matricula-btn">Ir a documentos</a>
-            </div>
-
-            <div class="col-lg-7">
-              <div class="matricula-panel">
-                <div class="matricula-item">
-                  <span>Tipo</span>
-                  <strong>Nuevo ingreso / Reingreso</strong>
-                </div>
-                <div class="matricula-item">
-                  <span>Documentos</span>
-                  <strong>Partida, notas y grado</strong>
-                </div>
-                <div class="matricula-item">
-                  <span>Proceso</span>
-                  <strong>Rápido y organizado</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="documentos-matricula" class="matricula-form-panel">
-            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
-              <h3 class="mb-0">Depósito de documentos</h3>
-              <span class="matricula-chip">Requisitos</span>
-            </div>
-
-            <form class="row g-3" action="#" method="post">
-              <div class="col-md-4">
-                <label for="tipo-matricula" class="form-label">Tipo</label>
-                <select id="tipo-matricula" class="form-select form-control-lg" aria-label="Tipo de matrícula">
-                  <option selected>Seleccione</option>
-                  <option>Nuevo ingreso</option>
-                  <option>Reingreso</option>
-                  <option>Traslado</option>
-                </select>
-              </div>
-
-              <div class="col-md-4">
-                <label for="grado-cursar" class="form-label">Grado a cursar</label>
-                <input id="grado-cursar" class="form-control form-control-lg" type="text" placeholder="Ejemplo: 4to Bachillerato" />
-              </div>
-
-              <div class="col-md-4">
-                <label for="partida" class="form-label">Partida de nacimiento</label>
-                <input id="partida" class="form-control form-control-lg" type="file" accept=".pdf,.jpg,.jpeg,.png" />
-              </div>
-
-              <div class="col-md-6">
-                <label for="notas" class="form-label">Notas del año anterior</label>
-                <input id="notas" class="form-control form-control-lg" type="file" accept=".pdf,.jpg,.jpeg,.png" />
-              </div>
-
-              <div class="col-md-6">
-                <label for="certificado" class="form-label">Otro documento</label>
-                <input id="certificado" class="form-control form-control-lg" type="file" accept=".pdf,.jpg,.jpeg,.png" />
-              </div>
-
-              <div class="col-12 text-center mt-4">
-                <button type="submit" class="btn btn-primary btn-lg px-5 matricula-submit">Enviar documentos</button>
-              </div>
-            </form>
+          <div class="matricula-card text-center">
+            <h2 class="section-title mb-3">Solicitar matrícula</h2>
+            <a href="matricula.html" class="btn btn-warning btn-lg matricula-btn">Solicitar matrícula</a>
           </div>
         </div>
       </section>

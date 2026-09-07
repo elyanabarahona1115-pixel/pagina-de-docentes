@@ -1,18 +1,30 @@
 :root {
-  --primary: #0d6efd;
-  --secondary: #ffc107;
-  --dark: #1f2937;
-  --light: #f8f9fa;
-  --ink: #172033;
-  --teal: #0f766e;
-  --nav-pastel: #f8e7a8;
-  --nav-strong: #8a6515;
-  --header-blue: #191970;
-  --ochre-soft: #e6c879;
-  --ochre-dark: #604714;
-  --beige-page: #ead9b8;
-  --project-blue: #4f83a8;
-  --project-blue-dark: #173b59;
+  --azul-principal: #0D6EFD;
+  --azul-oscuro: #002B7F;
+  --vino: #7A1F3D;
+  --dorado: #FFD700;
+  --lavanda: #D9D9FF;
+  --blanco: #FFFFFF;
+  --azul-claro: #DCEAF7;
+  --lavanda-suave: #F1EEFA;
+  --dorado-claro: #F3D98B;
+  --vino-claro: #A94B68;
+  --texto: #172033;
+
+  --primary: var(--azul-principal);
+  --secondary: var(--dorado);
+  --dark: var(--azul-oscuro);
+  --light: var(--blanco);
+  --ink: var(--texto);
+  --teal: var(--vino);
+  --nav-pastel: var(--lavanda);
+  --nav-strong: var(--azul-oscuro);
+  --header-blue: var(--azul-oscuro);
+  --ochre-soft: var(--dorado-claro);
+  --ochre-dark: #8A6515;
+  --beige-page: var(--lavanda-suave);
+  --project-blue: var(--azul-principal);
+  --project-blue-dark: var(--azul-oscuro);
 }
 
 * {
@@ -124,7 +136,7 @@ body {
 
 .specialty-bar {
   border-top: 1px solid rgba(255, 255, 255, 0.22);
-  background-color: #a6533a;
+  background-color: var(--vino);
 }
 
 .specialty-links {
@@ -448,7 +460,7 @@ body {
   aspect-ratio: 3 / 2;
   border-radius: 0.7rem;
   object-fit: cover;
-  background: #d7e6ef;
+  background: var(--azul-claro);
 }
 
 .dropdown-list {
@@ -500,7 +512,7 @@ body {
 }
 
 .specialties-section {
-  background-color: #f3e6ca;
+  background-color: var(--lavanda-suave);
 }
 
 .specialty-card {
@@ -559,7 +571,7 @@ body {
 .specialty-orange { background-color: #f9d7b5; }
 .specialty-cream { background-color: #f7e8c6; }
 .specialty-sage { background-color: #dce8c4; }
-.specialty-blue { background-color: #d7e6ef; }
+.specialty-blue { background-color: var(--azul-claro); }
 
 .subsection-title {
   font-size: 1.5rem;
@@ -577,8 +589,8 @@ body {
   min-width: 140px;
   margin: 1.5rem 0 2rem auto;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #8a6515 0%, #604714 100%);
-  border: 2px solid #e6c879;
+  background: linear-gradient(135deg, var(--vino) 0%, var(--azul-oscuro) 100%);
+  border: 2px solid var(--dorado);
   border-radius: 999px;
   color: #fffaf3;
   font-weight: 700;
@@ -641,7 +653,7 @@ body {
 }
 
 .teacher-card:nth-child(3n) {
-  border-top-color: #d97706;
+  border-top-color: var(--dorado);
 }
 
 .teacher-card .card-body {
@@ -649,11 +661,11 @@ body {
 }
 
 .teacher-card:nth-child(3n + 2) .card-body {
-  background: linear-gradient(135deg, #fffdf0 0%, #f4e9bb 100%);
+  background: linear-gradient(135deg, var(--blanco) 0%, var(--lavanda) 100%);
 }
 
 .teacher-card:nth-child(3n) .card-body {
-  background: linear-gradient(135deg, #fffdf0 0%, #f5dcae 100%);
+  background: linear-gradient(135deg, var(--blanco) 0%, var(--dorado-claro) 100%);
 }
 
 .teacher-card:hover {
@@ -842,8 +854,46 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(15, 118, 110, 0.12);
 }
 
+.matricula-page-main {
+  min-height: calc(100vh - 230px);
+  background: linear-gradient(135deg, #f3e6ca 0%, #ead9b8 100%);
+}
+
+.matricula-form-page {
+  max-width: 820px;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 2px solid rgba(15, 118, 110, 0.14);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+}
+
+.matricula-form-page .form-label {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.matricula-form-page .form-control,
+.matricula-form-page .form-select {
+  min-height: 52px;
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  border-radius: 14px;
+}
+
+.matricula-form-page .form-control:focus,
+.matricula-form-page .form-select:focus {
+  border-color: rgba(15, 118, 110, 0.7);
+  box-shadow: 0 0 0 0.2rem rgba(15, 118, 110, 0.12);
+}
+
+@media (max-width: 576px) {
+  .matricula-form-page {
+    padding: 1.25rem;
+  }
+}
+
 footer {
-  background-color: #111827;
+  background-color: var(--azul-oscuro);
 }
 
 footer p {
@@ -877,10 +927,293 @@ footer p {
   }
 }
 
+:root {
+  --azul-principal: #0D6EFD;
+  --azul-oscuro: #002B7F;
+  --vino: #7A1F3D;
+  --dorado: #FFD700;
+  --lavanda: #D9D9FF;
+  --blanco: #FFFFFF;
+}
+
+body {
+  background-color: var(--lavanda-suave);
+  color: var(--texto);
+}
+
+.site-header,
+.matricula-page-main {
+  background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 100%);
+}
+
+.specialty-bar,
+footer {
+  background-color: var(--vino);
+}
+
+.nav-link:hover,
+.nav-link.active,
+.specialty-links a:hover,
+.specialty-links .dropdown-toggle:hover,
+.specialty-links .dropdown-item:hover,
+.specialty-links .dropdown-item.active,
+.specialty-links .dropdown-item:active {
+  color: var(--azul-oscuro) !important;
+  background-color: var(--lavanda);
+}
+
+.navbar-matricula-btn,
+.matricula-btn,
+.matricula-submit {
+  background: var(--dorado);
+  color: var(--azul-oscuro) !important;
+}
+
+.navbar-matricula-btn:hover,
+.matricula-btn:hover,
+.matricula-submit:hover {
+  background: var(--dorado-claro);
+  color: var(--azul-oscuro) !important;
+}
+
+.hero-section {
+  background-color: var(--azul-oscuro);
+}
+
+.hero-kicker,
+.eyebrow,
+.dropdown-badge {
+  color: var(--vino);
+}
+
+.category-tab {
+  background-color: var(--lavanda);
+  color: var(--azul-oscuro);
+}
+
+.category-tab:hover,
+.category-tab.is-active {
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+}
+
+.tab-dropdown-card,
+.career-card,
+.info-box,
+.matricula-card,
+.matricula-form-page {
+  background: var(--blanco);
+}
+
+.career-card,
+.dropdown-list li,
+.dropdown-list a {
+  background-color: var(--azul-claro);
+}
+
+.career-card h3,
+.career-details h4,
+.section-title,
+.subsection-title {
+  color: var(--azul-oscuro);
+}
+
+.specialties-section,
+.historia-section,
+.matricula-section {
+  background: var(--lavanda-suave);
+}
+
+.specialty-card {
+  color: var(--azul-oscuro);
+  border-color: rgba(0, 43, 127, 0.16);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 43, 127, 0.1);
+}
+
+.specialty-ochre,
+.specialty-yellow,
+.specialty-cream {
+  background-color: var(--dorado-claro);
+}
+
+.specialty-peach,
+.specialty-purple {
+  background-color: var(--lavanda);
+}
+
+.specialty-orange,
+.specialty-sage {
+  background-color: #E8C5D0;
+}
+
+.specialty-blue {
+  background-color: var(--azul-claro);
+}
+
+.workshop-button,
+.historia-toggle {
+  background: var(--vino);
+  color: var(--blanco);
+}
+
+.workshop-button:hover,
+.historia-toggle:hover,
+.historia-toggle:focus-visible {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+.teacher-card {
+  border-top-color: var(--azul-principal);
+  background-color: var(--lavanda);
+}
+
+.teacher-card:nth-child(3n + 2) {
+  border-top-color: var(--vino);
+}
+
+.teacher-card:nth-child(3n) {
+  border-top-color: var(--dorado);
+}
+
+#proyectos .card {
+  background-color: var(--azul-principal);
+}
+
+.social-links a:hover,
+.matricula-lista li::before {
+  color: var(--vino);
+}
+
+.matricula-panel,
+.matricula-form-panel {
+  border-color: rgba(0, 43, 127, 0.16);
+  background: var(--lavanda-suave);
+}
+
+.matricula-chip {
+  background: var(--lavanda);
+  color: var(--azul-oscuro);
+}
+
+.historia-card {
+  background-color: var(--blanco);
+  border-color: var(--dorado);
+}
+
+.historia-badge {
+  background: var(--vino);
+  color: var(--blanco);
+}
+
+.historia-titulo {
+  color: var(--azul-oscuro);
+}
+
+/* Tratamiento caligráfico y translúcido para el encabezado principal. */
+.institution-name {
+  display: none;
+  position: relative;
+  z-index: 1;
+  max-width: 330px;
+  color: rgba(255, 231, 147, 0.96);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
+}
+
+.navbar-brand {
+  position: static;
+  z-index: auto;
+  transform: none;
+  align-items: center !important;
+}
+
+.site-header .navbar {
+  min-height: 108px;
+}
+
+.logo-placeholder {
+  position: relative;
+  z-index: 2;
+  width: 108px;
+  height: 108px;
+  flex: 0 0 108px;
+  margin: 0;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.28));
+}
+
+.site-header .navbar-nav {
+  gap: 0.45rem;
+}
+
+.site-header .nav-link {
+  padding: 0.7rem 1.2rem !important;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f8c74e 0%, #f5a623 100%);
+  color: #1f2937 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  background: linear-gradient(135deg, #f4ba35 0%, #e9950a 100%);
+  color: #1f2937 !important;
+  transform: translateY(-1px);
+}
+
+.site-header .nav-link::after {
+  display: none;
+}
+
+.hero-content h1 {
+  max-width: 900px;
+  padding: 0.6rem 1.25rem 0.8rem;
+  border: 0;
+  border-radius: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 24, 72, 0.52) 0%, rgba(0, 24, 72, 0.28) 38%, rgba(0, 24, 72, 0.08) 64%, transparent 82%);
+  color: rgba(255, 231, 147, 0.98);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2.8rem, 6vw, 5.6rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.05;
+  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px) {
+  .site-header .navbar {
+    min-height: 88px;
+  }
+
+  .institution-name {
+    max-width: 190px;
+    font-size: 1.15rem;
+  }
+
+  .logo-placeholder {
+    width: 88px;
+    height: 88px;
+    flex-basis: 88px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.2rem, 12vw, 3.5rem);
+  }
+}
+
 /* ===== SECCIÓN HISTORIA DEL INSTITUTO ===== */
 
 .historia-section {
-  background: linear-gradient(135deg, #faf6f0 0%, #ead9b8 100%);
+  background: linear-gradient(135deg, var(--blanco) 0%, var(--lavanda-suave) 100%);
   padding: 4rem 1rem;
 }
 
@@ -888,9 +1221,9 @@ footer p {
   max-width: 900px;
   margin: 0 auto;
   padding: 4rem 3rem;
-  background-color: #f9f5f0;
+  background-color: var(--blanco);
   border-radius: 12px;
-  border: 2px solid #e6c879;
+  border: 2px solid var(--dorado);
   box-shadow: 
     0 10px 30px rgba(62, 39, 35, 0.12),
     0 4px 10px rgba(130, 87, 57, 0.08),
@@ -912,8 +1245,8 @@ footer p {
   top: -18px;
   right: 3rem;
   padding: 0.9rem 1.8rem;
-  background: linear-gradient(135deg, #3e2723 0%, #7a4c31 100%);
-  color: #fffaf3;
+  background: linear-gradient(135deg, var(--vino) 0%, var(--azul-oscuro) 100%);
+  color: var(--blanco);
   border-radius: 50px;
   font-family: 'Merriweather', serif;
   font-size: 1.6rem;
@@ -928,7 +1261,7 @@ footer p {
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
   font-weight: 700;
-  color: #3e2723;
+  color: var(--azul-oscuro);
   text-align: center;
   margin-bottom: 3rem;
   line-height: 1.2;
@@ -943,7 +1276,7 @@ footer p {
 .historia-seccion {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 2px solid #e6c879;
+  border-bottom: 2px solid var(--dorado);
 }
 
 .historia-seccion:last-child {
@@ -956,7 +1289,7 @@ footer p {
   font-family: 'Merriweather', serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: #604714;
+  color: var(--vino);
   margin-bottom: 1.2rem;
   letter-spacing: -0.01em;
 }
@@ -970,7 +1303,7 @@ footer p {
 }
 
 .historia-contenido strong {
-  color: #3e2723;
+  color: var(--azul-oscuro);
   font-weight: 700;
 }
 
@@ -993,7 +1326,7 @@ footer p {
   content: "✦";
   position: absolute;
   left: 0;
-  color: #604714;
+  color: var(--vino);
   font-weight: bold;
 }
 
@@ -1017,13 +1350,13 @@ footer p {
   content: "→";
   position: absolute;
   left: 0;
-  color: #604714;
+  color: var(--vino);
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .historia-timeline li strong {
-  color: #3e2723;
+  color: var(--azul-oscuro);
   font-weight: 700;
 }
 
@@ -1036,13 +1369,13 @@ footer p {
 
 .valor-item {
   padding: 1.2rem 1rem;
-  background: linear-gradient(135deg, #e6c879 0%, #f0dfa8 100%);
-  border: 1px solid #d4b968;
+  background: linear-gradient(135deg, var(--dorado) 0%, var(--dorado-claro) 100%);
+  border: 1px solid var(--dorado);
   border-radius: 8px;
   font-family: 'Merriweather', serif;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #3e2723;
+  color: var(--azul-oscuro);
   text-align: center;
   line-height: 1.4;
   box-shadow: 0 2px 8px rgba(130, 87, 57, 0.1);
@@ -1301,7 +1634,7 @@ footer p {
 /* ===== SECCIÓN TALLER DE CARPINTERÍA Y EBANISTERÍA ===== */
 
 .carpinteria-section {
-  background: linear-gradient(180deg, #fff7f1 0%, #fbe2c9 52%, #f7d1a5 100%);
+  background: linear-gradient(180deg, var(--blanco) 0%, var(--lavanda-suave) 52%, var(--lavanda) 100%);
   padding: 5rem 1rem;
   position: relative;
 }
@@ -1313,7 +1646,7 @@ footer p {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #d97706, transparent);
+  background: linear-gradient(90deg, transparent, var(--vino), transparent);
 }
 
 .carpinteria-header {
@@ -1325,7 +1658,7 @@ footer p {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   font-weight: 700;
-  color: #4a2c11;
+  color: var(--azul-oscuro);
   margin-bottom: 0.8rem;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -1336,7 +1669,7 @@ footer p {
   font-family: 'Merriweather', serif;
   font-size: 1.4rem;
   font-weight: 400;
-  color: #8b6f47;
+  color: var(--vino);
   font-style: italic;
   margin: 0;
   letter-spacing: 0.02em;
@@ -1345,9 +1678,9 @@ footer p {
 .carpinteria-contenido {
   max-width: 900px;
   margin: 0 auto 5rem;
-  background: #fefdfb;
+  background: var(--blanco);
   padding: 3.5rem;
-  border: 2px solid #e6d5c3;
+  border: 2px solid var(--lavanda);
   border-radius: 8px;
   box-shadow: 
     0 8px 32px rgba(74, 44, 17, 0.1),
@@ -1363,13 +1696,13 @@ footer p {
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
-  color: #8b6f47;
+  color: var(--vino);
 }
 
 .carpinteria-articulo {
   margin-bottom: 3.5rem;
   padding-bottom: 3.5rem;
-  border-bottom: 1px solid #e6d5c3;
+  border-bottom: 1px solid var(--lavanda);
   position: relative;
 }
 
@@ -1383,7 +1716,7 @@ footer p {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   font-weight: 600;
-  color: #4a2c11;
+  color: var(--azul-oscuro);
   margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
   padding-left: 1.5rem;
@@ -1397,7 +1730,7 @@ footer p {
   top: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg, #8b6f47, #c9a36d);
+  background: linear-gradient(180deg, var(--vino), var(--dorado));
   border-radius: 2px;
 }
 
@@ -1405,12 +1738,12 @@ footer p {
   font-family: 'Merriweather', serif;
   font-size: 1.05rem;
   line-height: 1.85;
-  color: #5a4a3a;
+  color: var(--texto);
   margin-bottom: 1.5rem;
 }
 
 .carpinteria-contenido strong {
-  color: #4a2c11;
+  color: var(--azul-oscuro);
   font-weight: 700;
 }
 
@@ -1424,7 +1757,7 @@ footer p {
   font-family: 'Merriweather', serif;
   font-size: 1rem;
   line-height: 1.9;
-  color: #5a4a3a;
+  color: var(--texto);
   padding-left: 2rem;
   position: relative;
   margin-bottom: 0.8rem;
@@ -1434,7 +1767,7 @@ footer p {
   content: '➢';
   position: absolute;
   left: 0.5rem;
-  color: #8b6f47;
+  color: var(--vino);
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -1448,7 +1781,7 @@ footer p {
   font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
   font-weight: 600;
-  color: #4a2c11;
+  color: var(--azul-oscuro);
   text-align: center;
   margin-bottom: 3rem;
   letter-spacing: -0.01em;
@@ -1466,8 +1799,8 @@ footer p {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  background: #fefdfb;
-  border: 1px solid #e6d5c3;
+  background: var(--blanco);
+  border: 1px solid var(--lavanda);
   box-shadow: 0 6px 20px rgba(74, 44, 17, 0.12);
   transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
               box-shadow 0.4s ease;
@@ -1495,7 +1828,7 @@ footer p {
   font-family: 'Merriweather', serif;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #4a2c11;
+  color: var(--azul-oscuro);
   text-align: center;
   padding: 1.2rem 0.8rem;
   margin: 0;
@@ -1583,5 +1916,172 @@ footer p {
   .galeria-caption {
     font-size: 0.85rem;
     padding: 0.8rem;
+  }
+}
+
+/* Ajustes exclusivos para teléfonos: el diseño de escritorio permanece igual. */
+@media (max-width: 767px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    min-height: 70px;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .navbar-brand {
+    min-width: 0;
+    max-width: calc(100% - 58px);
+  }
+
+  .logo-placeholder {
+    width: 52px;
+    height: 58px;
+    flex: 0 0 52px;
+  }
+
+  .institution-name {
+    max-width: 175px;
+    font-size: 0.95rem;
+  }
+
+  .navbar-toggler {
+    flex: 0 0 auto;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .navbar-collapse {
+    padding: 0.75rem 0 0.25rem;
+  }
+
+  .navbar-nav {
+    align-items: stretch !important;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.6rem 0.25rem;
+  }
+
+  .navbar-matricula-btn {
+    display: block;
+    margin-top: 0.35rem;
+    text-align: center;
+  }
+
+  .specialty-links {
+    gap: 0.45rem;
+    padding: 0.55rem 0.5rem;
+  }
+
+  .specialty-links a,
+  .specialty-links .dropdown,
+  .specialty-links .dropdown-toggle {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .specialty-links a,
+  .specialty-links .dropdown-toggle {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .specialty-links .dropdown-menu {
+    position: static !important;
+    width: 100%;
+    min-width: 0;
+    margin-top: 0.35rem;
+  }
+
+  .hero-section,
+  .hero-section .carousel,
+  .hero-section .carousel-item,
+  .hero-content {
+    min-height: 72vh;
+  }
+
+  .hero-content {
+    align-items: center;
+    padding: 4rem 1.25rem 5rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 10vw, 3.1rem);
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions,
+  .matricula-card .btn,
+  .matricula-form-page .btn {
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    white-space: normal;
+  }
+
+  section.py-5 {
+    padding-top: 2.75rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.7rem, 8vw, 2.35rem);
+    line-height: 1.15;
+  }
+
+  .historia-card,
+  .matricula-card,
+  .matricula-form-page {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .historia-card {
+    width: 100%;
+  }
+
+  .matricula-card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .matricula-form-page {
+    width: 100%;
+  }
+
+  .map-card iframe {
+    min-height: 240px;
+    height: 240px;
+  }
+
+  .teacher-card img {
+    height: 230px;
+  }
+
+  .teacher-card .card-body {
+    min-height: 0;
+  }
+
+  footer .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
