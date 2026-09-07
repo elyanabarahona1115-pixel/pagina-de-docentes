@@ -363,7 +363,8 @@ const TALLERES_DATA = {
                 numero: 3,
                 titulo: 'Evolución e Integración Tecnológica',
                 contenido: 'El taller ha evolucionado desde la enseñanza de conceptos básicos y circuitos sencillos hacia prácticas que integran herramientas, equipos y recursos tecnológicos. Los estudiantes aprenden a reconocer componentes, interpretar diagramas y comprender el funcionamiento de instalaciones eléctricas aplicadas a distintos contextos.\n\nLa integración tecnológica fortalece la formación porque conecta la teoría con la solución de problemas. El uso responsable de instrumentos de medición y materiales de trabajo permite que los alumnos desarrollen precisión, pensamiento lógico y criterios técnicos cercanos a los que encontrarán en el mundo laboral.',
-                imagen: 'fotos de maestros/WhatsApp Image 2026-08-10 at 1.27.27 PM.jpeg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-06 at 8.33.38 PM.jpeg',
+                imagenClase: 'imagen-electricidad',
                 layout: 'text-image'
             },
             {

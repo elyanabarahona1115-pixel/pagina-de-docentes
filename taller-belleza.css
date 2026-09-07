@@ -907,6 +907,16 @@ body {
     object-position: center top;
 }
 
+.image-placeholder.imagen-electricidad {
+    aspect-ratio: 657 / 360;
+    min-height: 0;
+}
+
+.image-placeholder.imagen-electricidad .placeholder-img {
+    object-fit: contain;
+    object-position: center;
+}
+
 .image-placeholder:hover .placeholder-img {
     opacity: 1;
 }
