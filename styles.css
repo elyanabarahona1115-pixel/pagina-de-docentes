@@ -641,6 +641,21 @@ body {
   background-color: #f8f9fa;
 }
 
+.teacher-card .danilo-photo {
+  height: 280px;
+  object-fit: contain;
+  transform: scale(1.12);
+  transform-origin: center;
+}
+
+.teacher-card .fatima-photo {
+  object-fit: contain;
+  object-position: center;
+  transform: scale(1.15);
+  transform-origin: center top;
+  clip-path: inset(0);
+}
+
 .teacher-card {
   overflow: hidden;
   border: 0;
@@ -2074,6 +2089,10 @@ footer {
   }
 
   .teacher-card img {
+    height: 230px;
+  }
+
+  .teacher-card .danilo-photo {
     height: 230px;
   }
 
