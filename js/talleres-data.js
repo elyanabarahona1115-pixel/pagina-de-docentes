@@ -333,7 +333,7 @@ const TALLERES_DATA = {
                 numero: 8,
                 titulo: 'Planes a Futuro y Retos',
                 contenido: 'El objetivo primordial del área es asegurar que cada estudiante que egrese del Instituto Técnico Francisco Miranda obtenga una formación técnica sólida para valerse en la vida. A diferencia de otros materiales, la madera exige máxima precisión, ya que un corte erróneo no se puede soldar ni corregir fácilmente, requiriendo altos estándares de disciplina y arte.\n\nFuturos planes incluyen la expansión del taller con equipos aún más especializados, la incorporación de nuevas técnicas de diseño asistido por computadora (CAD), y la ampliación de las áreas de aprendizaje para que los estudiantes puedan especializarse en diferentes aspectos de la carpintería.\n\nSe busca mantener la excelencia del taller y consolidarlo como referencia regional en la formación de técnicos en carpintería y ebanistería, asegurando que cada egresado sea un profesional íntegro, competente y con valores que lo distingan en el mercado laboral.',
-                imagen: 'placeholder-8-futuro.jpg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-06 at 11.31.39 PM.jpeg',
                 layout: 'image-text'
             }
         ]
