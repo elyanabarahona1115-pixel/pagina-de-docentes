@@ -2907,3 +2907,8 @@ small,
   color: var(--texto-ocre) !important;
   background-color: var(--marfil);
 }
+
+.home-page .logo-placeholder img {
+  width: 92%;
+  height: 92%;
+}
