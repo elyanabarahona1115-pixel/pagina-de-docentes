@@ -470,7 +470,7 @@ const TALLERES_DATA = {
                 numero: 6,
                 titulo: 'Proyectos y Estructuras Construidas',
                 contenido: 'Los estudiantes aplican sus conocimientos en proyectos que responden a necesidades reales del instituto y de la comunidad. Entre los trabajos documentados se encuentran la construcción de bancas con material de desecho, proyectos de reciclaje y la fabricación de piezas o estructuras que requieren medir, cortar, unir y dar acabado al metal.\n\nCada proyecto fortalece la creatividad y el sentido de servicio. El grupo aprende a distribuir tareas, aprovechar materiales, corregir errores y entregar una estructura estable y útil, relacionando el aprendizaje del taller con el cuidado del entorno.',
-                imagen: 'fotos de maestros/Vanessa Lizeth galindo Velasquez.png',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-06 at 11.47.17 PM.jpeg',
                 layout: 'image-text'
             },
             {
