@@ -2826,6 +2826,19 @@ footer a {
   color: var(--marfil) !important;
 }
 
+.site-header .navbar-matricula-btn {
+  background: #C88A34 !important;
+  border-color: #C88A34 !important;
+  color: #1E3A8A !important;
+}
+
+.site-header .navbar-matricula-btn:hover,
+.site-header .navbar-matricula-btn:focus-visible {
+  background: #A96F21 !important;
+  border-color: #A96F21 !important;
+  color: #FFFFFF !important;
+}
+
 .specialties-section,
 .historia-section,
 .matricula-section,
