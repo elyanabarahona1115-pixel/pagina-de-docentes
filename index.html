@@ -33,9 +33,26 @@
       </nav>
       <div class="specialty-bar">
         <div class="container specialty-links" aria-label="Especialidades técnicas">
-          <a href="#oferta">Carreras</a>
+          <div class="dropdown">
+            <a href="#oferta" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Carreras <i class="fas fa-chevron-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#oferta">Bachillerato Técnico Profesional en Informática</a></li>
+              <li><a class="dropdown-item" href="#oferta">Bachillerato Técnico Profesional en Contaduría y Finanzas</a></li>
+              <li><a class="dropdown-item" href="#oferta">Bachillerato Técnico Profesional en Agroindustria</a></li>
+            </ul>
+          </div>
           <a href="talleres.html?taller=deportes">Deportes</a>
           <a href="talleres.html?taller=banda">Banda Latina</a>
+          <div class="dropdown">
+            <a href="talleres.html?taller=banda" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Banda <i class="fas fa-chevron-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="talleres.html?taller=banda">Banda Latina Francisco Miranda</a></li>
+            </ul>
+          </div>
           <div class="dropdown">
             <a href="talleres.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               Talleres <i class="fas fa-chevron-down ms-1"></i>
@@ -328,13 +345,6 @@
             <h2 class="section-title">Oferta Académica</h2>
           </div>
 
-          <div class="category-tabs" aria-label="Navegación de categorías">
-            <button class="category-tab is-active" type="button" data-tab="carreras">Carreras</button>
-            <button class="category-tab" type="button" data-tab="deportes">Deportes</button>
-            <button class="category-tab" type="button" data-tab="banda">Banda</button>
-            <button class="category-tab" type="button" data-tab="talleres">Talleres</button>
-          </div>
-
           <div class="tab-panels">
             <div class="tab-panel is-active" id="tab-carreras">
               <div class="tab-dropdown-card">
@@ -407,7 +417,7 @@
               </div>
             </div>
 
-            <div class="tab-panel" id="tab-deportes">
+            <div class="tab-panel is-active" id="tab-deportes">
               <div class="tab-dropdown-card">
                 <ul class="dropdown-list">
                   <li><span class="dropdown-badge">Activo</span> Fútbol</li>
@@ -417,7 +427,7 @@
               </div>
             </div>
 
-            <div class="tab-panel" id="tab-banda">
+            <div class="tab-panel is-active" id="tab-banda">
               <div class="tab-dropdown-card">
                 <ul class="dropdown-list">
                   <li><span class="dropdown-badge">Grupo</span> Banda Latina Francisco Miranda</li>
@@ -427,7 +437,7 @@
               </div>
             </div>
 
-            <div class="tab-panel" id="tab-talleres">
+            <div class="tab-panel is-active" id="tab-talleres">
               <div class="tab-dropdown-card">
                 <ul class="dropdown-list">
                   <li><a href="talleres.html?taller=belleza">Belleza y Cosmetología</a></li>
