@@ -43,7 +43,7 @@ body {
 }
 
 .site-header {
-  background: linear-gradient(90deg, #ffd700 0%, #d8b52a 45%, #002b7f 100%);
+  background: linear-gradient(90deg, var(--azul-oscuro) 0%, #1557a6 52%, #d8b52a 100%);
   font-family: "Poppins", sans-serif;
 }
 
@@ -137,7 +137,7 @@ body {
 
 .specialty-bar {
   border-top: 1px solid rgba(255, 255, 255, 0.22);
-  background-color: var(--vino);
+  background-color: var(--ochre-dark);
 }
 
 .specialty-links {
@@ -2544,13 +2544,13 @@ body {
 .site-header,
 .navbar-wrapper,
 .matricula-page-main {
-  background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 100%) !important;
+  background: linear-gradient(90deg, var(--azul-oscuro) 0%, #1557a6 52%, #d8b52a 100%) !important;
 }
 
 .specialty-bar,
 footer,
 .footer-section {
-  background-color: var(--vino) !important;
+  background-color: var(--ochre-dark) !important;
 }
 
 .hero-section,
