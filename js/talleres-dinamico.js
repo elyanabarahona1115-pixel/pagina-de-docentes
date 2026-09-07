@@ -81,7 +81,7 @@ class TallerDinamico {
         const taller = TALLERES_DATA[tallerKey];
         if (!taller) return;
 
-        document.body.classList.remove('area-belleza', 'area-carpinteria', 'area-electricidad', 'area-banda', 'area-deportes');
+        document.body.classList.remove('area-belleza', 'area-carpinteria', 'area-electricidad', 'area-banda', 'area-deportes', 'area-hogar', 'area-estructuras');
         document.body.classList.add(`area-${tallerKey}`);
 
         if (this.selectorSection) {
@@ -94,7 +94,7 @@ class TallerDinamico {
         // Limpiar contenedor
         this.contenedor.innerHTML = '';
         this.contenedor.classList.remove('theme-belleza', 'theme-carpinteria', 'theme-electricidad', 'theme-banda');
-        this.contenedor.classList.remove('theme-deportes');
+        this.contenedor.classList.remove('theme-deportes', 'theme-hogar', 'theme-estructuras');
         if (tallerKey === 'carpinteria') {
             this.contenedor.classList.add('theme-carpinteria');
         } else if (tallerKey === 'electricidad') {
@@ -103,6 +103,10 @@ class TallerDinamico {
             this.contenedor.classList.add('theme-banda');
         } else if (tallerKey === 'deportes') {
             this.contenedor.classList.add('theme-deportes');
+        } else if (tallerKey === 'hogar') {
+            this.contenedor.classList.add('theme-hogar');
+        } else if (tallerKey === 'estructuras') {
+            this.contenedor.classList.add('theme-estructuras');
         } else {
             this.contenedor.classList.add('theme-belleza');
         }
@@ -163,6 +167,12 @@ class TallerDinamico {
         } else if (taller.id === 'banda') {
             temaClase = 'hero-taller-banda';
             overlayClase = 'hero-overlay-banda';
+        } else if (taller.id === 'hogar') {
+            temaClase = 'hero-taller-hogar';
+            overlayClase = 'hero-overlay-belleza';
+        } else if (taller.id === 'estructuras') {
+            temaClase = 'hero-taller-estructuras';
+            overlayClase = 'hero-overlay-estructuras';
         }
 
         return `
@@ -327,12 +337,16 @@ class TallerDinamico {
             tallerNombre = 'Banda Latina Francisco Miranda';
         } else if (taller.id === 'electricidad') {
             tallerNombre = 'Electricidad';
+        } else if (taller.id === 'hogar') {
+            tallerNombre = 'Taller de Hogar';
+        } else if (taller.id === 'estructuras') {
+            tallerNombre = 'Estructuras Metálicas';
         }
 
         return `
             <section class="cta-section">
                 <div class="container text-center">
-                    <h2>Únete a la ${tallerNombre}</h2>
+                    <h2>${taller.id === 'hogar' ? 'Únete al' : taller.id === 'estructuras' ? 'Únete al Taller de' : 'Únete a la'} ${tallerNombre}</h2>
                     <p>Desarrolla habilidades prácticas que transformarán tu futuro</p>
                     <a href="index.html#contacto" class="btn btn-cta">Solicitar Información</a>
                 </div>
