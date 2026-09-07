@@ -2583,3 +2583,8 @@ body,
     color: var(--texto-ocre) !important;
     background-color: var(--marfil);
 }
+
+.area-belleza .hero-taller-belleza .hero-subtitle,
+.area-belleza .hero-taller-belleza .hero-description {
+    color: #FFFFFF !important;
+}
