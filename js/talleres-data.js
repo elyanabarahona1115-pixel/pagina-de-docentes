@@ -363,7 +363,8 @@ const TALLERES_DATA = {
                 numero: 3,
                 titulo: 'Evolución e Integración Tecnológica',
                 contenido: 'El taller ha evolucionado desde la enseñanza de conceptos básicos y circuitos sencillos hacia prácticas que integran herramientas, equipos y recursos tecnológicos. Los estudiantes aprenden a reconocer componentes, interpretar diagramas y comprender el funcionamiento de instalaciones eléctricas aplicadas a distintos contextos.\n\nLa integración tecnológica fortalece la formación porque conecta la teoría con la solución de problemas. El uso responsable de instrumentos de medición y materiales de trabajo permite que los alumnos desarrollen precisión, pensamiento lógico y criterios técnicos cercanos a los que encontrarán en el mundo laboral.',
-                imagen: 'fotos de maestros/WhatsApp Image 2026-08-10 at 1.27.27 PM.jpeg',
+                imagen: 'fotos de maestros/WhatsApp Image 2026-09-06 at 8.33.38 PM.jpeg',
+                imagenClase: 'imagen-electricidad',
                 layout: 'text-image'
             },
             {
@@ -408,6 +409,74 @@ const TALLERES_DATA = {
                     { icon: 'fas fa-shield-halved', titulo: 'Cultura de Seguridad', texto: 'Convertir la prevención y el cumplimiento de normas en hábitos profesionales.' },
                     { icon: 'fas fa-seedling', titulo: 'Aprendizaje Continuo', texto: 'Construir una base para continuar estudios, trabajar y emprender en el área técnica.' }
                 ]
+            }
+        ]
+    },
+    estructuras: {
+        id: 'estructuras',
+        titulo: 'Taller de Estructuras Metálicas',
+        subtitulo: 'Precisión, resistencia y seguridad en cada proyecto',
+        descripcion: 'Formación técnica en metalmecánica, soldadura y fabricación de estructuras para responder a las necesidades del instituto y la comunidad',
+        icon: 'fas fa-industry',
+        secciones: [
+            {
+                numero: 1,
+                titulo: 'Origen del Taller',
+                contenido: 'El Taller de Estructuras Metálicas, conocido también como área de Metales, nació con la transformación del Instituto Francisco Miranda hacia la modalidad técnica. Fue uno de los primeros talleres junto con Madera y respondió a la necesidad de ofrecer una formación práctica relacionada con los oficios, la industria y las necesidades de la comunidad.\n\nDesde sus inicios, el área ha combinado el aprendizaje de dibujo técnico, interpretación de medidas, preparación de materiales y fabricación de piezas. La formación busca que los estudiantes comprendan el proceso completo: planificar, medir, cortar, unir, revisar y entregar una estructura funcional.',
+                imagen: 'fotos de maestros/Vanessa Lizeth galindo Velasquez.png',
+                layout: 'text-image'
+            },
+            {
+                numero: 2,
+                titulo: 'Docentes Encargados e Impulsores',
+                contenido: 'El área cuenta con docentes especializados que acompañan el aprendizaje técnico y la práctica en el taller. Vanessa Lizeth Galindo Velásquez se desempeña en Estructuras Metálicas y Dibujo Técnico, con formación en Educación Técnica Industrial y orientación en Metal Mecánica. Su trabajo integra la representación gráfica con la construcción de proyectos y el uso responsable de los materiales.\n\nTambién forma parte del equipo Closvin Fabricio Yánez Santos, docente de Estructuras Metálicas, instructor certificado por INFOP y reconocido como docente del año 2018. Danilo José Banegas Figueroa ha apoyado el área de Madera y Estructuras Metálicas, fortaleciendo la coordinación de talleres y el acompañamiento de proyectos técnicos.',
+                imagen: 'fotos de maestros/Fabrio yanez.png',
+                layout: 'image-text'
+            },
+            {
+                numero: 3,
+                titulo: 'Evolución del Taller',
+                contenido: 'El taller ha evolucionado desde prácticas iniciales con herramientas básicas hacia una formación más organizada y cercana a los procesos de la industria. Los estudiantes trabajan con soldadoras, cortadoras, esmeriles, herramientas de medición y equipos de apoyo para preparar y unir piezas metálicas.\n\nEl crecimiento también se refleja en la relación entre el dibujo técnico y la práctica. Antes de fabricar, los estudiantes deben interpretar planos, establecer medidas, seleccionar perfiles y organizar el procedimiento. Esta integración permite mejorar la precisión, aprovechar los materiales y construir con mayor seguridad.',
+                imagen: 'fotos de maestros/Vanessa Lizeth galindo Velasquez.png',
+                layout: 'text-image'
+            },
+            {
+                numero: 4,
+                titulo: 'Habilidades y Formación de los Estudiantes',
+                contenido: 'La formación del área de Metales desarrolla competencias técnicas, hábitos de orden y capacidad para resolver problemas. Los estudiantes aprenden a trabajar de manera colaborativa, cuidar los equipos y revisar la calidad de cada unión o acabado antes de considerar terminado un proyecto.',
+                tipo: 'card-grid',
+                items: [
+                    { icon: 'fas fa-ruler-combined', titulo: 'Medición y Trazado', texto: 'Interpretación de planos, toma de medidas y trazado preciso antes de cortar o ensamblar.' },
+                    { icon: 'fas fa-fire', titulo: 'Soldadura', texto: 'Preparación y unión de piezas con soldadoras bajo supervisión y procedimientos seguros.' },
+                    { icon: 'fas fa-scissors', titulo: 'Corte y Preparación', texto: 'Uso responsable de cortadoras, esmeriles y herramientas para preparar perfiles y láminas.' },
+                    { icon: 'fas fa-briefcase', titulo: 'Preparación Laboral', texto: 'Competencias prácticas para continuar estudios, incorporarse al trabajo o emprender.' }
+                ]
+            },
+            {
+                numero: 5,
+                titulo: 'Medidas de Seguridad y Normas',
+                contenido: 'La seguridad es una condición indispensable en cada práctica. Antes de utilizar una soldadora, cortadora o esmeril, los estudiantes reciben orientación docente, revisan el estado del equipo y mantienen despejada el área de trabajo. No se permite operar maquinaria sin autorización ni improvisar conexiones o procedimientos.\n\nEl equipo de protección personal incluye careta o máscara para soldar, gafas de seguridad, guantes de soldar, gabacha o ropa de trabajo, calzado cerrado y protección auditiva cuando la actividad lo requiere. También se debe trabajar con ventilación adecuada, retirar materiales inflamables y respetar las normas para prevenir quemaduras, lesiones o incendios.',
+                tipo: 'challenge-grid',
+                items: [
+                    { numero: '1', titulo: 'Careta y Protección Visual', texto: 'Usar careta de soldar y gafas adecuadas para proteger rostro y ojos de chispas y radiación.' },
+                    { numero: '2', titulo: 'Guantes y Ropa de Trabajo', texto: 'Utilizar guantes de soldar, gabacha o ropa resistente y calzado cerrado.' },
+                    { numero: '3', titulo: 'Revisión de Equipos', texto: 'Comprobar cables, conexiones, discos y guardas antes de usar soldadoras o cortadoras.' },
+                    { numero: '4', titulo: 'Orden y Supervisión', texto: 'Mantener ventilación y área despejada, trabajar con supervisión y controlar chispas.' }
+                ]
+            },
+            {
+                numero: 6,
+                titulo: 'Proyectos y Estructuras Construidas',
+                contenido: 'Los estudiantes aplican sus conocimientos en proyectos que responden a necesidades reales del instituto y de la comunidad. Entre los trabajos documentados se encuentran la construcción de bancas con material de desecho, proyectos de reciclaje y la fabricación de piezas o estructuras que requieren medir, cortar, unir y dar acabado al metal.\n\nCada proyecto fortalece la creatividad y el sentido de servicio. El grupo aprende a distribuir tareas, aprovechar materiales, corregir errores y entregar una estructura estable y útil, relacionando el aprendizaje del taller con el cuidado del entorno.',
+                imagen: 'fotos de maestros/Vanessa Lizeth galindo Velasquez.png',
+                layout: 'image-text'
+            },
+            {
+                numero: 7,
+                titulo: 'Principales Logros y Proyección',
+                contenido: 'Uno de los principales logros del Taller de Estructuras Metálicas es formar jóvenes con competencias laborales y una cultura de seguridad. El reconocimiento docente, la certificación como instructor y la participación en proyectos prácticos muestran el compromiso del equipo con una educación técnica vinculada a la realidad.\n\nLa proyección del área es continuar fortaleciendo el equipamiento, ampliar las prácticas de soldadura y fabricación, y consolidar proyectos que beneficien al instituto. La meta es que cada estudiante egrese con bases sólidas para trabajar, seguir especializándose o emprender con responsabilidad y calidad.',
+                imagen: 'fotos de maestros/Fabrio yanez.png',
+                layout: 'text-image'
             }
         ]
     },

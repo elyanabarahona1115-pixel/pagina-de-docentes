@@ -11,6 +11,7 @@
     --dorado: #FFD700;
     --lavanda: #D9D9FF;
     --blanco: #FFFFFF;
+    --fondo-calido: #FFFACD;
     --azul-claro: #DCEAF7;
     --lavanda-suave: #F1EEFA;
     --dorado-claro: #F3D98B;
@@ -334,6 +335,22 @@ body {
     animation: gradientShift 8s ease infinite;
 }
 
+.hero-taller-estructuras {
+    --theme-primary: #263238;
+    --theme-secondary: #607d8b;
+    --theme-tertiary: #c04b3f;
+    --theme-accent: #263238;
+    --theme-contrast: var(--white-cream);
+    background: linear-gradient(135deg, #263238 0%, #607d8b 58%, #c04b3f 100%);
+}
+
+.hero-overlay-estructuras {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(20, 27, 30, 0.9) 0%, rgba(38, 50, 56, 0.62) 55%, rgba(192, 75, 63, 0.2) 100%);
+    animation: gradientShift 8s ease infinite;
+}
+
 .hero-overlay-banda {
     position: absolute;
     top: 0;
@@ -559,6 +576,65 @@ body {
 
 .theme-electricidad .challenge-card:hover {
     border-left-color: #1d638f;
+}
+
+.theme-estructuras .section-title,
+.theme-estructuras .achievement-card h3,
+.theme-estructuras .challenge-card h3,
+.theme-estructuras .quality-card h3,
+.theme-estructuras .cta-section h2,
+.theme-estructuras .placeholder-text i {
+    color: #263238;
+}
+
+.theme-estructuras .section-divider {
+    background: linear-gradient(90deg, #c04b3f, #607d8b);
+}
+
+.theme-estructuras .achievement-card,
+.theme-estructuras .challenge-card,
+.theme-estructuras .quality-card {
+    border-color: rgba(96, 125, 139, 0.42);
+}
+
+.theme-estructuras .achievement-card {
+    background: linear-gradient(135deg, rgba(245, 247, 248, 0.96), rgba(224, 230, 233, 0.82));
+}
+
+.theme-estructuras .achievement-icon,
+.theme-estructuras .quality-icon,
+.theme-estructuras .challenge-number {
+    color: #ffffff;
+    background: linear-gradient(135deg, #263238, #c04b3f);
+}
+
+.theme-estructuras .challenge-card {
+    border-left-color: #c04b3f;
+}
+
+.theme-estructuras .quality-card {
+    background: linear-gradient(135deg, #e0e6e9 0%, #f3dfdc 100%);
+}
+
+.theme-estructuras .cta-section {
+    background: linear-gradient(135deg, #263238 0%, #607d8b 58%, #c04b3f 100%);
+}
+
+.theme-estructuras .btn-cta {
+    color: #263238;
+}
+
+.theme-estructuras .section-title:hover {
+    color: #c04b3f;
+}
+
+.theme-estructuras .achievement-card:hover,
+.theme-estructuras .quality-card:hover {
+    box-shadow: 0 12px 35px rgba(38, 50, 56, 0.22);
+}
+
+.theme-estructuras .challenge-card:hover {
+    border-left-color: #607d8b;
 }
 
 .theme-carpinteria .achievement-card:hover {
@@ -837,6 +913,16 @@ body {
 
 .image-placeholder.imagen-fundacion .placeholder-img {
     object-position: center top;
+}
+
+.image-placeholder.imagen-electricidad {
+    aspect-ratio: 657 / 360;
+    min-height: 0;
+}
+
+.image-placeholder.imagen-electricidad .placeholder-img {
+    object-fit: contain;
+    object-position: center;
 }
 
 .image-placeholder:hover .placeholder-img {
@@ -1170,6 +1256,198 @@ body {
         padding: 3rem 1.5rem;
     }
 
+
+/* ===== PALETA UNICA MOSTAZA, OCRE Y BLANCO ===== */
+:root {
+    --mostaza: #D49A00;
+    --mostaza-claro: #F2C94C;
+    --ocre: #A66F00;
+    --ocre-profundo: #694200;
+    --crema: #FFF4D6;
+    --marfil: #FFFDF7;
+    --linea-ocre: #E7C875;
+    --texto-ocre: #3F2A08;
+    --sombra-ocre: rgba(105, 66, 0, 0.16);
+
+    --azul-principal: var(--mostaza);
+    --azul-oscuro: var(--ocre-profundo);
+    --vino: var(--ocre);
+    --dorado: var(--mostaza);
+    --lavanda: var(--crema);
+    --blanco: var(--marfil);
+    --fondo-calido: var(--crema);
+    --azul-claro: var(--crema);
+    --lavanda-suave: var(--marfil);
+    --dorado-claro: var(--mostaza-claro);
+    --vino-claro: var(--mostaza-claro);
+    --texto: var(--texto-ocre);
+    --lilac: var(--mostaza-claro);
+    --soft-lavender: var(--marfil);
+    --pastel-violet: var(--mostaza);
+    --light-purple: var(--crema);
+    --darker-purple: var(--ocre-profundo);
+    --soft-gray: var(--marfil);
+    --warm-gray: var(--mostaza);
+    --rose-gold: var(--crema);
+    --accent-rose: var(--mostaza-claro);
+    --text-dark: var(--texto-ocre);
+    --text-light: var(--ocre);
+    --white-cream: var(--marfil);
+}
+
+body,
+.taller-container {
+    background-color: var(--marfil);
+    color: var(--texto-ocre);
+}
+
+.navbar-wrapper,
+.area-belleza .navbar-wrapper,
+.area-carpinteria .navbar-wrapper,
+.area-banda .navbar-wrapper,
+.area-deportes .navbar-wrapper,
+.footer-section {
+    background: linear-gradient(100deg, var(--ocre-profundo) 0%, var(--ocre) 52%, var(--mostaza) 100%);
+    color: var(--marfil);
+    box-shadow: 0 2px 8px var(--sombra-ocre);
+}
+
+.navbar-brand,
+.nav-link,
+.hero-taller-belleza .hero-content-belleza,
+.hero-taller-deportes .hero-content-belleza,
+.footer-section p,
+.footer-bottom {
+    color: var(--marfil) !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover::after,
+.nav-link.active::after,
+.hero-kicker-belleza,
+.footer-section h5 {
+    color: var(--mostaza-claro) !important;
+    background-color: var(--mostaza-claro);
+}
+
+.hero-taller,
+.hero-taller-estructuras,
+.hero-taller-deportes {
+    background: linear-gradient(135deg, var(--ocre-profundo) 0%, var(--ocre) 58%, var(--mostaza) 100%);
+}
+
+.hero-overlay-belleza,
+.hero-overlay-electricidad,
+.hero-overlay-estructuras,
+.hero-overlay-deportes {
+    background: linear-gradient(90deg, rgba(63, 42, 8, 0.92) 0%, rgba(105, 66, 0, 0.66) 55%, rgba(166, 111, 0, 0.2) 100%);
+}
+
+.hero-overlay-carpinteria,
+.hero-overlay-banda {
+    background: radial-gradient(circle at 20% 50%, rgba(242, 201, 76, 0.35) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 253, 247, 0.3) 0%, transparent 50%);
+}
+
+.talleres-selector,
+.area-belleza .talleres-selector,
+.area-belleza .hero-taller-belleza,
+.section-dark {
+    background: var(--crema);
+    color: var(--texto-ocre);
+}
+
+.talleres-selector h2,
+.area-belleza .hero-taller-belleza .hero-title,
+.section-title,
+.achievement-card h3,
+.challenge-card h3,
+.quality-card h3,
+.cta-section h2 {
+    color: var(--ocre-profundo) !important;
+}
+
+.section-light,
+.theme-banda .section-light,
+.theme-deportes .section-light,
+.theme-belleza .section-light {
+    background: linear-gradient(180deg, var(--marfil) 0%, var(--crema) 100%);
+}
+
+.section-divider {
+    background: linear-gradient(90deg, var(--mostaza), var(--ocre-profundo));
+}
+
+.image-placeholder,
+.achievement-card,
+.challenge-card,
+.quality-card,
+.theme-belleza .image-placeholder,
+.theme-belleza .achievement-card,
+.theme-belleza .challenge-card,
+.theme-belleza .quality-card,
+.theme-banda .achievement-card,
+.theme-deportes .achievement-card {
+    background: linear-gradient(135deg, var(--marfil) 0%, var(--crema) 100%);
+    border-color: var(--linea-ocre);
+    color: var(--texto-ocre);
+    box-shadow: 0 10px 30px var(--sombra-ocre);
+}
+
+.achievement-icon,
+.quality-icon,
+.placeholder-text i,
+.challenge-number {
+    color: var(--ocre-profundo) !important;
+}
+
+.challenge-number,
+.btn-cta,
+.btn-cta:hover,
+.theme-belleza .achievement-icon,
+.theme-belleza .quality-icon {
+    background: var(--mostaza);
+}
+
+.challenge-card {
+    border-left-color: var(--mostaza);
+}
+
+.quality-card {
+    border-color: var(--linea-ocre);
+}
+
+.cta-section {
+    background: linear-gradient(135deg, var(--ocre-profundo) 0%, var(--ocre) 58%, var(--mostaza) 100%);
+    color: var(--marfil);
+}
+
+.btn-cta {
+    color: var(--ocre-profundo);
+}
+
+.btn-cta:hover {
+    color: var(--ocre-profundo);
+    box-shadow: 0 10px 30px var(--sombra-ocre);
+}
+
+.talleres-selector .dropdown-toggle,
+.form-control,
+.form-select {
+    border-color: var(--linea-ocre);
+    color: var(--texto-ocre);
+    background-color: var(--marfil);
+}
+
+.talleres-selector .dropdown-toggle:hover,
+.talleres-selector .dropdown-toggle:focus,
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--mostaza);
+    background-color: var(--crema);
+    color: var(--texto-ocre);
+    box-shadow: 0 0 0 0.2rem rgba(212, 154, 0, 0.2);
+}
     .cta-section h2 {
         font-size: 1.4rem;
     }
@@ -1508,6 +1786,23 @@ body {
     border-color: rgba(255, 215, 0, 0.28);
 }
 
+.section-light,
+.image-placeholder,
+.achievement-card,
+.challenge-card,
+.quality-card,
+.placeholder-text,
+.btn-cta {
+    background-color: var(--fondo-calido);
+}
+
+.achievement-card,
+.challenge-card,
+.quality-card,
+.placeholder-text {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 250, 205, 0.9));
+}
+
 .theme-carpinteria .section-title,
 .theme-carpinteria .achievement-card h3,
 .theme-carpinteria .challenge-card h3,
@@ -1606,4 +1901,654 @@ body {
     color: #F0F4F8 !important;
     font-family: Arial, Roboto, Inter, sans-serif;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.section-light {
+    background: linear-gradient(180deg, var(--fondo-calido) 0%, #FFF7C2 100%) !important;
+}
+
+.theme-carpinteria .achievement-card,
+.theme-carpinteria .challenge-card,
+.theme-carpinteria .quality-card,
+.theme-banda .achievement-card,
+.theme-banda .challenge-card,
+.theme-banda .quality-card,
+.theme-deportes .achievement-card,
+.theme-deportes .challenge-card,
+.theme-deportes .quality-card,
+.theme-belleza .achievement-card,
+.theme-belleza .challenge-card,
+.theme-belleza .quality-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 250, 205, 0.9)) !important;
+}
+
+/* Cierre de paleta: prevalece sobre variaciones antiguas de cada taller. */
+:root {
+    --azul-principal: var(--mostaza);
+    --azul-oscuro: var(--ocre-profundo);
+    --vino: var(--ocre);
+    --dorado: var(--mostaza);
+    --lavanda: var(--crema);
+    --blanco: var(--marfil);
+    --azul-claro: var(--crema);
+    --lavanda-suave: var(--marfil);
+    --dorado-claro: var(--mostaza-claro);
+    --vino-claro: var(--mostaza-claro);
+    --texto: var(--texto-ocre);
+}
+
+body,
+.taller-container,
+.section-light,
+.section-dark {
+    background: var(--marfil) !important;
+    color: var(--texto-ocre);
+}
+
+.navbar-wrapper,
+.area-belleza .navbar-wrapper,
+.area-carpinteria .navbar-wrapper,
+.area-banda .navbar-wrapper,
+.area-deportes .navbar-wrapper,
+.footer-section,
+.cta-section {
+    background: linear-gradient(100deg, var(--ocre-profundo), var(--ocre) 55%, var(--mostaza)) !important;
+}
+
+.hero-taller,
+.hero-taller-estructuras,
+.hero-taller-deportes {
+    background: linear-gradient(135deg, var(--ocre-profundo), var(--ocre) 58%, var(--mostaza)) !important;
+}
+
+.section-title,
+.achievement-card h3,
+.challenge-card h3,
+.quality-card h3,
+.talleres-selector h2,
+.hero-title,
+.carpinteria-titulo,
+.carpinteria-seccion-titulo,
+.galeria-titulo {
+    color: var(--ocre-profundo) !important;
+}
+
+.section-divider,
+.talleres-selector h2::after {
+    background: linear-gradient(90deg, var(--mostaza), var(--ocre-profundo)) !important;
+}
+
+.achievement-card,
+.challenge-card,
+.quality-card,
+.image-placeholder,
+.carpinteria-contenido,
+.galeria-item {
+    background: linear-gradient(135deg, var(--marfil), var(--crema)) !important;
+    border-color: var(--linea-ocre) !important;
+    color: var(--texto-ocre);
+    box-shadow: 0 10px 30px var(--sombra-ocre);
+}
+
+.achievement-icon,
+.quality-icon,
+.placeholder-text i,
+.challenge-number {
+    color: var(--ocre-profundo) !important;
+}
+
+.challenge-card,
+.theme-carpinteria .challenge-card,
+.theme-banda .challenge-card,
+.theme-deportes .challenge-card,
+.theme-belleza .challenge-card {
+    border-left-color: var(--mostaza) !important;
+}
+
+.challenge-number,
+.btn-cta,
+.btn-cta:hover {
+    background: var(--mostaza) !important;
+    border-color: var(--mostaza) !important;
+    color: var(--ocre-profundo) !important;
+}
+
+.section-text,
+.achievement-card p,
+.challenge-card p,
+.quality-card p,
+.carpinteria-contenido p,
+.carpinteria-lista li {
+    color: var(--texto-ocre) !important;
+}
+
+/* Tipografia y contraste finales para textos heredados. */
+body,
+p,
+li,
+label,
+small,
+.text-muted,
+.section-text,
+.hero-description,
+.achievement-card p,
+.challenge-card p,
+.quality-card p,
+.carpinteria-contenido p,
+.carpinteria-lista li {
+    color: var(--texto-ocre) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title,
+.talleres-selector h2,
+.hero-title,
+.carpinteria-titulo,
+.carpinteria-seccion-titulo,
+.galeria-titulo {
+    color: var(--ocre-profundo) !important;
+}
+
+.navbar-wrapper h1,
+.navbar-wrapper h2,
+.navbar-wrapper h3,
+.navbar-wrapper h4,
+.navbar-wrapper h5,
+.navbar-wrapper h6,
+.navbar-wrapper p,
+.navbar-wrapper .navbar-brand,
+.navbar-wrapper .nav-link,
+.footer-section p,
+.footer-section a,
+.cta-section h2,
+.cta-section p,
+.hero-taller .hero-content-belleza,
+.hero-taller .hero-title,
+.hero-taller .hero-subtitle,
+.hero-taller .hero-description {
+    color: var(--marfil) !important;
+}
+
+.hero-taller .hero-title,
+.hero-taller .hero-kicker-belleza,
+.hero-taller-deportes .hero-subtitle {
+    color: var(--mostaza-claro) !important;
+}
+
+a {
+    color: var(--ocre);
+}
+
+a:hover {
+    color: var(--ocre-profundo);
+}
+
+.form-label,
+.form-control,
+.form-select,
+.form-control::placeholder {
+    color: var(--texto-ocre) !important;
+}
+
+.form-control::placeholder {
+    opacity: 0.68;
+}
+
+/* Todas las areas de talleres comparten el mismo tema institucional. */
+.area-belleza,
+.area-carpinteria,
+.area-electricidad,
+.area-banda,
+.area-deportes,
+.area-hogar,
+.area-estructuras,
+.theme-belleza,
+.theme-carpinteria,
+.theme-electricidad,
+.theme-banda,
+.theme-deportes,
+.theme-hogar,
+.theme-estructuras {
+    --theme-primary: var(--mostaza);
+    --theme-secondary: var(--ocre);
+    --theme-tertiary: var(--crema);
+    --theme-accent: var(--ocre-profundo);
+    --theme-contrast: var(--marfil);
+}
+
+.hero-taller-belleza,
+.hero-taller-carpinteria,
+.hero-taller-electricidad,
+.hero-taller-banda,
+.hero-taller-hogar,
+.hero-taller-estructuras,
+.hero-taller-deportes {
+    background: linear-gradient(135deg, var(--ocre-profundo) 0%, var(--ocre) 58%, var(--mostaza) 100%) !important;
+}
+
+.hero-overlay-belleza,
+.hero-overlay-carpinteria,
+.hero-overlay-electricidad,
+.hero-overlay-banda,
+.hero-overlay-estructuras,
+.hero-overlay-deportes {
+    background: linear-gradient(90deg, rgba(63, 42, 8, 0.9) 0%, rgba(105, 66, 0, 0.62) 55%, rgba(166, 111, 0, 0.18) 100%) !important;
+}
+
+.area-belleza .section-title,
+.area-carpinteria .section-title,
+.area-electricidad .section-title,
+.area-banda .section-title,
+.area-deportes .section-title,
+.area-hogar .section-title,
+.area-estructuras .section-title,
+.theme-belleza .section-title,
+.theme-carpinteria .section-title,
+.theme-electricidad .section-title,
+.theme-banda .section-title,
+.theme-deportes .section-title,
+.theme-hogar .section-title,
+.theme-estructuras .section-title {
+    color: var(--ocre-profundo) !important;
+}
+
+.area-belleza .section-divider,
+.area-carpinteria .section-divider,
+.area-electricidad .section-divider,
+.area-banda .section-divider,
+.area-deportes .section-divider,
+.area-hogar .section-divider,
+.area-estructuras .section-divider,
+.theme-belleza .section-divider,
+.theme-carpinteria .section-divider,
+.theme-electricidad .section-divider,
+.theme-banda .section-divider,
+.theme-deportes .section-divider,
+.theme-hogar .section-divider,
+.theme-estructuras .section-divider {
+    background: linear-gradient(90deg, var(--mostaza), var(--ocre-profundo)) !important;
+}
+
+.area-belleza .achievement-card,
+.area-belleza .challenge-card,
+.area-belleza .quality-card,
+.area-carpinteria .achievement-card,
+.area-carpinteria .challenge-card,
+.area-carpinteria .quality-card,
+.area-electricidad .achievement-card,
+.area-electricidad .challenge-card,
+.area-electricidad .quality-card,
+.area-banda .achievement-card,
+.area-banda .challenge-card,
+.area-banda .quality-card,
+.area-deportes .achievement-card,
+.area-deportes .challenge-card,
+.area-deportes .quality-card,
+.area-hogar .achievement-card,
+.area-hogar .challenge-card,
+.area-hogar .quality-card,
+.area-estructuras .achievement-card,
+.area-estructuras .challenge-card,
+.area-estructuras .quality-card,
+.theme-belleza .achievement-card,
+.theme-belleza .challenge-card,
+.theme-belleza .quality-card,
+.theme-carpinteria .achievement-card,
+.theme-carpinteria .challenge-card,
+.theme-carpinteria .quality-card,
+.theme-electricidad .achievement-card,
+.theme-electricidad .challenge-card,
+.theme-electricidad .quality-card,
+.theme-banda .achievement-card,
+.theme-banda .challenge-card,
+.theme-banda .quality-card,
+.theme-deportes .achievement-card,
+.theme-deportes .challenge-card,
+.theme-deportes .quality-card,
+.theme-hogar .achievement-card,
+.theme-hogar .challenge-card,
+.theme-hogar .quality-card,
+.theme-estructuras .achievement-card,
+.theme-estructuras .challenge-card,
+.theme-estructuras .quality-card {
+    background: linear-gradient(135deg, var(--marfil), var(--crema)) !important;
+    border-color: var(--linea-ocre) !important;
+}
+
+.area-belleza .achievement-icon,
+.area-belleza .quality-icon,
+.area-carpinteria .achievement-icon,
+.area-carpinteria .quality-icon,
+.area-electricidad .achievement-icon,
+.area-electricidad .quality-icon,
+.area-banda .achievement-icon,
+.area-banda .quality-icon,
+.area-deportes .achievement-icon,
+.area-deportes .quality-icon,
+.area-hogar .achievement-icon,
+.area-hogar .quality-icon,
+.area-estructuras .achievement-icon,
+.area-estructuras .quality-icon {
+    color: var(--ocre-profundo) !important;
+}
+
+.area-belleza .challenge-number,
+.area-carpinteria .challenge-number,
+.area-electricidad .challenge-number,
+.area-banda .challenge-number,
+.area-deportes .challenge-number,
+.area-hogar .challenge-number,
+.area-estructuras .challenge-number {
+    background: var(--mostaza) !important;
+    color: var(--ocre-profundo) !important;
+}
+
+/* Las areas de talleres usan exactamente el tema visual del inicio. */
+:root {
+    --azul-principal: #0D6EFD;
+    --azul-oscuro: #002B7F;
+    --vino: #7A1F3D;
+    --dorado: #FFD700;
+    --lavanda: #D9D9FF;
+    --blanco: #FFFFFF;
+    --fondo-calido: #FFFACD;
+    --azul-claro: #DCEAF7;
+    --lavanda-suave: #F1EEFA;
+    --dorado-claro: #F3D98B;
+    --vino-claro: #A94B68;
+    --texto: #172033;
+    --mostaza: var(--dorado);
+    --mostaza-claro: var(--dorado-claro);
+    --ocre: var(--vino);
+    --ocre-profundo: var(--azul-oscuro);
+    --crema: var(--fondo-calido);
+    --marfil: var(--blanco);
+    --linea-ocre: var(--dorado-claro);
+    --texto-ocre: var(--texto);
+    --sombra-ocre: rgba(0, 43, 127, 0.16);
+}
+
+body,
+.taller-container {
+    background-color: var(--lavanda-suave) !important;
+    color: var(--texto);
+}
+
+.navbar-wrapper,
+.footer-section,
+.cta-section {
+    background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 100%) !important;
+}
+
+.hero-taller,
+.hero-taller-belleza,
+.hero-taller-carpinteria,
+.hero-taller-electricidad,
+.hero-taller-banda,
+.hero-taller-hogar,
+.hero-taller-estructuras,
+.hero-taller-deportes {
+    background: var(--azul-oscuro) !important;
+}
+
+.hero-overlay-belleza,
+.hero-overlay-carpinteria,
+.hero-overlay-electricidad,
+.hero-overlay-banda,
+.hero-overlay-estructuras,
+.hero-overlay-deportes {
+    background: linear-gradient(90deg, rgba(0, 43, 127, 0.9) 0%, rgba(0, 43, 127, 0.62) 55%, rgba(122, 31, 61, 0.2) 100%) !important;
+}
+
+.navbar-brand,
+.nav-link,
+.hero-taller .hero-content-belleza,
+.hero-taller .hero-title,
+.hero-taller .hero-subtitle,
+.hero-taller .hero-description,
+.footer-section p,
+.footer-section a {
+    color: var(--blanco) !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover::after,
+.nav-link.active::after,
+.hero-kicker-belleza,
+.footer-section h5 {
+    color: var(--dorado) !important;
+    background-color: var(--dorado);
+}
+
+.talleres-selector,
+.section-light,
+.section-dark {
+    background: linear-gradient(180deg, var(--lavanda-suave) 0%, var(--azul-claro) 100%) !important;
+}
+
+.section-title,
+.talleres-selector h2,
+.hero-title,
+.carpinteria-titulo,
+.carpinteria-seccion-titulo,
+.galeria-titulo,
+.achievement-card h3,
+.challenge-card h3,
+.quality-card h3 {
+    color: var(--azul-oscuro) !important;
+}
+
+.section-text,
+.achievement-card p,
+.challenge-card p,
+.quality-card p,
+.carpinteria-contenido p,
+.carpinteria-lista li {
+    color: var(--texto) !important;
+}
+
+.section-divider,
+.talleres-selector h2::after {
+    background: linear-gradient(90deg, var(--vino), var(--dorado)) !important;
+}
+
+.image-placeholder,
+.achievement-card,
+.challenge-card,
+.quality-card,
+.carpinteria-contenido,
+.galeria-item {
+    background: var(--blanco) !important;
+    border-color: rgba(0, 43, 127, 0.2) !important;
+    color: var(--texto);
+    box-shadow: 0 8px 25px rgba(0, 43, 127, 0.1);
+}
+
+.achievement-icon,
+.quality-icon,
+.placeholder-text i {
+    color: var(--vino) !important;
+}
+
+.challenge-card {
+    border-left-color: var(--vino) !important;
+}
+
+.challenge-number {
+    background: linear-gradient(135deg, var(--vino), var(--azul-oscuro)) !important;
+    color: var(--blanco) !important;
+}
+
+.btn-cta {
+    background: var(--dorado) !important;
+    color: var(--azul-oscuro) !important;
+}
+
+.btn-cta:hover {
+    background: var(--dorado-claro) !important;
+    color: var(--azul-oscuro) !important;
+}
+
+.form-control,
+.form-select,
+.talleres-selector .dropdown-toggle {
+    border-color: rgba(0, 43, 127, 0.2);
+    color: var(--texto) !important;
+    background-color: var(--blanco);
+}
+
+/* Tema definitivo compartido con la pantalla principal mostaza. */
+:root {
+    --azul-principal: #D49A00;
+    --azul-oscuro: #694200;
+    --vino: #A66F00;
+    --dorado: #D49A00;
+    --lavanda: #FFF4D6;
+    --blanco: #FFFDF7;
+    --fondo-calido: #FFF4D6;
+    --azul-claro: #FFF4D6;
+    --lavanda-suave: #FFFDF7;
+    --dorado-claro: #F2C94C;
+    --vino-claro: #F2C94C;
+    --texto: #3F2A08;
+    --mostaza: #D49A00;
+    --mostaza-claro: #F2C94C;
+    --ocre: #A66F00;
+    --ocre-profundo: #694200;
+    --crema: #FFF4D6;
+    --marfil: #FFFDF7;
+    --linea-ocre: #E7C875;
+    --texto-ocre: #3F2A08;
+    --sombra-ocre: rgba(105, 66, 0, 0.16);
+}
+
+body,
+.taller-container {
+    background-color: var(--marfil) !important;
+    color: var(--texto-ocre);
+}
+
+.navbar-wrapper,
+.footer-section,
+.cta-section,
+.hero-taller,
+.hero-taller-belleza,
+.hero-taller-carpinteria,
+.hero-taller-electricidad,
+.hero-taller-banda,
+.hero-taller-hogar,
+.hero-taller-estructuras,
+.hero-taller-deportes {
+    background: linear-gradient(100deg, var(--ocre-profundo) 0%, var(--ocre) 52%, var(--mostaza) 100%) !important;
+}
+
+.hero-overlay-belleza,
+.hero-overlay-carpinteria,
+.hero-overlay-electricidad,
+.hero-overlay-banda,
+.hero-overlay-estructuras,
+.hero-overlay-deportes {
+    background: linear-gradient(90deg, rgba(63, 42, 8, 0.9) 0%, rgba(105, 66, 0, 0.62) 55%, rgba(166, 111, 0, 0.2) 100%) !important;
+}
+
+.navbar-brand,
+.nav-link,
+.hero-taller .hero-content-belleza,
+.hero-taller .hero-title,
+.hero-taller .hero-subtitle,
+.hero-taller .hero-description,
+.footer-section p,
+.footer-section a {
+    color: var(--marfil) !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover::after,
+.nav-link.active::after,
+.hero-kicker-belleza,
+.footer-section h5 {
+    color: var(--mostaza-claro) !important;
+    background-color: var(--mostaza-claro);
+}
+
+.talleres-selector,
+.section-light,
+.section-dark {
+    background: linear-gradient(180deg, var(--marfil) 0%, var(--crema) 100%) !important;
+}
+
+.section-title,
+.talleres-selector h2,
+.hero-title,
+.carpinteria-titulo,
+.carpinteria-seccion-titulo,
+.galeria-titulo,
+.achievement-card h3,
+.challenge-card h3,
+.quality-card h3 {
+    color: var(--ocre-profundo) !important;
+}
+
+.section-text,
+.achievement-card p,
+.challenge-card p,
+.quality-card p,
+.carpinteria-contenido p,
+.carpinteria-lista li {
+    color: var(--texto-ocre) !important;
+}
+
+.section-divider,
+.talleres-selector h2::after {
+    background: linear-gradient(90deg, var(--mostaza), var(--ocre-profundo)) !important;
+}
+
+.image-placeholder,
+.achievement-card,
+.challenge-card,
+.quality-card,
+.carpinteria-contenido,
+.galeria-item {
+    background: var(--marfil) !important;
+    border-color: var(--linea-ocre) !important;
+    color: var(--texto-ocre);
+    box-shadow: 0 8px 25px var(--sombra-ocre);
+}
+
+.achievement-icon,
+.quality-icon,
+.placeholder-text i {
+    color: var(--ocre) !important;
+}
+
+.challenge-card {
+    border-left-color: var(--ocre) !important;
+}
+
+.challenge-number {
+    background: linear-gradient(135deg, var(--ocre), var(--ocre-profundo)) !important;
+    color: var(--marfil) !important;
+}
+
+.btn-cta {
+    background: linear-gradient(135deg, var(--mostaza-claro), var(--mostaza)) !important;
+    color: var(--ocre-profundo) !important;
+}
+
+.btn-cta:hover {
+    background: var(--ocre) !important;
+    color: var(--marfil) !important;
+}
+
+.form-control,
+.form-select,
+.talleres-selector .dropdown-toggle {
+    border-color: var(--linea-ocre);
+    color: var(--texto-ocre) !important;
+    background-color: var(--marfil);
 }

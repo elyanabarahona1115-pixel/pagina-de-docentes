@@ -5,6 +5,7 @@
   --dorado: #FFD700;
   --lavanda: #D9D9FF;
   --blanco: #FFFFFF;
+  --fondo-calido: #FFFACD;
   --azul-claro: #DCEAF7;
   --lavanda-suave: #F1EEFA;
   --dorado-claro: #F3D98B;
@@ -595,6 +596,61 @@ body {
   background-color: #f4e6c8;
 }
 
+#instituto {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #FFFACD;
+  background-image:
+    radial-gradient(circle at 12% 22%, rgba(255, 255, 255, 0.34) 0 2.2rem, transparent 2.35rem),
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.24) 0 3rem, transparent 3.15rem),
+    radial-gradient(circle at 28% 78%, rgba(255, 255, 255, 0.2) 0 1.5rem, transparent 1.65rem),
+    radial-gradient(circle at 91% 74%, rgba(255, 255, 255, 0.28) 0 2.4rem, transparent 2.55rem),
+    linear-gradient(135deg, #FFFACD 0%, #FFF7C2 100%);
+  background-size: auto, auto, auto, auto, 100% 100%;
+}
+
+#instituto > .container {
+  position: relative;
+  z-index: 1;
+}
+
+#instituto .info-box {
+  background: rgba(255, 250, 205, 0.82);
+  border: 1px solid rgba(196, 154, 58, 0.22);
+  box-shadow: 0 8px 20px rgba(138, 101, 21, 0.08);
+}
+
+/* Superficies claras coherentes en todo el sitio. */
+.tab-dropdown-card,
+.matricula-card,
+.matricula-form-page,
+.noticias-section,
+.noticias-contenido,
+.carpinteria-contenido,
+.galeria-item,
+.historia-card,
+.valor-item,
+.matricula-form-panel,
+.matricula-item,
+.image-placeholder,
+.achievement-card,
+.challenge-card,
+.quality-card {
+  background-color: var(--fondo-calido);
+}
+
+.tab-dropdown-card,
+.matricula-card,
+.matricula-form-page,
+.noticias-contenido,
+.carpinteria-contenido,
+.galeria-item,
+.historia-card,
+.matricula-form-panel {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 250, 205, 0.9));
+}
+
 .historia-toggle {
   display: block;
   min-width: 140px;
@@ -951,6 +1007,198 @@ footer p {
   .hero-content h2 {
     font-size: clamp(2.3rem, 11vw, 3.8rem);
   }
+}
+
+/* ===== PALETA INSTITUCIONAL MOSTAZA, OCRE Y BLANCO ===== */
+:root {
+  --mostaza: #D49A00;
+  --mostaza-claro: #F2C94C;
+  --ocre: #A66F00;
+  --ocre-profundo: #694200;
+  --crema: #FFF4D6;
+  --marfil: #FFFDF7;
+  --linea-ocre: #E7C875;
+  --texto-ocre: #3F2A08;
+  --sombra-ocre: rgba(105, 66, 0, 0.16);
+
+  --azul-principal: var(--mostaza);
+  --azul-oscuro: var(--ocre-profundo);
+  --vino: var(--ocre);
+  --dorado: var(--mostaza);
+  --lavanda: var(--crema);
+  --fondo-calido: var(--crema);
+  --azul-claro: var(--crema);
+  --lavanda-suave: var(--marfil);
+  --dorado-claro: var(--mostaza-claro);
+  --vino-claro: var(--mostaza-claro);
+  --texto: var(--texto-ocre);
+}
+
+body {
+  background-color: var(--marfil);
+  color: var(--texto-ocre);
+}
+
+.site-header,
+.navbar-wrapper {
+  background: linear-gradient(100deg, var(--ocre-profundo) 0%, var(--ocre) 52%, var(--mostaza) 100%);
+}
+
+.institution-strip,
+.navbar-brand,
+.institution-name,
+.nav-link,
+.hero-content,
+.hero-section,
+footer,
+#proyectos .card,
+#proyectos .card .card-body {
+  color: var(--marfil);
+}
+
+.nav-link:hover,
+.nav-link.active,
+.hero-kicker,
+.eyebrow,
+.specialty-card span,
+.social-links a:hover {
+  color: var(--mostaza-claro) !important;
+}
+
+.specialty-bar,
+footer {
+  background-color: var(--ocre-profundo);
+}
+
+.specialty-links a,
+.specialty-links .dropdown-toggle,
+.dropdown-menu,
+.category-tab.is-active,
+.tab-dropdown-card,
+.matricula-card,
+.matricula-form-page,
+.matricula-form-panel {
+  background-color: var(--marfil);
+  border-color: var(--linea-ocre);
+  color: var(--texto-ocre);
+}
+
+.specialty-links a:hover,
+.specialty-links .dropdown-toggle:hover,
+.specialty-links .dropdown-item:hover,
+.category-tab:hover {
+  background-color: var(--crema);
+  color: var(--ocre-profundo);
+}
+
+.specialty-links .dropdown-item,
+.category-tab,
+.career-card h3,
+.career-details h4,
+.dropdown-list li,
+.dropdown-list a,
+.matricula-form-panel .form-label,
+.matricula-form-page .form-label {
+  color: var(--texto-ocre);
+}
+
+.navbar-matricula-btn,
+.matricula-btn,
+.matricula-submit,
+.workshop-button,
+.historia-toggle {
+  background: linear-gradient(135deg, var(--mostaza-claro), var(--mostaza));
+  border-color: var(--mostaza);
+  color: var(--ocre-profundo) !important;
+  box-shadow: 0 10px 22px var(--sombra-ocre);
+}
+
+.navbar-matricula-btn:hover,
+.matricula-btn:hover,
+.matricula-submit:hover,
+.workshop-button:hover,
+.historia-toggle:hover,
+.historia-toggle:focus-visible {
+  background: var(--ocre);
+  border-color: var(--ocre-profundo);
+  color: var(--marfil) !important;
+}
+
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(63, 42, 8, 0.92) 0%, rgba(105, 66, 0, 0.68) 52%, rgba(166, 111, 0, 0.2) 100%);
+}
+
+.section-title,
+.subsection-title,
+.career-card h3,
+.career-details h4,
+.matricula-texto,
+.matricula-lista li,
+.matricula-form-panel .form-label,
+.matricula-form-page .form-label {
+  color: var(--ocre-profundo);
+}
+
+.specialties-section,
+.matricula-section,
+.matricula-page-main {
+  background: linear-gradient(135deg, var(--crema) 0%, var(--marfil) 100%);
+}
+
+.specialty-card,
+.career-card,
+.teacher-card,
+.historia-card,
+.valor-item,
+.achievement-card,
+.challenge-card,
+.quality-card {
+  background: var(--marfil);
+  border-color: var(--linea-ocre);
+  color: var(--texto-ocre);
+  box-shadow: 0 0.75rem 1.5rem var(--sombra-ocre);
+}
+
+.specialty-ochre,
+.specialty-yellow,
+.specialty-peach,
+.specialty-purple,
+.specialty-orange,
+.specialty-cream,
+.specialty-sage,
+.specialty-blue,
+.info-box,
+.career-card,
+.image-placeholder {
+  background: var(--crema);
+}
+
+.teacher-card .card-body,
+.teacher-card:nth-child(3n + 2) .card-body,
+.teacher-card:nth-child(3n) .card-body {
+  background: linear-gradient(135deg, var(--marfil), var(--crema));
+}
+
+.teacher-card,
+.teacher-card:nth-child(3n + 2),
+.teacher-card:nth-child(3n) {
+  border-top-color: var(--mostaza);
+}
+
+.form-control:focus,
+.form-select:focus,
+.matricula-form-panel .form-control:focus,
+.matricula-form-panel .form-select:focus,
+.matricula-form-page .form-control:focus,
+.matricula-form-page .form-select:focus {
+  border-color: var(--mostaza);
+  box-shadow: 0 0 0 0.2rem rgba(212, 154, 0, 0.2);
+}
+
+.dropdown-badge,
+.matricula-chip {
+  background: var(--mostaza-claro);
+  color: var(--ocre-profundo);
 }
 
 :root {
@@ -2114,4 +2362,539 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+/* Cierre de paleta: estas reglas prevalecen sobre estilos historicos anteriores. */
+:root {
+  --azul-principal: var(--mostaza);
+  --azul-oscuro: var(--ocre-profundo);
+  --vino: var(--ocre);
+  --dorado: var(--mostaza);
+  --lavanda: var(--crema);
+  --blanco: var(--marfil);
+  --azul-claro: var(--crema);
+  --lavanda-suave: var(--marfil);
+  --dorado-claro: var(--mostaza-claro);
+  --vino-claro: var(--mostaza-claro);
+  --texto: var(--texto-ocre);
+}
+
+body,
+.noticias-section,
+.carpinteria-section {
+  background: var(--marfil);
+  color: var(--texto-ocre);
+}
+
+.noticias-titulo,
+.noticias-subtitulo,
+.carpinteria-titulo,
+.carpinteria-seccion-titulo,
+.galeria-titulo {
+  color: var(--ocre-profundo);
+}
+
+.noticias-titulo::after,
+.noticias-contenido,
+.carpinteria-seccion-titulo::before {
+  background: var(--mostaza);
+}
+
+.noticias-contenido,
+.carpinteria-contenido,
+.galeria-item {
+  background: var(--marfil);
+  border-color: var(--linea-ocre);
+  color: var(--texto-ocre);
+  box-shadow: 0 8px 24px var(--sombra-ocre);
+}
+
+.noticias-contenido p,
+.carpinteria-contenido p,
+.carpinteria-lista li {
+  color: var(--texto-ocre);
+}
+
+.btn,
+button,
+.form-control,
+.form-select {
+  border-color: var(--linea-ocre);
+}
+
+.btn-warning,
+.btn-primary,
+.btn-success,
+.btn-cta {
+  background: var(--mostaza);
+  border-color: var(--mostaza);
+  color: var(--ocre-profundo);
+}
+
+/* Tipografia y contraste finales para textos heredados. */
+body,
+p,
+li,
+label,
+small,
+.text-muted,
+.matricula-texto,
+.career-card p,
+.dropdown-list li,
+.dropdown-list a,
+.noticias-contenido p,
+.carpinteria-contenido p,
+.carpinteria-lista li {
+  color: var(--texto-ocre) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title,
+.subsection-title,
+.career-card h3,
+.career-details h4,
+.noticias-titulo,
+.noticias-subtitulo,
+.carpinteria-titulo,
+.carpinteria-seccion-titulo,
+.galeria-titulo {
+  color: var(--ocre-profundo) !important;
+}
+
+.site-header h1,
+.site-header h2,
+.site-header h3,
+.site-header h4,
+.site-header h5,
+.site-header h6,
+.site-header p,
+.site-header .nav-link,
+.site-header .navbar-brand,
+.hero-section h1,
+.hero-section h2,
+.hero-section p,
+footer p,
+footer a {
+  color: var(--marfil) !important;
+}
+
+a {
+  color: var(--ocre);
+}
+
+a:hover {
+  color: var(--ocre-profundo);
+}
+
+.form-label,
+.form-control,
+.form-select,
+.form-control::placeholder {
+  color: var(--texto-ocre) !important;
+}
+
+.form-control::placeholder {
+  opacity: 0.68;
+}
+
+/* Tema final compartido con el inicio. */
+:root {
+  --azul-principal: #0D6EFD;
+  --azul-oscuro: #002B7F;
+  --vino: #7A1F3D;
+  --dorado: #FFD700;
+  --lavanda: #D9D9FF;
+  --blanco: #FFFFFF;
+  --fondo-calido: #FFFACD;
+  --azul-claro: #DCEAF7;
+  --lavanda-suave: #F1EEFA;
+  --dorado-claro: #F3D98B;
+  --vino-claro: #A94B68;
+  --texto: #172033;
+  --mostaza: var(--dorado);
+  --mostaza-claro: var(--dorado-claro);
+  --ocre: var(--vino);
+  --ocre-profundo: var(--azul-oscuro);
+  --crema: var(--fondo-calido);
+  --marfil: var(--blanco);
+  --linea-ocre: var(--dorado-claro);
+  --texto-ocre: var(--texto);
+  --sombra-ocre: rgba(0, 43, 127, 0.16);
+}
+
+body {
+  background-color: var(--lavanda-suave);
+  color: var(--texto);
+}
+
+.site-header,
+.navbar-wrapper,
+.matricula-page-main {
+  background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 100%) !important;
+}
+
+.specialty-bar,
+footer,
+.footer-section {
+  background-color: var(--vino) !important;
+}
+
+.hero-section,
+.hero-taller,
+.hero-taller-belleza,
+.hero-taller-carpinteria,
+.hero-taller-electricidad,
+.hero-taller-banda,
+.hero-taller-hogar,
+.hero-taller-estructuras,
+.hero-taller-deportes {
+  background: var(--azul-oscuro) !important;
+}
+
+.institution-strip,
+.navbar-brand,
+.institution-name,
+.nav-link,
+.hero-content,
+.hero-section h1,
+.hero-section h2,
+.hero-section p,
+.hero-taller .hero-content-belleza,
+.footer-section p,
+footer p,
+footer a {
+  color: var(--blanco) !important;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.hero-kicker,
+.hero-kicker-belleza,
+.eyebrow,
+.footer-section h5 {
+  color: var(--dorado) !important;
+}
+
+.specialty-links a,
+.specialty-links .dropdown-toggle,
+.dropdown-menu,
+.tab-dropdown-card,
+.matricula-card,
+.matricula-form-page,
+.matricula-form-panel,
+.career-card,
+.history-card,
+.galeria-item,
+.carpinteria-contenido {
+  background-color: var(--blanco);
+  border-color: rgba(0, 43, 127, 0.16);
+  color: var(--azul-oscuro);
+}
+
+.specialty-links a:hover,
+.specialty-links .dropdown-toggle:hover,
+.specialty-links .dropdown-item:hover,
+.category-tab:hover,
+.category-tab.is-active {
+  background-color: var(--lavanda);
+  color: var(--azul-oscuro);
+}
+
+.navbar-matricula-btn,
+.matricula-btn,
+.matricula-submit,
+.btn-warning,
+.btn-primary,
+.btn-success {
+  background: var(--dorado) !important;
+  border-color: var(--dorado) !important;
+  color: var(--azul-oscuro) !important;
+}
+
+.navbar-matricula-btn:hover,
+.matricula-btn:hover,
+.matricula-submit:hover,
+.btn-warning:hover,
+.btn-primary:hover,
+.btn-success:hover {
+  background: var(--dorado-claro) !important;
+  color: var(--azul-oscuro) !important;
+}
+
+.specialties-section,
+.historia-section,
+.matricula-section,
+.section-light,
+.section-dark,
+.talleres-selector,
+.carpinteria-section {
+  background: linear-gradient(180deg, var(--lavanda-suave) 0%, var(--azul-claro) 100%) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title,
+.subsection-title,
+.career-card h3,
+.career-details h4,
+.noticias-titulo,
+.noticias-subtitulo,
+.carpinteria-titulo,
+.carpinteria-seccion-titulo,
+.galeria-titulo,
+.talleres-selector h2 {
+  color: var(--azul-oscuro) !important;
+}
+
+p,
+li,
+label,
+small,
+.text-muted,
+.section-text,
+.career-card p,
+.noticias-contenido p,
+.carpinteria-contenido p,
+.carpinteria-lista li {
+  color: var(--texto) !important;
+}
+
+.specialty-card,
+.teacher-card,
+.achievement-card,
+.challenge-card,
+.quality-card,
+.image-placeholder,
+.info-box {
+  background: var(--blanco) !important;
+  border-color: rgba(0, 43, 127, 0.2) !important;
+  color: var(--texto);
+}
+
+.specialty-card span,
+.social-links a:hover,
+.matricula-lista li::before,
+.placeholder-text i,
+.achievement-icon,
+.quality-icon {
+  color: var(--vino) !important;
+}
+
+.workshop-button,
+.historia-toggle,
+.cta-section,
+.challenge-number {
+  background: linear-gradient(135deg, var(--vino), var(--azul-oscuro)) !important;
+  color: var(--blanco) !important;
+}
+
+.section-divider {
+  background: linear-gradient(90deg, var(--vino), var(--dorado)) !important;
+}
+
+.form-control,
+.form-select {
+  border-color: rgba(0, 43, 127, 0.2);
+  color: var(--texto) !important;
+  background-color: var(--blanco);
+}
+
+/* Tema definitivo de inicio: mostaza, ocre y blanco. */
+:root {
+  --azul-principal: #D49A00;
+  --azul-oscuro: #694200;
+  --vino: #A66F00;
+  --dorado: #D49A00;
+  --lavanda: #FFF4D6;
+  --blanco: #FFFDF7;
+  --fondo-calido: #FFF4D6;
+  --azul-claro: #FFF4D6;
+  --lavanda-suave: #FFFDF7;
+  --dorado-claro: #F2C94C;
+  --vino-claro: #F2C94C;
+  --texto: #3F2A08;
+  --mostaza: #D49A00;
+  --mostaza-claro: #F2C94C;
+  --ocre: #A66F00;
+  --ocre-profundo: #694200;
+  --crema: #FFF4D6;
+  --marfil: #FFFDF7;
+  --linea-ocre: #E7C875;
+  --texto-ocre: #3F2A08;
+  --sombra-ocre: rgba(105, 66, 0, 0.16);
+}
+
+body {
+  background-color: var(--marfil);
+  color: var(--texto-ocre);
+}
+
+.site-header,
+.navbar-wrapper,
+.matricula-page-main,
+.hero-section {
+  background: linear-gradient(100deg, var(--ocre-profundo) 0%, var(--ocre) 52%, var(--mostaza) 100%) !important;
+}
+
+.specialty-bar,
+footer,
+.footer-section {
+  background-color: var(--ocre-profundo) !important;
+}
+
+.institution-strip,
+.navbar-brand,
+.institution-name,
+.nav-link,
+.hero-section h1,
+.hero-section h2,
+.hero-section p,
+footer p,
+footer a {
+  color: var(--marfil) !important;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.hero-kicker,
+.eyebrow,
+.footer-section h5 {
+  color: var(--mostaza-claro) !important;
+}
+
+.specialty-links a,
+.specialty-links .dropdown-toggle,
+.dropdown-menu,
+.tab-dropdown-card,
+.matricula-card,
+.matricula-form-page,
+.matricula-form-panel,
+.career-card,
+.noticias-contenido,
+.carpinteria-contenido,
+.galeria-item {
+  background-color: var(--marfil);
+  border-color: var(--linea-ocre);
+  color: var(--texto-ocre);
+}
+
+.specialty-links a:hover,
+.specialty-links .dropdown-toggle:hover,
+.specialty-links .dropdown-item:hover,
+.category-tab:hover,
+.category-tab.is-active {
+  background-color: var(--crema);
+  color: var(--ocre-profundo);
+}
+
+.navbar-matricula-btn,
+.matricula-btn,
+.matricula-submit,
+.btn-warning,
+.btn-primary,
+.btn-success {
+  background: linear-gradient(135deg, var(--mostaza-claro), var(--mostaza)) !important;
+  border-color: var(--mostaza) !important;
+  color: var(--ocre-profundo) !important;
+}
+
+.navbar-matricula-btn:hover,
+.matricula-btn:hover,
+.matricula-submit:hover,
+.btn-warning:hover,
+.btn-primary:hover,
+.btn-success:hover {
+  background: var(--ocre) !important;
+  color: var(--marfil) !important;
+}
+
+.specialties-section,
+.historia-section,
+.matricula-section,
+.section-light,
+.section-dark,
+.talleres-selector,
+.carpinteria-section {
+  background: linear-gradient(180deg, var(--marfil) 0%, var(--crema) 100%) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title,
+.subsection-title,
+.career-card h3,
+.career-details h4,
+.noticias-titulo,
+.noticias-subtitulo,
+.carpinteria-titulo,
+.carpinteria-seccion-titulo,
+.galeria-titulo,
+.talleres-selector h2 {
+  color: var(--ocre-profundo) !important;
+}
+
+p,
+li,
+label,
+small,
+.text-muted,
+.section-text,
+.career-card p,
+.noticias-contenido p,
+.carpinteria-contenido p,
+.carpinteria-lista li {
+  color: var(--texto-ocre) !important;
+}
+
+.specialty-card,
+.teacher-card,
+.achievement-card,
+.challenge-card,
+.quality-card,
+.image-placeholder,
+.info-box {
+  background: var(--marfil) !important;
+  border-color: var(--linea-ocre) !important;
+  color: var(--texto-ocre);
+}
+
+.specialty-card span,
+.social-links a:hover,
+.matricula-lista li::before,
+.placeholder-text i,
+.achievement-icon,
+.quality-icon {
+  color: var(--ocre) !important;
+}
+
+.workshop-button,
+.historia-toggle,
+.cta-section,
+.challenge-number {
+  background: linear-gradient(135deg, var(--ocre), var(--ocre-profundo)) !important;
+  color: var(--marfil) !important;
+}
+
+.section-divider {
+  background: linear-gradient(90deg, var(--mostaza), var(--ocre-profundo)) !important;
+}
+
+.form-control,
+.form-select {
+  border-color: var(--linea-ocre);
+  color: var(--texto-ocre) !important;
+  background-color: var(--marfil);
 }
